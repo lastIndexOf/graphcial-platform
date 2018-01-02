@@ -1,3 +1,3 @@
 # Graphical platform
 
-- forked by [chentsulin](https://github.com/chentsulin/electron-react-boilerplate)
+- scaffold was forked by [chentsulin](https://github.com/chentsulin/electron-react-boilerplate)
