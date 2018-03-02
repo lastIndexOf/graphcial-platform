@@ -1,0 +1,13 @@
+{
+  "name": "graphcial-platform",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/lastIndexOf/graphcial-platform.git",
+  "author": "lastIndexOf <kgaikj2cu@icloud.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "parcel-bundler": "^1.6.2"
+  }
+}
