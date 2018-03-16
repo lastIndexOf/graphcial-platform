@@ -1,0 +1,66 @@
+.gra-screen-wrapper {
+  height: 100%;
+  position: relative;
+  .gra-screen-header {
+    height: 40px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom: 1px solid #ddd;
+    background: linear-gradient(to bottom, #fff 0%, rgb(230, 230, 230) 100%);
+    .iconfont {
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      font-size: 24px;
+      line-height: 40px;
+      cursor: pointer;
+    }
+    .gra-icon-full-screen {
+      color: rgb(15, 117, 188);
+      margin-left: 16px;
+    }
+    .gra-icon-start,
+    .gra-icon-end {
+      float: right;
+    }
+    .gra-icon-start {
+      color: rgb(75, 109, 60);
+      margin-right: 8px;
+      &.active {
+        color: rgb(60, 226, 20);
+      }
+    }
+    .gra-icon-end {
+      color: rgb(160, 18, 18);
+      margin-right: 16px;
+      &.active {
+        color: rgb(234, 24, 24);
+      }
+    }
+  }
+  .gra-screen-main {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    background-color: rgb(250, 242, 142);
+  }
+  .gra-screen-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 20px;
+    text-align: right;
+    .gra-screen-x,
+    .gra-screen-z,
+    .gra-screen-y {
+      display: inline-block;
+      height: 20px;
+      margin: 0 12px;
+      color: #fff;
+      line-height: 20px;
+    }
+  }
+}

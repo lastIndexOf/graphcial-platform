@@ -1,0 +1,12 @@
+.gra-content-wrapper {
+  position: relative;
+  height: 100%;
+  .gra-content-main-wrapper {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(222, 222, 222);
+  }
+}

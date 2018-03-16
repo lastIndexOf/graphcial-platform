@@ -1,0 +1,30 @@
+.gra-content-tab-list {
+  height: 30px;
+  .gra-content-list {
+    height: 100%;
+    .gra-content-list-item {
+      display: inline-block;
+      height: 30px;
+      padding: 0 12px;
+      line-height: 30px;
+      font-size: 14px;
+      font-weight: 700;
+      color: rgb(122, 123, 125);
+      box-sizing: border-box;
+      vertical-align: top;
+      cursor: pointer;
+      border: 1px solid rgb(222, 222, 222);
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+      background-color: rgb(242, 242, 242);
+      &.active {
+        background-color: rgb(222, 222, 222);
+        border-bottom: 0;
+      }
+      &:hover {
+        background-color: rgb(222, 222, 222);
+        border-bottom: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+[
+  {
+    "title": "文件",
+    "isActive": false,
+    "children": [
+      {
+        "title": "打开",
+        "func": "fileOpen"
+      }
+    ] 
+  },
+  {
+    "title": "编辑",
+    "isActive": false,
+    "children": [
+      {
+        "title": "暂无"
+      }
+    ]
+  }
+]

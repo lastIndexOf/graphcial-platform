@@ -5,9 +5,24 @@
   "repository": "https://github.com/lastIndexOf/graphcial-platform.git",
   "author": "lastIndexOf <kgaikj2cu@icloud.com>",
   "license": "MIT",
+  "scripts": {
+    "dev": "npm run main-render & npm run main-process &",
+    "main-render": "parcel app/app.html -p 4000",
+    "main-process": "electron .",
+    "build": "rm -rf ./cache && parcel build ./app/app.html -d dist"
+  },
   "devDependencies": {
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
+    "node-sass": "^4.7.2",
     "parcel-bundler": "^1.6.2"
+  },
+  "dependencies": {
+    "electron": "^1.8.2",
+    "react": "^16.2.0",
+    "react-addons-css-transition-group": "^15.6.2",
+    "react-dom": "^16.2.0",
+    "react-router": "^4.2.0",
+    "three": "^0.90.0"
   }
 }

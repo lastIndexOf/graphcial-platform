@@ -1,0 +1,131 @@
+.gra-editor-wrapper {
+  height: 100%;
+  position: relative;
+  .gra-editor-header {
+    height: 40px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom: 1px solid #d2d2d2;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, #fff 0%, rgb(230, 230, 230) 100%);
+    .gra-editor-header-block,
+    .gra-editor-header-role {
+      display:inline-block;
+      height: 100%;
+      vertical-align: top;
+    }
+    .gra-editor-header-block {
+      width: 20%;
+      border-right: 1px solid #d2d2d2;
+      box-sizing: border-box;
+    }
+    .gra-editor-header-role {
+      width: 80%;
+      color: rgb(92, 93, 95);
+      .gra-editor-role-title {
+        display: inline-block;
+        height: 100%;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 40px;
+        padding: 0 12px;
+      }
+      .gra-editor-role-operate {
+        float: right;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 40px;
+        margin-right: 12px;
+        .iconfont {
+          display: inline-block;
+          height: 100%;
+          margin: 0 2px;
+          font-size: 20px;
+          line-height: 40px;
+          cursor: pointer;
+          &:hover {
+            color: rgb(89, 184, 223);
+          }
+          &.gra-icon-addrole {
+            margin-left: 14px;
+          }
+          &.gra-icon-draw {
+            font-size: 24px;
+          }
+          &.gra-icon-upload {
+            font-size: 24px;
+          }
+          &.gra-icon-camera {
+            font-size: 18px;
+            margin: 0 10px;
+          }
+        }
+      }
+    }
+  }
+  .gra-editor-main {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: rgb(92, 93, 95);
+    background-color: rgb(230, 232, 232);
+    .gra-editor-main-bgeditor {
+      display:inline-block;
+      height: 100%;
+      width: 20%;
+      box-sizing: border-box;
+      vertical-align: top;
+      border-right: 1px solid #d2d2d2;
+      .gra-editor-main-bgimg-wrapper {
+        padding: 6px;
+        box-sizing: border-box;
+        border-radius: 6px;
+        border: 4px solid transparent;
+        &.active {
+          border: 4px solid rgb(23, 159, 215);
+        }
+        .gra-editor-main-bgimg {
+          width: 100%;
+          height: 80px;
+          cursor: pointer;
+        }
+        .gra-editor-main-bgimg-title {
+          text-align: center;
+        }
+      }
+      .gra-editor-main-bgimg-edit-wrapper {
+        .gra-editor-main-bgimg-edit-title {
+          padding: 6px 0;
+          font-size: 12px;
+          text-align: left;
+        }
+        .gra-editor-main-bgimg-edit-operate {
+          display: block;
+          width: 100%;
+          height: 20px;
+          text-align: center;
+          .iconfont {
+            display: inline-block;
+            line-height: 20px;
+            font-size: 20px;
+            cursor: pointer;
+            margin: 0 2px;
+            vertical-align: top;
+            &:hover {
+              color: rgb(89, 184, 223);
+            }
+            &.gra-icon-addbgimg {
+              font-size: 16px;
+            }
+            &.gra-icon-camera {
+              font-size: 16px;
+              margin: 0 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
