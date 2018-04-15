@@ -1,0 +1,184 @@
+.gra-content-script-editor {
+  width: 100%;
+  height: 100%;
+  .gra-content-script-blockly {
+    height: 100%;
+    width: 100%;
+    .injectionDiv {
+      .blocklyToolboxDiv {
+        width: 15%;
+        padding: 6px;
+        box-sizing: border-box;
+      }
+    }
+  }
+  // .gra-content-script-left-wrapper,
+  // .gra-content-script-right-wrapper {
+  //   display: inline-block;
+  //   height: 100%;
+  //   box-sizing: border-box;
+  //   vertical-align: top;
+  // }
+  // .gra-content-script-left-wrapper {
+  //   width: 18%;
+  //   padding: 8px 2px 8px 8px;
+  //   .gra-content-script-top-block-wrapper {
+  //     width: 100%;
+  //     padding-bottom: 6px;
+  //     border-bottom: 1px solid #c2c2c2;
+  //     .gra-content-block-list {
+  //       width: 100%;
+  //       .gra-content-block-item {
+  //         display: inline-block;
+  //         width: 40%;
+  //         height: 24px;
+  //         line-height: 24px;
+  //         margin-right: 12px;
+  //         box-sizing: border-box;
+  //         vertical-align: top;
+  //         cursor: pointer;
+  //         &:hover {
+  //           .gra-content-block-right {
+  //             color: rgb(246, 182, 92);
+  //           }
+  //         }
+  //         span {
+  //           display: inline-block;
+  //           height: 24px;
+  //           vertical-align: top;
+  //           &.gra-content-block-left {
+  //             width: 8px;
+  //           }
+  //           &.gra-content-block-right {
+  //             font-size: 14px;
+  //             line-height: 24px;
+  //             padding-left: 4px;
+  //           }
+  //         }
+  //         &.gra-block-action {
+  //           &.active {
+  //             background-color: rgb(74, 108, 212);
+  //             .gra-content-block-right {
+  //               color: #fff;
+  //             }
+  //           }
+  //           .gra-content-block-left {
+  //             background-color: rgb(74, 108, 212);
+  //           }
+  //         }
+  //         &.gra-block-events {
+  //           &.active {
+  //             background-color: rgb(200, 131, 48);
+  //             .gra-content-block-right {
+  //               color: #fff;
+  //             }
+  //           }
+  //           .gra-content-block-left {
+  //             background-color: rgb(200, 131, 48);
+  //           }
+  //         }
+  //         &.gra-block-clothes {
+  //           &.active {
+  //             background-color: rgb(138, 85, 215);
+  //             .gra-content-block-right {
+  //               color: #fff;
+  //             }
+  //           }
+  //           .gra-content-block-left {
+  //             background-color: rgb(138, 85, 215);
+  //           }
+  //         }
+  //         &.gra-block-control {
+  //           &.active {
+  //             background-color: rgb(225, 125, 26);
+  //             .gra-content-block-right {
+  //               color: #fff;
+  //             }
+  //           }
+  //           .gra-content-block-left {
+  //             background-color: rgb(225, 125, 26);
+  //           }
+  //         }
+  //         &.gra-block-voice {
+  //           &.active {
+  //             background-color: rgb(187, 66, 195);
+  //             .gra-content-block-right {
+  //               color: #fff;
+  //             }
+  //           }
+  //           .gra-content-block-left {
+  //             background-color: rgb(187, 66, 195);
+  //           }
+  //         }
+  //         &.gra-block-detection {
+  //           &.active {
+  //             background-color: rgb(44, 165, 126);
+  //             .gra-content-block-right {
+  //               color: #fff;
+  //             }
+  //           }
+  //           .gra-content-block-left {
+  //             background-color: rgb(44, 165, 126);
+  //           }
+  //         }
+  //         &.gra-block-pen {
+  //           &.active {
+  //             background-color: rgb(14, 154, 108);
+  //             .gra-content-block-right {
+  //               color: #fff;
+  //             }
+  //           }
+  //           .gra-content-block-left {
+  //             background-color: rgb(14, 154, 108);
+  //           }
+  //         }
+  //         &.gra-block-operator {
+  //           &.active {
+  //             background-color: rgb(92, 183, 18);
+  //             .gra-content-block-right {
+  //               color: #fff;
+  //             }
+  //           }
+  //           .gra-content-block-left {
+  //             background-color: rgb(92, 183, 18);
+  //           }
+  //         }
+  //         &.gra-block-datas {
+  //           &.active {
+  //             background-color: rgb(238, 125, 22);
+  //             .gra-content-block-right {
+  //               color: #fff;
+  //             }
+  //           }
+  //           .gra-content-block-left {
+  //             background-color: rgb(238, 125, 22);
+  //           }
+  //         }
+  //         &.gra-block-more {
+  //           &.active {
+  //             background-color: rgb(99, 45, 153);
+  //             .gra-content-block-right {
+  //               color: #fff;
+  //             }
+  //           }
+  //           .gra-content-block-left {
+  //             background-color: rgb(99, 45, 153);
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+  // .gra-content-script-right-wrapper {
+  //   width: 82%;
+  //   padding: 8px;
+  //   box-sizing: border-box;
+  //   .gra-content-script-block-container {
+  //     width: 100%;
+  //     height: 100%;
+  //     border: 1px solid #ccc;
+  //     overflow: auto;
+  //     background-color: rgb(221, 222, 222);
+  //   }
+  // }
+}

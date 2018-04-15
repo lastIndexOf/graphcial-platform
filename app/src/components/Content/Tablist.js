@@ -22,18 +22,23 @@ export default class Tablist extends Component {
 
   render () {
     let { tabIndex, tabList } = this.state
+    let { role } = this.props
 
     return (
       <div className="gra-content-tab-list">
         <ul className="gra-content-list">
-          {tabList.map((item, i) => (
-            <li 
-              className={`gra-content-list-item ${tabIndex === i ? 'active' : ''}`}
-              onClick={this.changeIndex.bind(this, i)} 
-              key={item}>
-              {item}
-            </li>
-          ))}
+          {tabList.map((item, i) => {
+            if (role === 'background' && i === 3) return null
+            else if (role === 'role' && i === 1) return null
+            return (
+              <li 
+                className={`gra-content-list-item ${tabIndex === i ? 'active' : ''}`}
+                onClick={this.changeIndex.bind(this, i)} 
+                key={item}>
+                {item}
+              </li>
+            )
+          })}
         </ul>
       </div>
     )

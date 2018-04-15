@@ -71,7 +71,7 @@ require = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({43:[function(require,module,exports) {
+})({52:[function(require,module,exports) {
 /*
 object-assign
 (c) Sindre Sorhus
@@ -163,7 +163,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 	return to;
 };
 
-},{}],46:[function(require,module,exports) {
+},{}],56:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -181,7 +181,7 @@ if ('development' !== 'production') {
 }
 
 module.exports = emptyObject;
-},{}],47:[function(require,module,exports) {
+},{}],57:[function(require,module,exports) {
 "use strict";
 
 /**
@@ -218,7 +218,7 @@ emptyFunction.thatReturnsArgument = function (arg) {
 };
 
 module.exports = emptyFunction;
-},{}],24:[function(require,module,exports) {
+},{}],41:[function(require,module,exports) {
 /** @license React v16.2.0
  * react.production.min.js
  *
@@ -241,7 +241,7 @@ var U={Children:{map:function(a,b,e){if(null==a)return a;var c=[];T(a,c,null,b,e
 d=a.key,g=a.ref,k=a._owner;if(null!=b){void 0!==b.ref&&(g=b.ref,k=G.current);void 0!==b.key&&(d=""+b.key);if(a.type&&a.type.defaultProps)var f=a.type.defaultProps;for(h in b)H.call(b,h)&&!I.hasOwnProperty(h)&&(c[h]=void 0===b[h]&&void 0!==f?f[h]:b[h])}var h=arguments.length-2;if(1===h)c.children=e;else if(1<h){f=Array(h);for(var l=0;l<h;l++)f[l]=arguments[l+2];c.children=f}return{$$typeof:r,type:a.type,key:d,ref:g,props:c,_owner:k}},createFactory:function(a){var b=J.bind(null,a);b.type=a;return b},
 isValidElement:K,version:"16.2.0",__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED:{ReactCurrentOwner:G,assign:m}},V=Object.freeze({default:U}),W=V&&U||V;module.exports=W["default"]?W["default"]:W;
 
-},{"object-assign":43,"fbjs/lib/emptyObject":46,"fbjs/lib/emptyFunction":47}],55:[function(require,module,exports) {
+},{"object-assign":52,"fbjs/lib/emptyObject":56,"fbjs/lib/emptyFunction":57}],64:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -295,7 +295,7 @@ function invariant(condition, format, a, b, c, d, e, f) {
 }
 
 module.exports = invariant;
-},{}],56:[function(require,module,exports) {
+},{}],65:[function(require,module,exports) {
 /**
  * Copyright (c) 2014-present, Facebook, Inc.
  *
@@ -358,7 +358,7 @@ if ('development' !== 'production') {
 }
 
 module.exports = warning;
-},{"./emptyFunction":47}],45:[function(require,module,exports) {
+},{"./emptyFunction":57}],55:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -372,7 +372,7 @@ var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
 
 module.exports = ReactPropTypesSecret;
 
-},{}],44:[function(require,module,exports) {
+},{}],54:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -432,7 +432,7 @@ function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
 }
 
 module.exports = checkPropTypes;
-},{"fbjs/lib/invariant":55,"fbjs/lib/warning":56,"./lib/ReactPropTypesSecret":45}],25:[function(require,module,exports) {
+},{"fbjs/lib/invariant":64,"fbjs/lib/warning":65,"./lib/ReactPropTypesSecret":55}],42:[function(require,module,exports) {
 /** @license React v16.2.0
  * react.development.js
  *
@@ -1784,7 +1784,7 @@ if ('development' !== "production") {
     module.exports = react;
   })();
 }
-},{"object-assign":43,"fbjs/lib/emptyObject":46,"fbjs/lib/invariant":55,"fbjs/lib/warning":56,"fbjs/lib/emptyFunction":47,"prop-types/checkPropTypes":44}],11:[function(require,module,exports) {
+},{"object-assign":52,"fbjs/lib/emptyObject":56,"fbjs/lib/invariant":64,"fbjs/lib/warning":65,"fbjs/lib/emptyFunction":57,"prop-types/checkPropTypes":54}],39:[function(require,module,exports) {
 'use strict';
 
 if ('development' === 'production') {
@@ -1792,7 +1792,7 @@ if ('development' === 'production') {
 } else {
   module.exports = require('./cjs/react.development.js');
 }
-},{"./cjs/react.production.min.js":24,"./cjs/react.development.js":25}],49:[function(require,module,exports) {
+},{"./cjs/react.production.min.js":41,"./cjs/react.development.js":42}],59:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -1826,7 +1826,7 @@ var ExecutionEnvironment = {
 };
 
 module.exports = ExecutionEnvironment;
-},{}],50:[function(require,module,exports) {
+},{}],61:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -1901,7 +1901,7 @@ var EventListener = {
 };
 
 module.exports = EventListener;
-},{"./emptyFunction":47}],51:[function(require,module,exports) {
+},{"./emptyFunction":57}],58:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -1938,7 +1938,7 @@ function getActiveElement(doc) /*?DOMElement*/{
 }
 
 module.exports = getActiveElement;
-},{}],52:[function(require,module,exports) {
+},{}],62:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2004,7 +2004,7 @@ function shallowEqual(objA, objB) {
 }
 
 module.exports = shallowEqual;
-},{}],58:[function(require,module,exports) {
+},{}],67:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2027,7 +2027,7 @@ function isNode(object) {
 }
 
 module.exports = isNode;
-},{}],57:[function(require,module,exports) {
+},{}],66:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2050,7 +2050,7 @@ function isTextNode(object) {
 }
 
 module.exports = isTextNode;
-},{"./isNode":58}],53:[function(require,module,exports) {
+},{"./isNode":67}],60:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2088,7 +2088,7 @@ function containsNode(outerNode, innerNode) {
 }
 
 module.exports = containsNode;
-},{"./isTextNode":57}],54:[function(require,module,exports) {
+},{"./isTextNode":66}],63:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2113,7 +2113,7 @@ function focusNode(node) {
 }
 
 module.exports = focusNode;
-},{}],23:[function(require,module,exports) {
+},{}],44:[function(require,module,exports) {
 /** @license React v16.2.0
  * react-dom.production.min.js
  *
@@ -2344,7 +2344,7 @@ var Sg={createPortal:Qg,findDOMNode:function(a){if(null==a)return null;if(1===a.
 E("40");return a._reactRootContainer?(Z.unbatchedUpdates(function(){Pg(null,null,a,!1,function(){a._reactRootContainer=null})}),!0):!1},unstable_createPortal:Qg,unstable_batchedUpdates:tc,unstable_deferredUpdates:Z.deferredUpdates,flushSync:Z.flushSync,__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED:{EventPluginHub:mb,EventPluginRegistry:Va,EventPropagators:Cb,ReactControlledComponent:qc,ReactDOMComponentTree:sb,ReactDOMEventListener:xd}};
 Z.injectIntoDevTools({findFiberByHostInstance:pb,bundleType:0,version:"16.2.0",rendererPackageName:"react-dom"});var Tg=Object.freeze({default:Sg}),Ug=Tg&&Sg||Tg;module.exports=Ug["default"]?Ug["default"]:Ug;
 
-},{"react":11,"fbjs/lib/ExecutionEnvironment":49,"object-assign":43,"fbjs/lib/emptyFunction":47,"fbjs/lib/EventListener":50,"fbjs/lib/getActiveElement":51,"fbjs/lib/shallowEqual":52,"fbjs/lib/containsNode":53,"fbjs/lib/focusNode":54,"fbjs/lib/emptyObject":46}],61:[function(require,module,exports) {
+},{"react":39,"fbjs/lib/ExecutionEnvironment":59,"object-assign":52,"fbjs/lib/emptyFunction":57,"fbjs/lib/EventListener":61,"fbjs/lib/getActiveElement":58,"fbjs/lib/shallowEqual":62,"fbjs/lib/containsNode":60,"fbjs/lib/focusNode":63,"fbjs/lib/emptyObject":56}],70:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2375,7 +2375,7 @@ function hyphenate(string) {
 }
 
 module.exports = hyphenate;
-},{}],59:[function(require,module,exports) {
+},{}],68:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2412,7 +2412,7 @@ function hyphenateStyleName(string) {
 }
 
 module.exports = hyphenateStyleName;
-},{"./hyphenate":61}],62:[function(require,module,exports) {
+},{"./hyphenate":70}],71:[function(require,module,exports) {
 "use strict";
 
 /**
@@ -2442,7 +2442,7 @@ function camelize(string) {
 }
 
 module.exports = camelize;
-},{}],60:[function(require,module,exports) {
+},{}],69:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2480,7 +2480,7 @@ function camelizeStyleName(string) {
 }
 
 module.exports = camelizeStyleName;
-},{"./camelize":62}],26:[function(require,module,exports) {
+},{"./camelize":71}],45:[function(require,module,exports) {
 /** @license React v16.2.0
  * react-dom.development.js
  *
@@ -17838,7 +17838,7 @@ if ('development' !== "production") {
     module.exports = reactDom;
   })();
 }
-},{"react":11,"fbjs/lib/invariant":55,"fbjs/lib/warning":56,"fbjs/lib/ExecutionEnvironment":49,"object-assign":43,"fbjs/lib/emptyFunction":47,"fbjs/lib/EventListener":50,"fbjs/lib/getActiveElement":51,"fbjs/lib/shallowEqual":52,"fbjs/lib/containsNode":53,"fbjs/lib/focusNode":54,"fbjs/lib/emptyObject":46,"prop-types/checkPropTypes":44,"fbjs/lib/hyphenateStyleName":59,"fbjs/lib/camelizeStyleName":60}],10:[function(require,module,exports) {
+},{"react":39,"fbjs/lib/invariant":64,"fbjs/lib/warning":65,"fbjs/lib/ExecutionEnvironment":59,"object-assign":52,"fbjs/lib/emptyFunction":57,"fbjs/lib/EventListener":61,"fbjs/lib/getActiveElement":58,"fbjs/lib/shallowEqual":62,"fbjs/lib/containsNode":60,"fbjs/lib/focusNode":63,"fbjs/lib/emptyObject":56,"prop-types/checkPropTypes":54,"fbjs/lib/hyphenateStyleName":68,"fbjs/lib/camelizeStyleName":69}],38:[function(require,module,exports) {
 'use strict';
 
 function checkDCE() {
@@ -17874,7 +17874,7 @@ if ('development' === 'production') {
 } else {
   module.exports = require('./cjs/react-dom.development.js');
 }
-},{"./cjs/react-dom.production.min.js":23,"./cjs/react-dom.development.js":26}],19:[function(require,module,exports) {
+},{"./cjs/react-dom.production.min.js":44,"./cjs/react-dom.development.js":45}],18:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -17904,7 +17904,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],9:[function(require,module,exports) {
+},{}],12:[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -17935,13 +17935,13 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":19}],36:[function(require,module,exports) {
+},{"./bundle-url":18}],37:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":9}],35:[function(require,module,exports) {
+},{"_css_loader":12}],33:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -18004,13 +18004,13 @@ var Nextmenu = function (_Component) {
 }(_react.Component);
 
 exports.default = Nextmenu;
-},{"react":11,"./Nextmenu.scss":36}],34:[function(require,module,exports) {
+},{"react":39,"./Nextmenu.scss":37}],32:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":9}],33:[function(require,module,exports) {
+},{"_css_loader":12}],30:[function(require,module,exports) {
 module.exports = [
   {
     "title": "文件",
@@ -18032,7 +18032,7 @@ module.exports = [
     ]
   }
 ];
-},{}],22:[function(require,module,exports) {
+},{}],26:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -18148,11 +18148,11 @@ var Menubar = function (_Component) {
 }(_react.Component);
 
 exports.default = Menubar;
-},{"react":11,"./Nextmenu":35,"./Menubar.scss":34,"../../common/menuData.json":33}],29:[function(require,module,exports) {
+},{"react":39,"./Nextmenu":33,"./Menubar.scss":32,"../../common/menuData.json":30}],27:[function(require,module,exports) {
 module.exports="/dist/1e268891d6e6396879728079ba91da11.png";
-},{}],30:[function(require,module,exports) {
+},{}],28:[function(require,module,exports) {
 module.exports="/dist/8aad4350ace5cfa6017ac8e5dc0e9993.png";
-},{}],20:[function(require,module,exports) {
+},{}],25:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -18172,13 +18172,13 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 exports.logo = _logo2.default;
 exports.language = _language2.default;
-},{"../../assets/image/logo.png":29,"../../assets/image/language.png":30}],21:[function(require,module,exports) {
+},{"../../assets/image/logo.png":27,"../../assets/image/language.png":28}],24:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":9}],8:[function(require,module,exports) {
+},{"_css_loader":12}],17:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -18246,13 +18246,13 @@ var Header = function (_Component) {
 }(_react.Component);
 
 exports.default = Header;
-},{"react":11,"./Menubar":22,"../../common/images":20,"./Header.scss":21}],32:[function(require,module,exports) {
+},{"react":39,"./Menubar":26,"../../common/images":25,"./Header.scss":24}],29:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":9}],48:[function(require,module,exports) {
+},{"_css_loader":12}],53:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -59246,7 +59246,7 @@ exports.Projector = Projector;
 exports.CanvasRenderer = CanvasRenderer;
 exports.SceneUtils = SceneUtils;
 exports.LensFlare = LensFlare;
-},{}],16:[function(require,module,exports) {
+},{}],20:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -59354,13 +59354,13 @@ var Screen = function (_Component) {
 }(_react.Component);
 
 exports.default = Screen;
-},{"react":11,"./Screen.scss":32,"three":48}],27:[function(require,module,exports) {
+},{"react":39,"./Screen.scss":29,"three":53}],31:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":9}],17:[function(require,module,exports) {
+},{"_css_loader":12}],21:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -59393,18 +59393,20 @@ var Editor = function (_Component) {
 
     _this.state = {
       bgImgTitle: '',
-      bgImgUrl: '',
-      bgImgIsActived: false
+      bgImgUrl: ''
     };
     return _this;
   }
 
   _createClass(Editor, [{
+    key: 'addBackground',
+    value: function addBackground(role) {
+      this.props.showModal(role);
+    }
+  }, {
     key: 'bgImgFocus',
     value: function bgImgFocus() {
-      this.setState({
-        bgImgIsActived: true
-      });
+      this.props.checkToBackground();
     }
   }, {
     key: 'render',
@@ -59413,6 +59415,7 @@ var Editor = function (_Component) {
           bgImgUrl = _state.bgImgUrl,
           bgImgTitle = _state.bgImgTitle,
           bgImgIsActived = _state.bgImgIsActived;
+      var role = this.props.role;
 
 
       return _react2.default.createElement(
@@ -59434,7 +59437,7 @@ var Editor = function (_Component) {
               'span',
               { className: 'gra-editor-role-operate' },
               '\u65B0\u5EFA\u89D2\u8272:',
-              _react2.default.createElement('i', { className: 'iconfont icon-addrole gra-icon-addrole' }),
+              _react2.default.createElement('i', { className: 'iconfont icon-addrole gra-icon-addrole', onClick: this.addBackground.bind(this, 'role') }),
               _react2.default.createElement('i', { className: 'iconfont icon-huabi gra-icon-draw' }),
               _react2.default.createElement('i', { className: 'iconfont icon-shangchuan1 gra-icon-upload' }),
               _react2.default.createElement('i', { className: 'iconfont icon-xiangji gra-icon-camera' })
@@ -59450,7 +59453,7 @@ var Editor = function (_Component) {
             _react2.default.createElement(
               'div',
               {
-                className: 'gra-editor-main-bgimg-wrapper ' + (bgImgIsActived ? 'active' : ''),
+                className: 'gra-editor-main-bgimg-wrapper ' + (role === 'background' ? 'active' : ''),
                 onClick: this.bgImgFocus.bind(this) },
               _react2.default.createElement('img', { src: bgImgUrl, className: 'gra-editor-main-bgimg' }),
               _react2.default.createElement(
@@ -59475,7 +59478,7 @@ var Editor = function (_Component) {
               _react2.default.createElement(
                 'span',
                 { className: 'gra-editor-main-bgimg-edit-operate' },
-                _react2.default.createElement('i', { className: 'iconfont icon-zhaopianphotos11 gra-icon-addbgimg' }),
+                _react2.default.createElement('i', { className: 'iconfont icon-zhaopianphotos11 gra-icon-addbgimg', onClick: this.addBackground.bind(this, 'background') }),
                 _react2.default.createElement('i', { className: 'iconfont icon-huabi gra-icon-draw' }),
                 _react2.default.createElement('i', { className: 'iconfont icon-shangchuan1 gra-icon-upload' }),
                 _react2.default.createElement('i', { className: 'iconfont icon-xiangji gra-icon-camera' })
@@ -59491,13 +59494,13 @@ var Editor = function (_Component) {
 }(_react.Component);
 
 exports.default = Editor;
-},{"react":11,"./Editor.scss":27}],38:[function(require,module,exports) {
+},{"react":39,"./Editor.scss":31}],43:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":9}],31:[function(require,module,exports) {
+},{"_css_loader":12}],35:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -59554,6 +59557,7 @@ var Tablist = function (_Component) {
       var _state = this.state,
           tabIndex = _state.tabIndex,
           tabList = _state.tabList;
+      var role = this.props.role;
 
 
       return _react2.default.createElement(
@@ -59563,6 +59567,7 @@ var Tablist = function (_Component) {
           'ul',
           { className: 'gra-content-list' },
           tabList.map(function (item, i) {
+            if (role === 'background' && i === 3) return null;else if (role === 'role' && i === 1) return null;
             return _react2.default.createElement(
               'li',
               {
@@ -59581,14 +59586,20 @@ var Tablist = function (_Component) {
 }(_react.Component);
 
 exports.default = Tablist;
-},{"react":11,"./Tablist.scss":38}],28:[function(require,module,exports) {
+},{"react":39,"./Tablist.scss":43}],34:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":9}],39:[function(require,module,exports) {
-"use strict";
+},{"_css_loader":12}],50:[function(require,module,exports) {
+
+        var reloadCSS = require('_css_loader');
+        module.hot.dispose(reloadCSS);
+        module.hot.accept(reloadCSS);
+      
+},{"_css_loader":12}],46:[function(require,module,exports) {
+'use strict';
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -59596,9 +59607,11 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = require("react");
+var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
+
+require('./Script.scss');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -59614,16 +59627,28 @@ var Script = function (_Component) {
   function Script() {
     _classCallCheck(this, Script);
 
-    return _possibleConstructorReturn(this, (Script.__proto__ || Object.getPrototypeOf(Script)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (Script.__proto__ || Object.getPrototypeOf(Script)).call(this));
   }
 
   _createClass(Script, [{
-    key: "render",
+    key: 'getBlock',
+    value: function getBlock(index) {
+      this.setState({
+        blockIndex: index
+      });
+    }
+  }, {
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      var workspace = Blockly.inject('blocklyDiv', { toolbox: document.getElementById('toolbox') });
+    }
+  }, {
+    key: 'render',
     value: function render() {
       return _react2.default.createElement(
-        "section",
-        { className: "gra-content-script-editor" },
-        "script editor"
+        'section',
+        { className: 'gra-content-script-editor' },
+        _react2.default.createElement('div', { id: 'blocklyDiv', className: 'gra-content-script-blockly' })
       );
     }
   }]);
@@ -59632,7 +59657,7 @@ var Script = function (_Component) {
 }(_react.Component);
 
 exports.default = Script;
-},{"react":11}],42:[function(require,module,exports) {
+},{"react":39,"./Script.scss":50}],47:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -59677,8 +59702,14 @@ var Voice = function (_Component) {
 }(_react.Component);
 
 exports.default = Voice;
-},{"react":11}],40:[function(require,module,exports) {
-"use strict";
+},{"react":39}],51:[function(require,module,exports) {
+
+        var reloadCSS = require('_css_loader');
+        module.hot.dispose(reloadCSS);
+        module.hot.accept(reloadCSS);
+      
+},{"_css_loader":12}],49:[function(require,module,exports) {
+'use strict';
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -59686,9 +59717,11 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = require("react");
+var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
+
+require('./Background.scss');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -59708,12 +59741,12 @@ var Background = function (_Component) {
   }
 
   _createClass(Background, [{
-    key: "render",
+    key: 'render',
     value: function render() {
       return _react2.default.createElement(
-        "section",
-        { className: "gra-content-background-editor" },
-        "background editor"
+        'section',
+        { className: 'gra-content-background-editor' },
+        _react2.default.createElement('iframe', { src: 'http://localhost:4040/' })
       );
     }
   }]);
@@ -59722,7 +59755,7 @@ var Background = function (_Component) {
 }(_react.Component);
 
 exports.default = Background;
-},{"react":11}],41:[function(require,module,exports) {
+},{"react":39,"./Background.scss":51}],48:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -59767,7 +59800,7 @@ var Handsome = function (_Component) {
 }(_react.Component);
 
 exports.default = Handsome;
-},{"react":11}],37:[function(require,module,exports) {
+},{"react":39}],40:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -59797,7 +59830,7 @@ exports.Script = _Script2.default;
 exports.Background = _Background2.default;
 exports.Voice = _Voice2.default;
 exports.Handsome = _Handsome2.default;
-},{"./Script":39,"./Voice":42,"./Background":40,"./Handsome":41}],18:[function(require,module,exports) {
+},{"./Script":46,"./Voice":47,"./Background":49,"./Handsome":48}],22:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -59856,14 +59889,30 @@ var Content = function (_Component) {
       return _react2.default.createElement(
         'section',
         { className: 'gra-content-wrapper' },
-        _react2.default.createElement(_Tablist2.default, { getTab: this.indexChange.bind(this) }),
+        _react2.default.createElement(_Tablist2.default, { getTab: this.indexChange.bind(this), role: this.props.role }),
         _react2.default.createElement(
           'div',
           { className: 'gra-content-main-wrapper' },
-          tabIndex === 0 ? _react2.default.createElement(_editors.Script, null) : null,
-          tabIndex === 1 ? _react2.default.createElement(_editors.Background, null) : null,
-          tabIndex === 2 ? _react2.default.createElement(_editors.Voice, null) : null,
-          tabIndex === 3 ? _react2.default.createElement(_editors.Handsome, null) : null
+          _react2.default.createElement(
+            'div',
+            { className: 'gra-content-main-container ' + (tabIndex === 0 ? '' : 'hidden') },
+            _react2.default.createElement(_editors.Script, null)
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'gra-content-main-container ' + (tabIndex === 1 ? '' : 'hidden') },
+            _react2.default.createElement(_editors.Background, null)
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'gra-content-main-container ' + (tabIndex === 2 ? '' : 'hidden') },
+            _react2.default.createElement(_editors.Voice, null)
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'gra-content-main-container ' + (tabIndex === 3 ? '' : 'hidden') },
+            _react2.default.createElement(_editors.Handsome, null)
+          )
         )
       );
     }
@@ -59873,13 +59922,219 @@ var Content = function (_Component) {
 }(_react.Component);
 
 exports.default = Content;
-},{"react":11,"./Tablist":31,"./Content.scss":28,"./editors":37}],15:[function(require,module,exports) {
+},{"react":39,"./Tablist":35,"./Content.scss":34,"./editors":40}],36:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":9}],7:[function(require,module,exports) {
+},{"_css_loader":12}],23:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+require('./Checkmodal.scss');
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Checkmodal = function (_Component) {
+  _inherits(Checkmodal, _Component);
+
+  function Checkmodal() {
+    _classCallCheck(this, Checkmodal);
+
+    var _this = _possibleConstructorReturn(this, (Checkmodal.__proto__ || Object.getPrototypeOf(Checkmodal)).call(this));
+
+    _this.state = {
+      showModal: false,
+      data: {
+        background: {
+          title: '背景库',
+          data: [{
+            part: '分类',
+            children: [{
+              name: '全部',
+              isActive: true,
+              data: []
+            }, {
+              name: '测试',
+              isActive: false,
+              data: []
+            }]
+          }, {
+            part: '主题',
+            children: [{
+              name: '测试',
+              isActive: false,
+              data: []
+            }]
+          }]
+        },
+        role: {
+          title: '角色库',
+          data: [{
+            part: '分类',
+            children: [{
+              name: '全部',
+              isActive: false,
+              data: []
+            }, {
+              name: '测试',
+              isActive: false,
+              data: []
+            }]
+          }, {
+            part: '主题',
+            children: [{
+              name: '测试',
+              isActive: true,
+              data: []
+            }]
+          }]
+        }
+      }
+    };
+    return _this;
+  }
+
+  _createClass(Checkmodal, [{
+    key: 'closeModal',
+    value: function closeModal() {
+      this.setState({
+        showModal: false
+      });
+    }
+  }, {
+    key: 'showModal',
+    value: function showModal() {
+      this.setState({
+        showModal: true
+      });
+    }
+  }, {
+    key: 'typeChange',
+    value: function typeChange(i, index) {
+      var role = this.props.role;
+
+
+      this.setState(function (o, n) {
+        var data = o.data;
+
+        data[role].data = data[role].data.map(function (item) {
+          item.children = item.children.map(function (child) {
+            child.isActive = false;
+            return child;
+          });
+          return item;
+        });
+        data[role].data[i].children[index].isActive = true;
+
+        return {
+          data: data
+        };
+      });
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var _this2 = this;
+
+      var _state = this.state,
+          showModal = _state.showModal,
+          data = _state.data;
+      var role = this.props.role;
+
+
+      return showModal ? _react2.default.createElement(
+        'section',
+        { className: 'gra-modal' },
+        _react2.default.createElement(
+          'div',
+          { className: 'gra-modal-main' },
+          _react2.default.createElement('i', { className: 'iconfont icon-iconfontguanbi gra-icon-close', onClick: this.closeModal.bind(this, 'role') }),
+          _react2.default.createElement(
+            'div',
+            { className: 'gra-modal-left-wrapper' },
+            _react2.default.createElement(
+              'h3',
+              { className: 'gra-modal-title' },
+              data[role].title
+            ),
+            data[role].data.map(function (item, i) {
+              return _react2.default.createElement(
+                'div',
+                { className: 'gra-modal-list-wrpper', key: item.part },
+                _react2.default.createElement(
+                  'h4',
+                  { className: 'gra-modal-type-title' },
+                  item.part
+                ),
+                _react2.default.createElement(
+                  'ul',
+                  { className: 'gra-modal-type-list' },
+                  item.children.map(function (child, index) {
+                    return _react2.default.createElement(
+                      'li',
+                      {
+                        className: 'gra-modal-type-item ' + (child.isActive ? 'active' : ''),
+                        onClick: _this2.typeChange.bind(_this2, i, index),
+                        key: child.name },
+                      child.name
+                    );
+                  })
+                )
+              );
+            })
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'gra-modal-right-wrapper' },
+            _react2.default.createElement('div', { className: 'gra-modal-content-wrapper' }),
+            _react2.default.createElement(
+              'div',
+              { className: 'gra-modal-content-operate-wrapper' },
+              _react2.default.createElement(
+                'a',
+                { href: 'javascript:;', className: 'btn btn-primary' },
+                '\u786E\u5B9A'
+              ),
+              _react2.default.createElement(
+                'a',
+                { href: 'javascript:;', className: 'btn btn-default', onClick: this.closeModal.bind(this, 'role') },
+                '\u53D6\u6D88'
+              )
+            )
+          )
+        )
+      ) : null;
+    }
+  }]);
+
+  return Checkmodal;
+}(_react.Component);
+
+exports.default = Checkmodal;
+},{"react":39,"./Checkmodal.scss":36}],19:[function(require,module,exports) {
+
+        var reloadCSS = require('_css_loader');
+        module.hot.dispose(reloadCSS);
+        module.hot.accept(reloadCSS);
+      
+},{"_css_loader":12}],16:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -59904,6 +60159,10 @@ var _Content = require('./Content/Content');
 
 var _Content2 = _interopRequireDefault(_Content);
 
+var _Checkmodal = require('./Checkmodal/Checkmodal');
+
+var _Checkmodal2 = _interopRequireDefault(_Checkmodal);
+
 require('./Container.scss');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -59920,12 +60179,39 @@ var Container = function (_Component) {
   function Container() {
     _classCallCheck(this, Container);
 
-    return _possibleConstructorReturn(this, (Container.__proto__ || Object.getPrototypeOf(Container)).apply(this, arguments));
+    var _this = _possibleConstructorReturn(this, (Container.__proto__ || Object.getPrototypeOf(Container)).call(this));
+
+    _this.state = {
+      role: 'background'
+    };
+    return _this;
   }
 
   _createClass(Container, [{
+    key: 'checkToBackground',
+    value: function checkToBackground() {
+      this.setState({
+        role: 'background'
+      });
+    }
+  }, {
+    key: 'showModal',
+    value: function showModal(role) {
+      if (role) {
+        this.setState({
+          role: role
+        });
+      }
+      this.checkModal.showModal();
+    }
+  }, {
     key: 'render',
     value: function render() {
+      var _this2 = this;
+
+      var role = this.state.role;
+
+
       return _react2.default.createElement(
         'section',
         { className: 'gra-main-container' },
@@ -59940,14 +60226,17 @@ var Container = function (_Component) {
           _react2.default.createElement(
             'div',
             { className: 'gra-left-bottom-wrapper' },
-            _react2.default.createElement(_Editor2.default, null)
+            _react2.default.createElement(_Editor2.default, { role: role, checkToBackground: this.checkToBackground.bind(this), showModal: this.showModal.bind(this) })
           )
         ),
         _react2.default.createElement(
           'div',
           { className: 'gra-right-wrapper' },
-          _react2.default.createElement(_Content2.default, null)
-        )
+          _react2.default.createElement(_Content2.default, { role: role })
+        ),
+        _react2.default.createElement(_Checkmodal2.default, { role: role, ref: function ref(checkModal) {
+            return _this2.checkModal = checkModal;
+          } })
       );
     }
   }]);
@@ -59956,7 +60245,7 @@ var Container = function (_Component) {
 }(_react.Component);
 
 exports.default = Container;
-},{"react":11,"./Screen/Screen":16,"./Editor/Editor":17,"./Content/Content":18,"./Container.scss":15}],4:[function(require,module,exports) {
+},{"react":39,"./Screen/Screen":20,"./Editor/Editor":21,"./Content/Content":22,"./Checkmodal/Checkmodal":23,"./Container.scss":19}],9:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -60010,19 +60299,19 @@ var App = function (_Component) {
 }(_react.Component);
 
 exports.default = App;
-},{"react":11,"./components/Header/Header":8,"./components/Container":7}],5:[function(require,module,exports) {
+},{"react":39,"./components/Header/Header":17,"./components/Container":16}],10:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":9}],6:[function(require,module,exports) {
+},{"_css_loader":12}],11:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"./iconfont.eot":[["52fc726a6e8818256ee0fc6c50b9e084.eot",12],12],"./iconfont.ttf":[["04e0360c30e5af3cd8fde800632c3cf1.ttf",13],13],"./iconfont.svg":[["26565906627a51cc3d91a6dd519f3436.svg",14],14],"_css_loader":9}],3:[function(require,module,exports) {
+},{"./iconfont.eot":[["52fc726a6e8818256ee0fc6c50b9e084.eot",13],13],"./iconfont.ttf":[["04e0360c30e5af3cd8fde800632c3cf1.ttf",14],14],"./iconfont.svg":[["26565906627a51cc3d91a6dd519f3436.svg",15],15],"_css_loader":12}],3:[function(require,module,exports) {
 'use strict';
 
 var _react = require('react');
@@ -60044,7 +60333,7 @@ require('./assets/icon/iconfont.css');
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 _reactDom2.default.render(_react2.default.createElement(_App2.default, null), document.querySelector('#app'));
-},{"react":11,"react-dom":10,"./src/App":4,"./assets/css/reset.css":5,"./assets/icon/iconfont.css":6}],63:[function(require,module,exports) {
+},{"react":39,"react-dom":38,"./src/App":9,"./assets/css/reset.css":10,"./assets/icon/iconfont.css":11}],92:[function(require,module,exports) {
 
 var global = (1, eval)('this');
 var OldModule = module.bundle.Module;
@@ -60066,7 +60355,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '45628' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '33533' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -60167,5 +60456,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.require, id);
   });
 }
-},{}]},{},[63,3])
+},{}]},{},[92,3])
 //# sourceMappingURL=/dist/491ce5ddacbb3a68e098914ade110dda.map

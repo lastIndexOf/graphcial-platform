@@ -9,6 +9,7 @@
     "dev": "npm run main-render & npm run main-process &",
     "main-render": "parcel app/app.html -p 4000",
     "main-process": "electron .",
+    "editor-process": "node app/src/editor/serve.js",
     "build": "rm -rf ./cache && parcel build ./app/app.html -d dist"
   },
   "devDependencies": {
@@ -18,11 +19,13 @@
     "parcel-bundler": "^1.6.2"
   },
   "dependencies": {
+    "connect": "^3.6.6",
     "electron": "^1.8.2",
     "react": "^16.2.0",
     "react-addons-css-transition-group": "^15.6.2",
     "react-dom": "^16.2.0",
     "react-router": "^4.2.0",
+    "serve-static": "^1.13.2",
     "three": "^0.90.0"
   }
 }

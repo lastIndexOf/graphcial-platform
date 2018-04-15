@@ -29,12 +29,20 @@ export default class Content extends Component {
 
     return (
       <section className="gra-content-wrapper">
-        <Tablist getTab={this.indexChange.bind(this)}/>
+        <Tablist getTab={this.indexChange.bind(this)} role={this.props.role}/>
         <div className="gra-content-main-wrapper">
-          {tabIndex === 0 ? <Script /> : null}
-          {tabIndex === 1 ? <Background /> : null}
-          {tabIndex === 2 ? <Voice /> : null}
-          {tabIndex === 3 ? <Handsome /> : null}
+          <div className={`gra-content-main-container ${tabIndex === 0 ? '' : 'hidden'}`}>
+            <Script />
+          </div>
+          <div className={`gra-content-main-container ${tabIndex === 1 ? '' : 'hidden'}`}>
+            <Background />
+          </div>
+          <div className={`gra-content-main-container ${tabIndex === 2 ? '' : 'hidden'}`}>
+            <Voice />
+          </div>
+          <div className={`gra-content-main-container ${tabIndex === 3 ? '' : 'hidden'}`}>
+            <Handsome />
+          </div>
         </div>
       </section>
     )

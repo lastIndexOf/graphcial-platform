@@ -1,0 +1,112 @@
+.gra-modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(130, 130, 130, .6);
+  .gra-modal-main {
+    position: absolute;
+    top: 32px;
+    left: 32px;
+    right: 32px;
+    bottom: 32px;
+    border-radius: 12px;
+    background-color: rgb(230, 232, 232);
+    .gra-icon-close {
+      position: absolute;
+      right: 12px;
+      top: 12px;
+      color: #333;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 900;
+      &:hover {
+        color: rgb(16, 156, 214);
+      }
+    }
+    .gra-modal-left-wrapper,
+    .gra-modal-right-wrapper {
+      display: inline-block;
+      height: 100%;
+      box-sizing: border-box;
+      vertical-align: top;
+    }
+    .gra-modal-left-wrapper {
+      width: 8%;
+      padding: 24px;
+      .gra-modal-title {
+        font-size: 24px;
+        font-weight: 500;
+        padding: 0 6px;
+        color: rgb(135, 135, 135);
+      }
+      .gra-modal-list-wrpper {
+        padding: 20px 6px 0;
+        .gra-modal-type-title {
+          font-size: 16px;
+          color: rgb(247, 182, 94);
+        }
+        .gra-modal-type-list {
+          padding: 6px 16px 0;
+          .gra-modal-type-item {
+            width: 100%;
+            height: 20px;
+            line-height: 20px;
+            font-size: 14px;
+            font-weight: 500;
+            color: rgb(23, 159, 215);
+            cursor: pointer;
+            &:hover {
+              color: rgb(247, 182, 94);
+            }
+            &.active {
+              color: #333;
+              font-weight: 900;
+            }
+          }
+        }
+      }
+    }
+    .gra-modal-right-wrapper {
+      width: 92%;
+      padding: 42px 24px 24px 0;
+      .gra-modal-content-wrapper {
+        width: 100%;
+        height: 90%;
+        border-radius: 6px;
+        overflow: auto;
+        background-color: #fff;        
+      }
+      .gra-modal-content-operate-wrapper {
+        width: 100%;
+        height: 8%;
+        margin-top: 1%;
+        .btn {
+          display: inline-block;
+          float: right;
+          width: 110px;
+          height: 40px;
+          font-size: 14px;
+          line-height: 40px;
+          text-align: center;
+          cursor: pointer;
+          &.btn-primary {
+            color: #fff;
+            background-color: rgb(68, 168, 242);
+            &:hover {
+              background-color: rgb(14, 139, 235);
+            }
+          }
+          &.btn-default {
+            width: 40px;
+            margin-right: 30px;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+}
