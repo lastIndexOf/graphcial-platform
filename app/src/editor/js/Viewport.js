@@ -10,7 +10,7 @@ var Viewport = function ( editor ) {
 	container.setId( 'viewport' );
 	container.setPosition( 'absolute' );
 
-	container.add( new Viewport.Info( editor ) );
+	// container.add( new Viewport.Info( editor ) );
 
 	//
 
@@ -335,7 +335,6 @@ var Viewport = function ( editor ) {
 	} );
 
 	signals.objectSelected.add( function ( object ) {
-
 		selectionBox.visible = false;
 		transformControls.detach();
 

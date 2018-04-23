@@ -71,7 +71,7 @@ require = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({52:[function(require,module,exports) {
+})({70:[function(require,module,exports) {
 /*
 object-assign
 (c) Sindre Sorhus
@@ -163,7 +163,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 	return to;
 };
 
-},{}],56:[function(require,module,exports) {
+},{}],109:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -181,7 +181,7 @@ if ('development' !== 'production') {
 }
 
 module.exports = emptyObject;
-},{}],57:[function(require,module,exports) {
+},{}],110:[function(require,module,exports) {
 "use strict";
 
 /**
@@ -218,7 +218,7 @@ emptyFunction.thatReturnsArgument = function (arg) {
 };
 
 module.exports = emptyFunction;
-},{}],41:[function(require,module,exports) {
+},{}],60:[function(require,module,exports) {
 /** @license React v16.2.0
  * react.production.min.js
  *
@@ -241,7 +241,7 @@ var U={Children:{map:function(a,b,e){if(null==a)return a;var c=[];T(a,c,null,b,e
 d=a.key,g=a.ref,k=a._owner;if(null!=b){void 0!==b.ref&&(g=b.ref,k=G.current);void 0!==b.key&&(d=""+b.key);if(a.type&&a.type.defaultProps)var f=a.type.defaultProps;for(h in b)H.call(b,h)&&!I.hasOwnProperty(h)&&(c[h]=void 0===b[h]&&void 0!==f?f[h]:b[h])}var h=arguments.length-2;if(1===h)c.children=e;else if(1<h){f=Array(h);for(var l=0;l<h;l++)f[l]=arguments[l+2];c.children=f}return{$$typeof:r,type:a.type,key:d,ref:g,props:c,_owner:k}},createFactory:function(a){var b=J.bind(null,a);b.type=a;return b},
 isValidElement:K,version:"16.2.0",__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED:{ReactCurrentOwner:G,assign:m}},V=Object.freeze({default:U}),W=V&&U||V;module.exports=W["default"]?W["default"]:W;
 
-},{"object-assign":52,"fbjs/lib/emptyObject":56,"fbjs/lib/emptyFunction":57}],64:[function(require,module,exports) {
+},{"object-assign":70,"fbjs/lib/emptyObject":109,"fbjs/lib/emptyFunction":110}],118:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -295,7 +295,7 @@ function invariant(condition, format, a, b, c, d, e, f) {
 }
 
 module.exports = invariant;
-},{}],65:[function(require,module,exports) {
+},{}],117:[function(require,module,exports) {
 /**
  * Copyright (c) 2014-present, Facebook, Inc.
  *
@@ -358,7 +358,7 @@ if ('development' !== 'production') {
 }
 
 module.exports = warning;
-},{"./emptyFunction":57}],55:[function(require,module,exports) {
+},{"./emptyFunction":110}],74:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -372,7 +372,7 @@ var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
 
 module.exports = ReactPropTypesSecret;
 
-},{}],54:[function(require,module,exports) {
+},{}],71:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -432,7 +432,7 @@ function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
 }
 
 module.exports = checkPropTypes;
-},{"fbjs/lib/invariant":64,"fbjs/lib/warning":65,"./lib/ReactPropTypesSecret":55}],42:[function(require,module,exports) {
+},{"fbjs/lib/invariant":118,"fbjs/lib/warning":117,"./lib/ReactPropTypesSecret":74}],61:[function(require,module,exports) {
 /** @license React v16.2.0
  * react.development.js
  *
@@ -1784,7 +1784,7 @@ if ('development' !== "production") {
     module.exports = react;
   })();
 }
-},{"object-assign":52,"fbjs/lib/emptyObject":56,"fbjs/lib/invariant":64,"fbjs/lib/warning":65,"fbjs/lib/emptyFunction":57,"prop-types/checkPropTypes":54}],39:[function(require,module,exports) {
+},{"object-assign":70,"fbjs/lib/emptyObject":109,"fbjs/lib/invariant":118,"fbjs/lib/warning":117,"fbjs/lib/emptyFunction":110,"prop-types/checkPropTypes":71}],57:[function(require,module,exports) {
 'use strict';
 
 if ('development' === 'production') {
@@ -1792,7 +1792,7 @@ if ('development' === 'production') {
 } else {
   module.exports = require('./cjs/react.development.js');
 }
-},{"./cjs/react.production.min.js":41,"./cjs/react.development.js":42}],59:[function(require,module,exports) {
+},{"./cjs/react.production.min.js":60,"./cjs/react.development.js":61}],111:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -1826,7 +1826,7 @@ var ExecutionEnvironment = {
 };
 
 module.exports = ExecutionEnvironment;
-},{}],61:[function(require,module,exports) {
+},{}],113:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -1901,7 +1901,7 @@ var EventListener = {
 };
 
 module.exports = EventListener;
-},{"./emptyFunction":57}],58:[function(require,module,exports) {
+},{"./emptyFunction":110}],114:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -1938,7 +1938,7 @@ function getActiveElement(doc) /*?DOMElement*/{
 }
 
 module.exports = getActiveElement;
-},{}],62:[function(require,module,exports) {
+},{}],112:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2004,7 +2004,7 @@ function shallowEqual(objA, objB) {
 }
 
 module.exports = shallowEqual;
-},{}],67:[function(require,module,exports) {
+},{}],125:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2027,7 +2027,7 @@ function isNode(object) {
 }
 
 module.exports = isNode;
-},{}],66:[function(require,module,exports) {
+},{}],122:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2050,7 +2050,7 @@ function isTextNode(object) {
 }
 
 module.exports = isTextNode;
-},{"./isNode":67}],60:[function(require,module,exports) {
+},{"./isNode":125}],115:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2088,7 +2088,7 @@ function containsNode(outerNode, innerNode) {
 }
 
 module.exports = containsNode;
-},{"./isTextNode":66}],63:[function(require,module,exports) {
+},{"./isTextNode":122}],116:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2113,7 +2113,7 @@ function focusNode(node) {
 }
 
 module.exports = focusNode;
-},{}],44:[function(require,module,exports) {
+},{}],63:[function(require,module,exports) {
 /** @license React v16.2.0
  * react-dom.production.min.js
  *
@@ -2344,7 +2344,7 @@ var Sg={createPortal:Qg,findDOMNode:function(a){if(null==a)return null;if(1===a.
 E("40");return a._reactRootContainer?(Z.unbatchedUpdates(function(){Pg(null,null,a,!1,function(){a._reactRootContainer=null})}),!0):!1},unstable_createPortal:Qg,unstable_batchedUpdates:tc,unstable_deferredUpdates:Z.deferredUpdates,flushSync:Z.flushSync,__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED:{EventPluginHub:mb,EventPluginRegistry:Va,EventPropagators:Cb,ReactControlledComponent:qc,ReactDOMComponentTree:sb,ReactDOMEventListener:xd}};
 Z.injectIntoDevTools({findFiberByHostInstance:pb,bundleType:0,version:"16.2.0",rendererPackageName:"react-dom"});var Tg=Object.freeze({default:Sg}),Ug=Tg&&Sg||Tg;module.exports=Ug["default"]?Ug["default"]:Ug;
 
-},{"react":39,"fbjs/lib/ExecutionEnvironment":59,"object-assign":52,"fbjs/lib/emptyFunction":57,"fbjs/lib/EventListener":61,"fbjs/lib/getActiveElement":58,"fbjs/lib/shallowEqual":62,"fbjs/lib/containsNode":60,"fbjs/lib/focusNode":63,"fbjs/lib/emptyObject":56}],70:[function(require,module,exports) {
+},{"react":57,"fbjs/lib/ExecutionEnvironment":111,"object-assign":70,"fbjs/lib/emptyFunction":110,"fbjs/lib/EventListener":113,"fbjs/lib/getActiveElement":114,"fbjs/lib/shallowEqual":112,"fbjs/lib/containsNode":115,"fbjs/lib/focusNode":116,"fbjs/lib/emptyObject":109}],123:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2375,7 +2375,7 @@ function hyphenate(string) {
 }
 
 module.exports = hyphenate;
-},{}],68:[function(require,module,exports) {
+},{}],119:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2412,7 +2412,7 @@ function hyphenateStyleName(string) {
 }
 
 module.exports = hyphenateStyleName;
-},{"./hyphenate":70}],71:[function(require,module,exports) {
+},{"./hyphenate":123}],124:[function(require,module,exports) {
 "use strict";
 
 /**
@@ -2442,7 +2442,7 @@ function camelize(string) {
 }
 
 module.exports = camelize;
-},{}],69:[function(require,module,exports) {
+},{}],120:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2480,7 +2480,7 @@ function camelizeStyleName(string) {
 }
 
 module.exports = camelizeStyleName;
-},{"./camelize":71}],45:[function(require,module,exports) {
+},{"./camelize":124}],62:[function(require,module,exports) {
 /** @license React v16.2.0
  * react-dom.development.js
  *
@@ -17838,7 +17838,7 @@ if ('development' !== "production") {
     module.exports = reactDom;
   })();
 }
-},{"react":39,"fbjs/lib/invariant":64,"fbjs/lib/warning":65,"fbjs/lib/ExecutionEnvironment":59,"object-assign":52,"fbjs/lib/emptyFunction":57,"fbjs/lib/EventListener":61,"fbjs/lib/getActiveElement":58,"fbjs/lib/shallowEqual":62,"fbjs/lib/containsNode":60,"fbjs/lib/focusNode":63,"fbjs/lib/emptyObject":56,"prop-types/checkPropTypes":54,"fbjs/lib/hyphenateStyleName":68,"fbjs/lib/camelizeStyleName":69}],38:[function(require,module,exports) {
+},{"react":57,"fbjs/lib/invariant":118,"fbjs/lib/warning":117,"fbjs/lib/ExecutionEnvironment":111,"object-assign":70,"fbjs/lib/emptyFunction":110,"fbjs/lib/EventListener":113,"fbjs/lib/getActiveElement":114,"fbjs/lib/shallowEqual":112,"fbjs/lib/containsNode":115,"fbjs/lib/focusNode":116,"fbjs/lib/emptyObject":109,"prop-types/checkPropTypes":71,"fbjs/lib/hyphenateStyleName":119,"fbjs/lib/camelizeStyleName":120}],58:[function(require,module,exports) {
 'use strict';
 
 function checkDCE() {
@@ -17874,7 +17874,7 @@ if ('development' === 'production') {
 } else {
   module.exports = require('./cjs/react-dom.development.js');
 }
-},{"./cjs/react-dom.production.min.js":44,"./cjs/react-dom.development.js":45}],18:[function(require,module,exports) {
+},{"./cjs/react-dom.production.min.js":63,"./cjs/react-dom.development.js":62}],14:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -17904,7 +17904,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],12:[function(require,module,exports) {
+},{}],10:[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -17935,13 +17935,13 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":18}],37:[function(require,module,exports) {
+},{"./bundle-url":14}],56:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":12}],33:[function(require,module,exports) {
+},{"_css_loader":10}],54:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -17974,14 +17974,56 @@ var Nextmenu = function (_Component) {
   }
 
   _createClass(Nextmenu, [{
-    key: 'fileOpen',
-    value: function fileOpen() {
-      console.log(arguments);
+    key: 'exportProject',
+    value: function exportProject() {
+      var output = editor.toJSON();
+      output.metadata.type = 'App';
+      delete output.history;
+
+      for (var key in output.scripts) {
+        try {
+
+          output.scripts[key][0].xml = output.scripts[key][0].xml.innerHTML;
+        } catch (e) {}
+      }
+
+      output = JSON.stringify(output);
+
+      saveString(output, 'app.json');
+    }
+  }, {
+    key: 'importProject',
+    value: function importProject() {
+      this.fileInput.click();
+    }
+  }, {
+    key: 'newProject',
+    value: function newProject() {
+      if (confirm('未保存的素材和脚本将会丢失， 确定要离开吗？')) {
+        editor.clear();
+      }
+    }
+  }, {
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      var form = document.createElement('form');
+      form.style.display = 'none';
+      document.body.appendChild(form);
+
+      this.fileInput = document.createElement('input');
+      this.fileInput.type = 'file';
+      this.fileInput.addEventListener('change', function (event) {
+
+        editor.loader.loadFile(_this2.fileInput.files[0]);
+        form.reset();
+      });
     }
   }, {
     key: 'render',
     value: function render() {
-      var _this2 = this;
+      var _this3 = this;
 
       return _react2.default.createElement(
         'ul',
@@ -17991,7 +18033,7 @@ var Nextmenu = function (_Component) {
             'li',
             {
               className: 'gra-next-menu-item',
-              onClick: item.func ? _this2[item.func].bind(_this2) : null,
+              onClick: item.func ? _this3[item.func].bind(_this3) : null,
               key: item.title },
             item.title
           );
@@ -18004,21 +18046,29 @@ var Nextmenu = function (_Component) {
 }(_react.Component);
 
 exports.default = Nextmenu;
-},{"react":39,"./Nextmenu.scss":37}],32:[function(require,module,exports) {
+},{"react":57,"./Nextmenu.scss":56}],53:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":12}],30:[function(require,module,exports) {
+},{"_css_loader":10}],51:[function(require,module,exports) {
 module.exports = [
   {
     "title": "文件",
     "isActive": false,
     "children": [
       {
-        "title": "打开",
-        "func": "fileOpen"
+        "title": "新建程序",
+        "func": "newProject"
+      },
+      {
+        "title": "导出项目",
+        "func": "exportProject"
+      },
+      {
+        "title": "导入项目",
+        "func": "importProject"
       }
     ] 
   },
@@ -18032,7 +18082,7 @@ module.exports = [
     ]
   }
 ];
-},{}],26:[function(require,module,exports) {
+},{}],27:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -18148,9 +18198,9 @@ var Menubar = function (_Component) {
 }(_react.Component);
 
 exports.default = Menubar;
-},{"react":39,"./Nextmenu":33,"./Menubar.scss":32,"../../common/menuData.json":30}],27:[function(require,module,exports) {
+},{"react":57,"./Nextmenu":54,"./Menubar.scss":53,"../../common/menuData.json":51}],28:[function(require,module,exports) {
 module.exports="/dist/1e268891d6e6396879728079ba91da11.png";
-},{}],28:[function(require,module,exports) {
+},{}],29:[function(require,module,exports) {
 module.exports="/dist/8aad4350ace5cfa6017ac8e5dc0e9993.png";
 },{}],25:[function(require,module,exports) {
 'use strict';
@@ -18172,13 +18222,13 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 exports.logo = _logo2.default;
 exports.language = _language2.default;
-},{"../../assets/image/logo.png":27,"../../assets/image/language.png":28}],24:[function(require,module,exports) {
+},{"../../assets/image/logo.png":28,"../../assets/image/language.png":29}],26:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":12}],17:[function(require,module,exports) {
+},{"_css_loader":10}],19:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -18246,13 +18296,13 @@ var Header = function (_Component) {
 }(_react.Component);
 
 exports.default = Header;
-},{"react":39,"./Menubar":26,"../../common/images":25,"./Header.scss":24}],29:[function(require,module,exports) {
+},{"react":57,"./Menubar":27,"../../common/images":25,"./Header.scss":26}],47:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":12}],53:[function(require,module,exports) {
+},{"_css_loader":10}],72:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -59246,7 +59296,9 @@ exports.Projector = Projector;
 exports.CanvasRenderer = CanvasRenderer;
 exports.SceneUtils = SceneUtils;
 exports.LensFlare = LensFlare;
-},{}],20:[function(require,module,exports) {
+},{}],30:[function(require,module,exports) {
+module.exports="/dist/6266afa47f221d355b798c480308ba71.png";
+},{}],21:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -59294,13 +59346,16 @@ var Screen = function (_Component) {
   _createClass(Screen, [{
     key: 'changeState',
     value: function changeState(state) {
+      var signals = editor.signals;
       if (state === 'isStarted') {
         var _setState;
 
+        signals.startPlayer.dispatch();
         this.setState((_setState = {}, _defineProperty(_setState, state, true), _defineProperty(_setState, 'isEnded', false), _setState));
       } else {
         var _setState2;
 
+        signals.stopPlayer.dispatch();
         this.setState((_setState2 = {}, _defineProperty(_setState2, state, true), _defineProperty(_setState2, 'isStarted', false), _setState2));
       }
     }
@@ -59323,7 +59378,15 @@ var Screen = function (_Component) {
           _react2.default.createElement('i', { onClick: this.changeState.bind(this, 'isEnded'), className: 'iconfont icon-circle gra-icon-end ' + (this.state.isEnded ? 'active' : '') }),
           _react2.default.createElement('i', { onClick: this.changeState.bind(this, 'isStarted'), className: 'iconfont icon-qizi gra-icon-start ' + (this.state.isStarted ? 'active' : '') })
         ),
-        _react2.default.createElement('div', { className: 'gra-screen-main' }),
+        _react2.default.createElement(
+          'div',
+          { className: 'gra-screen-main' },
+          _react2.default.createElement(
+            'div',
+            { className: 'gra-screen-main-container', id: 'gra-screen-main-player' },
+            _react2.default.createElement('img', { src: require('../../../assets/image/guide.png') })
+          )
+        ),
         _react2.default.createElement(
           'div',
           { className: 'gra-screen-footer' },
@@ -59354,13 +59417,2771 @@ var Screen = function (_Component) {
 }(_react.Component);
 
 exports.default = Screen;
-},{"react":39,"./Screen.scss":29,"three":53}],31:[function(require,module,exports) {
+},{"react":57,"./Screen.scss":47,"three":72,"../../../assets/image/guide.png":30}],48:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":12}],21:[function(require,module,exports) {
+},{"_css_loader":10}],76:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+const consolePrefix = exports.consolePrefix = 'SweetAlert2:';
+
+/**
+ * Filter the unique values into a new array
+ * @param arr
+ */
+const uniqueArray = exports.uniqueArray = arr => {
+  const result = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (result.indexOf(arr[i]) === -1) {
+      result.push(arr[i]);
+    }
+  }
+  return result;
+};
+
+/**
+ * Converts `inputOptions` into an array of `[value, label]`s
+ * @param inputOptions
+ */
+const formatInputOptions = exports.formatInputOptions = inputOptions => {
+  const result = [];
+  if (inputOptions instanceof Map) {
+    inputOptions.forEach((value, key) => {
+      result.push([key, value]);
+    });
+  } else {
+    Object.keys(inputOptions).forEach(key => {
+      result.push([key, inputOptions[key]]);
+    });
+  }
+  return result;
+};
+
+/**
+ * Standardise console warnings
+ * @param message
+ */
+const warn = exports.warn = message => {
+  console.warn(`${consolePrefix} ${message}`);
+};
+
+/**
+ * Standardise console errors
+ * @param message
+ */
+const error = exports.error = message => {
+  console.error(`${consolePrefix} ${message}`);
+};
+
+/**
+ * Private global state for `warnOnce`
+ * @type {Array}
+ * @private
+ */
+const previousWarnOnceMessages = [];
+
+/**
+ * Show a console warning, but only if it hasn't already been shown
+ * @param message
+ */
+const warnOnce = exports.warnOnce = message => {
+  if (!previousWarnOnceMessages.includes(message)) {
+    previousWarnOnceMessages.push(message);
+    warn(message);
+  }
+};
+
+/**
+ * If `arg` is a function, call it (with no arguments or context) and return the result.
+ * Otherwise, just pass the value through
+ * @param arg
+ */
+const callIfFunction = exports.callIfFunction = arg => typeof arg === 'function' ? arg() : arg;
+
+const isThenable = exports.isThenable = arg => typeof arg === 'object' && typeof arg.then === 'function';
+},{}],79:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+const DismissReason = exports.DismissReason = Object.freeze({
+  cancel: 'cancel',
+  backdrop: 'overlay',
+  close: 'close',
+  esc: 'esc',
+  timer: 'timer'
+});
+},{}],75:[function(require,module,exports) {
+module.exports = {
+  "name": "sweetalert2",
+  "version": "7.18.0",
+  "repository": "sweetalert2/sweetalert2",
+  "homepage": "https://sweetalert2.github.io/",
+  "description": "A beautiful, responsive, customizable and accessible (WAI-ARIA) replacement for JavaScript's popup boxes, supported fork of sweetalert",
+  "main": "dist/sweetalert2.all.js",
+  "jsnext:main": "src/sweetalert2.js",
+  "types": "sweetalert2.d.ts",
+  "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-array-includes": "^2.0.3",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-plugin-transform-object-assign": "^6.22.0",
+    "babel-preset-env": "^1.6.1",
+    "browser-sync": "^2.23.3",
+    "bundlesize": "^0.17.0",
+    "detect-browser": "^2.1.0",
+    "event-stream": "^3.3.4",
+    "execa": "^0.10.0",
+    "git-state": "^4.0.0",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-css2js": "^1.1.2",
+    "gulp-if": "^2.0.2",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-rollup": "^2.16.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sass-lint": "^1.3.4",
+    "gulp-standard": "^8.0.0",
+    "gulp-tslint": "^8.1.2",
+    "gulp-typescript": "^3.0.0",
+    "gulp-uglify": "^3.0.0",
+    "is-ci": "^1.1.0",
+    "jquery": "^3.3.1",
+    "karma": "^2.0.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-firefox-launcher": "^1.1.0",
+    "karma-ie-launcher": "^1.0.0",
+    "karma-qunit": "^2.0.0",
+    "karma-sauce-launcher": "^1.2.0",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-spec-reporter": "^0.0.32",
+    "karma-webpack": "^4.0.0-beta.0",
+    "merge2": "^1.2.1",
+    "mkdirp": "^0.5.1",
+    "pify": "^3.0.0",
+    "promise-polyfill": "^7.1.0",
+    "qunit": "^2.5.1",
+    "rimraf": "^2.6.2",
+    "rollup": "^0.57.1",
+    "rollup-plugin-babel": "^3.0.2",
+    "rollup-plugin-json": "^2.3.0",
+    "standard": "^8.0.0",
+    "tslint": "^5.8.0",
+    "typescript": "~2.1",
+    "uglify-js": "^3.1.10",
+    "webpack": "^4.0.0"
+  },
+  "standard": {
+    "ignore": [
+      "dist/"
+    ]
+  },
+  "greenkeeper": {
+    "ignore": [
+      "gulp-standard",
+      "standard"
+    ]
+  },
+  "files": [
+    "dist",
+    "src",
+    "sweetalert2.d.ts"
+  ],
+  "author": "Limon Monte <limon.monte@gmail.com> (https://limonte.github.io)",
+  "contributors": [
+    "Matthew Francis Brunetti <zenflow87@gmail.com> (https://github.com/zenflow)",
+    "Morgan Touverey-Quilling <mtouverey@alembic-dev.com> (https://github.com/toverux)",
+    "Joseph Schultz (https://github.com/acupajoe)",
+    "Sam Turrell <sam@samturrell.co.uk> (https://github.com/samturrell)",
+    "Johan Fagerberg (https://github.com/birjolaxew)"
+  ],
+  "keywords": [
+    "sweetalert",
+    "sweetalert2",
+    "alert",
+    "prompt",
+    "confirm"
+  ],
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "start": "gulp develop --continue-on-lint-error --skip-minification --skip-standalone",
+    "fix:lint": "standard --fix",
+    "test": "npm run build && npm run check",
+    "build": "gulp build",
+    "check": "npm run check:linting && npm run check:bundlesize && npm run check:require-in-node && npm run check:qunit && npm run check:ts",
+    "check:linting": "gulp lint",
+    "check:bundlesize": "bundlesize -f dist/sweetalert2.all.min.js -s 15kB",
+    "check:require-in-node": "node test/require-in-node",
+    "check:qunit": "karma start karma.conf.js --single-run  --captureTimeout 240000 --browserNoActivityTimeout 240000",
+    "check:ts": "tsc --lib dom,es6 sweetalert2.d.ts",
+    "release": "node release"
+  },
+  "bugs": "https://github.com/sweetalert2/sweetalert2/issues",
+  "license": "MIT",
+  "collective": {
+    "type": "opencollective",
+    "url": "https://opencollective.com/SweetAlert2",
+    "logo": "https://opencollective.com/SweetAlert2/logo.txt"
+  }
+}
+;
+},{}],80:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.argsToParams = undefined;
+
+var _utils = require('../utils/utils.js');
+
+const argsToParams = exports.argsToParams = args => {
+  const params = {};
+  switch (typeof args[0]) {
+    case 'string':
+      ['title', 'html', 'type'].forEach((name, index) => {
+        if (args[index] !== undefined) {
+          params[name] = args[index];
+        }
+      });
+      break;
+
+    case 'object':
+      Object.assign(params, args[0]);
+      break;
+
+    default:
+      (0, _utils.error)('Unexpected type of argument! Expected "string" or "object", got ' + typeof args[0]);
+      return false;
+  }
+  return params;
+};
+},{"../utils/utils.js":76}],81:[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+/**
+ * Adapt a legacy inputValidator for use with expectRejections=false
+ */
+const adaptInputValidator = exports.adaptInputValidator = legacyValidator => {
+  return function adaptedInputValidator(inputValue, extraParams) {
+    return legacyValidator.call(this, inputValue, extraParams).then(() => undefined, validationError => validationError);
+  };
+};
+},{}],96:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+const swalPrefix = exports.swalPrefix = 'swal2-';
+
+const prefix = exports.prefix = items => {
+  const result = {};
+  for (const i in items) {
+    result[items[i]] = swalPrefix + items[i];
+  }
+  return result;
+};
+
+const swalClasses = exports.swalClasses = prefix(['container', 'shown', 'iosfix', 'popup', 'modal', 'no-backdrop', 'toast', 'toast-shown', 'fade', 'show', 'hide', 'noanimation', 'close', 'title', 'header', 'content', 'actions', 'confirm', 'cancel', 'footer', 'icon', 'icon-text', 'image', 'input', 'has-input', 'file', 'range', 'select', 'radio', 'checkbox', 'textarea', 'inputerror', 'validationerror', 'progresssteps', 'activeprogressstep', 'progresscircle', 'progressline', 'loading', 'styled', 'top', 'top-start', 'top-end', 'top-left', 'top-right', 'center', 'center-start', 'center-end', 'center-left', 'center-right', 'bottom', 'bottom-start', 'bottom-end', 'bottom-left', 'bottom-right', 'grow-row', 'grow-column', 'grow-fullscreen']);
+
+const iconTypes = exports.iconTypes = prefix(['success', 'warning', 'info', 'question', 'error']);
+},{}],103:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.resetPrevState = exports.removeStyleProperty = exports.isVisible = exports.empty = exports.hide = exports.show = exports.getChildByClass = exports.removeClass = exports.addClass = exports.focusInput = exports.hasClass = exports.states = undefined;
+
+var _classes = require('../classes');
+
+// Remember state in cases where opening and handling a modal will fiddle with it.
+const states = exports.states = {
+  previousActiveElement: null,
+  previousBodyPadding: null
+};
+
+const hasClass = exports.hasClass = (elem, className) => {
+  if (elem.classList) {
+    return elem.classList.contains(className);
+  }
+  return false;
+};
+
+const focusInput = exports.focusInput = input => {
+  input.focus();
+
+  // place cursor at end of text in text input
+  if (input.type !== 'file') {
+    // http://stackoverflow.com/a/2345915/1331425
+    const val = input.value;
+    input.value = '';
+    input.value = val;
+  }
+};
+
+const addOrRemoveClass = (target, classList, add) => {
+  if (!target || !classList) {
+    return;
+  }
+  if (typeof classList === 'string') {
+    classList = classList.split(/\s+/).filter(Boolean);
+  }
+  classList.forEach(className => {
+    if (target.forEach) {
+      target.forEach(elem => {
+        add ? elem.classList.add(className) : elem.classList.remove(className);
+      });
+    } else {
+      add ? target.classList.add(className) : target.classList.remove(className);
+    }
+  });
+};
+
+const addClass = exports.addClass = (target, classList) => {
+  addOrRemoveClass(target, classList, true);
+};
+
+const removeClass = exports.removeClass = (target, classList) => {
+  addOrRemoveClass(target, classList, false);
+};
+
+const getChildByClass = exports.getChildByClass = (elem, className) => {
+  for (let i = 0; i < elem.childNodes.length; i++) {
+    if (hasClass(elem.childNodes[i], className)) {
+      return elem.childNodes[i];
+    }
+  }
+};
+
+const show = exports.show = elem => {
+  elem.style.opacity = '';
+  elem.style.display = elem.id === _classes.swalClasses.content ? 'block' : 'flex';
+};
+
+const hide = exports.hide = elem => {
+  elem.style.opacity = '';
+  elem.style.display = 'none';
+};
+
+const empty = exports.empty = elem => {
+  while (elem.firstChild) {
+    elem.removeChild(elem.firstChild);
+  }
+};
+
+// borrowed from jquery $(elem).is(':visible') implementation
+const isVisible = exports.isVisible = elem => elem && (elem.offsetWidth || elem.offsetHeight || elem.getClientRects().length);
+
+const removeStyleProperty = exports.removeStyleProperty = (elem, property) => {
+  if (elem.style.removeProperty) {
+    elem.style.removeProperty(property);
+  } else {
+    elem.style.removeAttribute(property);
+  }
+};
+
+// Reset previous window keydown handler and focued element
+const resetPrevState = exports.resetPrevState = () => {
+  if (states.previousActiveElement && states.previousActiveElement.focus) {
+    let x = window.scrollX;
+    let y = window.scrollY;
+    states.previousActiveElement.focus();
+    if (typeof x !== 'undefined' && typeof y !== 'undefined') {
+      // IE doesn't have scrollX/scrollY support
+      window.scrollTo(x, y);
+    }
+  }
+};
+},{"../classes":96}],105:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.isLoading = exports.isToast = exports.isModal = exports.getFocusableElements = exports.getCloseButton = exports.getFooter = exports.getActions = exports.getButtonsWrapper = exports.getCancelButton = exports.getConfirmButton = exports.getValidationError = exports.getProgressSteps = exports.getImage = exports.getContent = exports.getTitle = exports.getIcons = exports.getPopup = exports.getContainer = undefined;
+
+var _classes = require('../classes');
+
+var _utils = require('../utils');
+
+const getContainer = exports.getContainer = () => document.body.querySelector('.' + _classes.swalClasses.container);
+
+const elementByClass = className => {
+  const container = getContainer();
+  return container ? container.querySelector('.' + className) : null;
+};
+
+const getPopup = exports.getPopup = () => elementByClass(_classes.swalClasses.popup);
+
+const getIcons = exports.getIcons = () => {
+  const popup = getPopup();
+  return popup.querySelectorAll('.' + _classes.swalClasses.icon);
+};
+
+const getTitle = exports.getTitle = () => elementByClass(_classes.swalClasses.title);
+
+const getContent = exports.getContent = () => elementByClass(_classes.swalClasses.content);
+
+const getImage = exports.getImage = () => elementByClass(_classes.swalClasses.image);
+
+const getProgressSteps = exports.getProgressSteps = () => elementByClass(_classes.swalClasses.progresssteps);
+
+const getValidationError = exports.getValidationError = () => elementByClass(_classes.swalClasses.validationerror);
+
+const getConfirmButton = exports.getConfirmButton = () => elementByClass(_classes.swalClasses.confirm);
+
+const getCancelButton = exports.getCancelButton = () => elementByClass(_classes.swalClasses.cancel);
+
+const getButtonsWrapper = exports.getButtonsWrapper = () => {
+  (0, _utils.warnOnce)(`swal.getButtonsWrapper() is deprecated and will be removed in the next major release, use swal.getActions() instead`);
+  return elementByClass(_classes.swalClasses.actions);
+};
+
+const getActions = exports.getActions = () => elementByClass(_classes.swalClasses.actions);
+
+const getFooter = exports.getFooter = () => elementByClass(_classes.swalClasses.footer);
+
+const getCloseButton = exports.getCloseButton = () => elementByClass(_classes.swalClasses.close);
+
+const getFocusableElements = exports.getFocusableElements = () => {
+  const focusableElementsWithTabindex = Array.prototype.slice.call(getPopup().querySelectorAll('[tabindex]:not([tabindex="-1"]):not([tabindex="0"])'))
+  // sort according to tabindex
+  .sort((a, b) => {
+    a = parseInt(a.getAttribute('tabindex'));
+    b = parseInt(b.getAttribute('tabindex'));
+    if (a > b) {
+      return 1;
+    } else if (a < b) {
+      return -1;
+    }
+    return 0;
+  });
+
+  // https://github.com/jkup/focusable/blob/master/index.js
+  const otherFocusableElements = Array.prototype.slice.call(getPopup().querySelectorAll('a[href], area[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), button:not([disabled]), iframe, object, embed, [tabindex="0"], [contenteditable], audio[controls], video[controls]'));
+
+  return (0, _utils.uniqueArray)(focusableElementsWithTabindex.concat(otherFocusableElements));
+};
+
+const isModal = exports.isModal = () => {
+  return !document.body.classList.contains(_classes.swalClasses['toast-shown']);
+};
+
+const isToast = exports.isToast = () => {
+  return document.body.classList.contains(_classes.swalClasses['toast-shown']);
+};
+
+const isLoading = exports.isLoading = () => {
+  return getPopup().hasAttribute('data-loading');
+};
+},{"../classes":96,"../utils":76}],121:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+// Detect Node env
+const isNodeEnv = exports.isNodeEnv = () => typeof window === 'undefined' || typeof document === 'undefined';
+},{}],104:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.init = undefined;
+
+var _classes = require('../classes');
+
+var _getters = require('./getters');
+
+var _domUtils = require('./domUtils');
+
+var _isNodeEnv = require('../isNodeEnv');
+
+var _utils = require('../utils');
+
+var _sweetalert = require('../../sweetalert2');
+
+var _sweetalert2 = _interopRequireDefault(_sweetalert);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+const sweetHTML = `
+ <div aria-labelledby="${_classes.swalClasses.title}" aria-describedby="${_classes.swalClasses.content}" class="${_classes.swalClasses.popup}" tabindex="-1">
+   <div class="${_classes.swalClasses.header}">
+     <ul class="${_classes.swalClasses.progresssteps}"></ul>
+     <div class="${_classes.swalClasses.icon} ${_classes.iconTypes.error}">
+       <span class="swal2-x-mark"><span class="swal2-x-mark-line-left"></span><span class="swal2-x-mark-line-right"></span></span>
+     </div>
+     <div class="${_classes.swalClasses.icon} ${_classes.iconTypes.question}">
+       <span class="${_classes.swalClasses['icon-text']}">?</span>
+      </div>
+     <div class="${_classes.swalClasses.icon} ${_classes.iconTypes.warning}">
+       <span class="${_classes.swalClasses['icon-text']}">!</span>
+      </div>
+     <div class="${_classes.swalClasses.icon} ${_classes.iconTypes.info}">
+       <span class="${_classes.swalClasses['icon-text']}">i</span>
+      </div>
+     <div class="${_classes.swalClasses.icon} ${_classes.iconTypes.success}">
+       <div class="swal2-success-circular-line-left"></div>
+       <span class="swal2-success-line-tip"></span> <span class="swal2-success-line-long"></span>
+       <div class="swal2-success-ring"></div> <div class="swal2-success-fix"></div>
+       <div class="swal2-success-circular-line-right"></div>
+     </div>
+     <img class="${_classes.swalClasses.image}" />
+     <h2 class="${_classes.swalClasses.title}" id="${_classes.swalClasses.title}"></h2>
+     <button type="button" class="${_classes.swalClasses.close}">×</button>
+   </div>
+   <div class="${_classes.swalClasses.content}">
+     <div id="${_classes.swalClasses.content}"></div>
+     <input class="${_classes.swalClasses.input}" />
+     <input type="file" class="${_classes.swalClasses.file}" />
+     <div class="${_classes.swalClasses.range}">
+       <input type="range" />
+       <output></output>
+     </div>
+     <select class="${_classes.swalClasses.select}"></select>
+     <div class="${_classes.swalClasses.radio}"></div>
+     <label for="${_classes.swalClasses.checkbox}" class="${_classes.swalClasses.checkbox}">
+       <input type="checkbox" />
+     </label>
+     <textarea class="${_classes.swalClasses.textarea}"></textarea>
+     <div class="${_classes.swalClasses.validationerror}" id="${_classes.swalClasses.validationerror}"></div>
+   </div>
+   <div class="${_classes.swalClasses.actions}">
+     <button type="button" class="${_classes.swalClasses.confirm}">OK</button>
+     <button type="button" class="${_classes.swalClasses.cancel}">Cancel</button>
+   </div>
+   <div class="${_classes.swalClasses.footer}">
+   </div>
+ </div>
+`.replace(/(^|\n)\s*/g, '');
+
+/*
+ * Add modal + backdrop to DOM
+ */
+const init = exports.init = params => {
+  // Clean up the old popup if it exists
+  const c = (0, _getters.getContainer)();
+  if (c) {
+    c.parentNode.removeChild(c);
+    (0, _domUtils.removeClass)([document.documentElement, document.body], [_classes.swalClasses['no-backdrop'], _classes.swalClasses['has-input'], _classes.swalClasses['toast-shown']]);
+  }
+
+  if ((0, _isNodeEnv.isNodeEnv)()) {
+    (0, _utils.error)('SweetAlert2 requires document to initialize');
+    return;
+  }
+
+  const container = document.createElement('div');
+  container.className = _classes.swalClasses.container;
+  container.innerHTML = sweetHTML;
+
+  let targetElement = typeof params.target === 'string' ? document.querySelector(params.target) : params.target;
+  targetElement.appendChild(container);
+
+  const popup = (0, _getters.getPopup)();
+  const content = (0, _getters.getContent)();
+  const input = (0, _domUtils.getChildByClass)(content, _classes.swalClasses.input);
+  const file = (0, _domUtils.getChildByClass)(content, _classes.swalClasses.file);
+  const range = content.querySelector(`.${_classes.swalClasses.range} input`);
+  const rangeOutput = content.querySelector(`.${_classes.swalClasses.range} output`);
+  const select = (0, _domUtils.getChildByClass)(content, _classes.swalClasses.select);
+  const checkbox = content.querySelector(`.${_classes.swalClasses.checkbox} input`);
+  const textarea = (0, _domUtils.getChildByClass)(content, _classes.swalClasses.textarea);
+
+  // a11y
+  popup.setAttribute('role', params.toast ? 'alert' : 'dialog');
+  popup.setAttribute('aria-live', params.toast ? 'polite' : 'assertive');
+  if (!params.toast) {
+    popup.setAttribute('aria-modal', 'true');
+  }
+
+  const resetValidationError = () => {
+    _sweetalert2.default.isVisible() && _sweetalert2.default.resetValidationError();
+  };
+
+  input.oninput = resetValidationError;
+  file.onchange = resetValidationError;
+  select.onchange = resetValidationError;
+  checkbox.onchange = resetValidationError;
+  textarea.oninput = resetValidationError;
+
+  range.oninput = () => {
+    resetValidationError();
+    rangeOutput.value = range.value;
+  };
+
+  range.onchange = () => {
+    resetValidationError();
+    range.nextSibling.value = range.value;
+  };
+
+  return popup;
+};
+},{"../classes":96,"./getters":105,"./domUtils":103,"../isNodeEnv":121,"../utils":76,"../../sweetalert2":73}],106:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.parseHtmlToContainer = undefined;
+
+var _domUtils = require('./domUtils');
+
+const parseHtmlToContainer = exports.parseHtmlToContainer = (param, target) => {
+  if (!param) {
+    return (0, _domUtils.hide)(target);
+  }
+
+  if (typeof param === 'object') {
+    target.innerHTML = '';
+    if (0 in param) {
+      for (let i = 0; i in param; i++) {
+        target.appendChild(param[i].cloneNode(true));
+      }
+    } else {
+      target.appendChild(param.cloneNode(true));
+    }
+  } else if (param) {
+    target.innerHTML = param;
+  } else {}
+  (0, _domUtils.show)(target);
+};
+},{"./domUtils":103}],107:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.animationEndEvent = undefined;
+
+var _isNodeEnv = require('../isNodeEnv');
+
+const animationEndEvent = exports.animationEndEvent = (() => {
+  // Prevent run in Node env
+  if ((0, _isNodeEnv.isNodeEnv)()) {
+    return false;
+  }
+
+  const testEl = document.createElement('div');
+  const transEndEventNames = {
+    'WebkitAnimation': 'webkitAnimationEnd',
+    'OAnimation': 'oAnimationEnd oanimationend',
+    'animation': 'animationend'
+  };
+  for (const i in transEndEventNames) {
+    if (transEndEventNames.hasOwnProperty(i) && typeof testEl.style[i] !== 'undefined') {
+      return transEndEventNames[i];
+    }
+  }
+
+  return false;
+})();
+},{"../isNodeEnv":121}],108:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+// Measure width of scrollbar
+// https://github.com/twbs/bootstrap/blob/master/js/modal.js#L279-L286
+const measureScrollbar = exports.measureScrollbar = () => {
+  const supportsTouch = 'ontouchstart' in window || navigator.msMaxTouchPoints;
+  if (supportsTouch) {
+    return 0;
+  }
+  const scrollDiv = document.createElement('div');
+  scrollDiv.style.width = '50px';
+  scrollDiv.style.height = '50px';
+  scrollDiv.style.overflow = 'scroll';
+  document.body.appendChild(scrollDiv);
+  const scrollbarWidth = scrollDiv.offsetWidth - scrollDiv.clientWidth;
+  document.body.removeChild(scrollDiv);
+  return scrollbarWidth;
+};
+},{}],101:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _domUtils = require('./domUtils');
+
+Object.keys(_domUtils).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function () {
+      return _domUtils[key];
+    }
+  });
+});
+
+var _init = require('./init');
+
+Object.keys(_init).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function () {
+      return _init[key];
+    }
+  });
+});
+
+var _getters = require('./getters');
+
+Object.keys(_getters).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function () {
+      return _getters[key];
+    }
+  });
+});
+
+var _parseHtmlToContainer = require('./parseHtmlToContainer');
+
+Object.keys(_parseHtmlToContainer).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function () {
+      return _parseHtmlToContainer[key];
+    }
+  });
+});
+
+var _animationEndEvent = require('./animationEndEvent');
+
+Object.keys(_animationEndEvent).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function () {
+      return _animationEndEvent[key];
+    }
+  });
+});
+
+var _measureScrollbar = require('./measureScrollbar');
+
+Object.keys(_measureScrollbar).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function () {
+      return _measureScrollbar[key];
+    }
+  });
+});
+},{"./domUtils":103,"./init":104,"./getters":105,"./parseHtmlToContainer":106,"./animationEndEvent":107,"./measureScrollbar":108}],97:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.undoScrollbar = exports.fixScrollbar = undefined;
+
+var _index = require('./dom/index');
+
+var dom = _interopRequireWildcard(_index);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+const fixScrollbar = exports.fixScrollbar = () => {
+  // for queues, do not do this more than once
+  if (dom.states.previousBodyPadding !== null) {
+    return;
+  }
+  // if the body has overflow
+  if (document.body.scrollHeight > window.innerHeight) {
+    // add padding so the content doesn't shift after removal of scrollbar
+    dom.states.previousBodyPadding = document.body.style.paddingRight;
+    document.body.style.paddingRight = dom.measureScrollbar() + 'px';
+  }
+};
+
+const undoScrollbar = exports.undoScrollbar = () => {
+  if (dom.states.previousBodyPadding !== null) {
+    document.body.style.paddingRight = dom.states.previousBodyPadding;
+    dom.states.previousBodyPadding = null;
+  }
+};
+},{"./dom/index":101}],98:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.undoIOSfix = exports.iOSfix = undefined;
+
+var _index = require('./dom/index');
+
+var dom = _interopRequireWildcard(_index);
+
+var _classes = require('../utils/classes');
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+// Fix iOS scrolling http://stackoverflow.com/q/39626302/1331425
+const iOSfix = exports.iOSfix = () => {
+  const iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+  if (iOS && !dom.hasClass(document.body, _classes.swalClasses.iosfix)) {
+    const offset = document.body.scrollTop;
+    document.body.style.top = offset * -1 + 'px';
+    dom.addClass(document.body, _classes.swalClasses.iosfix);
+  }
+};
+
+const undoIOSfix = exports.undoIOSfix = () => {
+  if (dom.hasClass(document.body, _classes.swalClasses.iosfix)) {
+    const offset = parseInt(document.body.style.top, 10);
+    dom.removeClass(document.body, _classes.swalClasses.iosfix);
+    document.body.style.top = '';
+    document.body.scrollTop = offset * -1;
+  }
+};
+},{"./dom/index":101,"../utils/classes":96}],88:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.showWarningsForParams = exports.isDeprecatedParameter = exports.isValidParameter = exports.deprecatedParams = undefined;
+
+var _utils = require('../utils/utils');
+
+const defaultParams = {
+  title: '',
+  titleText: '',
+  text: '',
+  html: '',
+  footer: '',
+  type: null,
+  toast: false,
+  customClass: '',
+  target: 'body',
+  backdrop: true,
+  animation: true,
+  allowOutsideClick: true,
+  allowEscapeKey: true,
+  allowEnterKey: true,
+  showConfirmButton: true,
+  showCancelButton: false,
+  preConfirm: null,
+  confirmButtonText: 'OK',
+  confirmButtonAriaLabel: '',
+  confirmButtonColor: null,
+  confirmButtonClass: null,
+  cancelButtonText: 'Cancel',
+  cancelButtonAriaLabel: '',
+  cancelButtonColor: null,
+  cancelButtonClass: null,
+  buttonsStyling: true,
+  reverseButtons: false,
+  focusConfirm: true,
+  focusCancel: false,
+  showCloseButton: false,
+  closeButtonAriaLabel: 'Close this dialog',
+  showLoaderOnConfirm: false,
+  imageUrl: null,
+  imageWidth: null,
+  imageHeight: null,
+  imageAlt: '',
+  imageClass: null,
+  timer: null,
+  width: null,
+  padding: null,
+  background: null,
+  input: null,
+  inputPlaceholder: '',
+  inputValue: '',
+  inputOptions: {},
+  inputAutoTrim: true,
+  inputClass: null,
+  inputAttributes: {},
+  inputValidator: null,
+  grow: false,
+  position: 'center',
+  progressSteps: [],
+  currentProgressStep: null,
+  progressStepsDistance: null,
+  onBeforeOpen: null,
+  onAfterClose: null,
+  onOpen: null,
+  onClose: null,
+  useRejections: false,
+  expectRejections: false
+};
+
+const deprecatedParams = exports.deprecatedParams = ['useRejections', 'expectRejections'];
+
+/**
+ * Is valid parameter
+ * @param {String} paramName
+ */
+const isValidParameter = exports.isValidParameter = paramName => {
+  return defaultParams.hasOwnProperty(paramName) || paramName === 'extraParams';
+};
+
+/**
+ * Is deprecated parameter
+ * @param {String} paramName
+ */
+const isDeprecatedParameter = exports.isDeprecatedParameter = paramName => {
+  return deprecatedParams.includes(paramName);
+};
+
+/**
+ * Show relevant warnings for given params
+ *
+ * @param params
+ */
+const showWarningsForParams = exports.showWarningsForParams = params => {
+  for (const param in params) {
+    if (!isValidParameter(param)) {
+      (0, _utils.warn)(`Unknown parameter "${param}"`);
+    }
+    if (isDeprecatedParameter(param)) {
+      (0, _utils.warnOnce)(`The parameter "${param}" is deprecated and will be removed in the next major release.`);
+    }
+  }
+};
+
+exports.default = defaultParams;
+},{"../utils/utils":76}],95:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _params = require('./utils/params.js');
+
+var _params2 = _interopRequireDefault(_params);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = {
+  popupParams: Object.assign({}, _params2.default)
+};
+},{"./utils/params.js":88}],86:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.closeToast = exports.closeModal = exports.closePopup = exports.close = undefined;
+
+var _scrollbarFix = require('../utils/scrollbarFix');
+
+var _iosFix = require('../utils/iosFix');
+
+var _index = require('../utils/dom/index');
+
+var dom = _interopRequireWildcard(_index);
+
+var _classes = require('../utils/classes.js');
+
+var _globalState = require('../globalState');
+
+var _globalState2 = _interopRequireDefault(_globalState);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+/*
+ * Global function to close sweetAlert
+ */
+const close = (onClose, onAfterClose) => {
+  const container = dom.getContainer();
+  const popup = dom.getPopup();
+  if (!popup) {
+    return;
+  }
+
+  if (onClose !== null && typeof onClose === 'function') {
+    onClose(popup);
+  }
+
+  dom.removeClass(popup, _classes.swalClasses.show);
+  dom.addClass(popup, _classes.swalClasses.hide);
+  clearTimeout(popup.timeout);
+
+  if (!dom.isToast()) {
+    dom.resetPrevState();
+    window.onkeydown = _globalState2.default.previousWindowKeyDown;
+    _globalState2.default.windowOnkeydownOverridden = false;
+  }
+
+  const removePopupAndResetState = () => {
+    if (container.parentNode) {
+      container.parentNode.removeChild(container);
+    }
+    dom.removeClass([document.documentElement, document.body], [_classes.swalClasses.shown, _classes.swalClasses['no-backdrop'], _classes.swalClasses['has-input'], _classes.swalClasses['toast-shown']]);
+
+    if (dom.isModal()) {
+      (0, _scrollbarFix.undoScrollbar)();
+      (0, _iosFix.undoIOSfix)();
+    }
+
+    if (onAfterClose !== null && typeof onAfterClose === 'function') {
+      setTimeout(() => {
+        onAfterClose();
+      });
+    }
+  };
+
+  // If animation is supported, animate
+  if (dom.animationEndEvent && !dom.hasClass(popup, _classes.swalClasses.noanimation)) {
+    popup.addEventListener(dom.animationEndEvent, function swalCloseEventFinished() {
+      popup.removeEventListener(dom.animationEndEvent, swalCloseEventFinished);
+      if (dom.hasClass(popup, _classes.swalClasses.hide)) {
+        removePopupAndResetState();
+      }
+    });
+  } else {
+    // Otherwise, remove immediately
+    removePopupAndResetState();
+  }
+};
+exports.close = close;
+exports.closePopup = close;
+exports.closeModal = close;
+exports.closeToast = close;
+},{"../utils/scrollbarFix":97,"../utils/iosFix":98,"../utils/dom/index":101,"../utils/classes.js":96,"../globalState":95}],82:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.clickCancel = exports.clickConfirm = exports.isVisible = exports.isLoading = exports.getFooter = exports.getCancelButton = exports.getConfirmButton = exports.getActions = exports.getButtonsWrapper = exports.getImage = exports.getContent = exports.getTitle = undefined;
+
+var _index = require('../utils/dom/index');
+
+Object.defineProperty(exports, 'getTitle', {
+  enumerable: true,
+  get: function () {
+    return _index.getTitle;
+  }
+});
+Object.defineProperty(exports, 'getContent', {
+  enumerable: true,
+  get: function () {
+    return _index.getContent;
+  }
+});
+Object.defineProperty(exports, 'getImage', {
+  enumerable: true,
+  get: function () {
+    return _index.getImage;
+  }
+});
+Object.defineProperty(exports, 'getButtonsWrapper', {
+  enumerable: true,
+  get: function () {
+    return _index.getButtonsWrapper;
+  }
+});
+Object.defineProperty(exports, 'getActions', {
+  enumerable: true,
+  get: function () {
+    return _index.getActions;
+  }
+});
+Object.defineProperty(exports, 'getConfirmButton', {
+  enumerable: true,
+  get: function () {
+    return _index.getConfirmButton;
+  }
+});
+Object.defineProperty(exports, 'getCancelButton', {
+  enumerable: true,
+  get: function () {
+    return _index.getCancelButton;
+  }
+});
+Object.defineProperty(exports, 'getFooter', {
+  enumerable: true,
+  get: function () {
+    return _index.getFooter;
+  }
+});
+Object.defineProperty(exports, 'isLoading', {
+  enumerable: true,
+  get: function () {
+    return _index.isLoading;
+  }
+});
+
+var dom = _interopRequireWildcard(_index);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+/*
+ * Global function to determine if swal2 popup is shown
+ */
+const isVisible = exports.isVisible = () => {
+  return !!dom.getPopup();
+};
+
+/*
+ * Global function to click 'Confirm' button
+ */
+const clickConfirm = exports.clickConfirm = () => dom.getConfirmButton().click();
+
+/*
+ * Global function to click 'Cancel' button
+ */
+const clickCancel = exports.clickCancel = () => dom.getCancelButton().click();
+},{"../utils/dom/index":101}],83:[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.mixin = mixin;
+/**
+ * Returns an extended version of `Swal` containing `params` as defaults.
+ * Useful for reusing Swal configuration.
+ *
+ * For example:
+ *
+ * Before:
+ * const textPromptOptions = { input: 'text', showCancelButton: true }
+ * const {value: firstName} = await Swal({ ...textPromptOptions, title: 'What is your first name?' })
+ * const {value: lastName} = await Swal({ ...textPromptOptions, title: 'What is your last name?' })
+ *
+ * After:
+ * const TextPrompt = Swal.mixin({ input: 'text', showCancelButton: true })
+ * const {value: firstName} = await TextPrompt.fire('What is your first name?')
+ * const {value: lastName} = await TextPrompt.fire('What is your last name?')
+ *
+ * @param params
+ */
+function mixin(mixinParams) {
+  const Swal = this;
+  return class MixinSwal extends Swal {
+    _main(params) {
+      return super._main(Object.assign({}, mixinParams, params));
+    }
+  };
+}
+},{}],84:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+// private global state for the queue feature
+let currentSteps = [];
+
+/*
+ * Global function for chaining sweetAlert popups
+ */
+const queue = exports.queue = function (steps) {
+  const swal = this;
+  currentSteps = steps;
+  const resetQueue = () => {
+    currentSteps = [];
+    document.body.removeAttribute('data-swal2-queue-step');
+  };
+  let queueResult = [];
+  return new Promise((resolve, reject) => {
+    (function step(i, callback) {
+      if (i < currentSteps.length) {
+        document.body.setAttribute('data-swal2-queue-step', i);
+
+        swal(currentSteps[i]).then(result => {
+          if (typeof result.value !== 'undefined') {
+            queueResult.push(result.value);
+            step(i + 1, callback);
+          } else {
+            resetQueue();
+            resolve({ dismiss: result.dismiss });
+          }
+        });
+      } else {
+        resetQueue();
+        resolve({ value: queueResult });
+      }
+    })(0);
+  });
+};
+
+/*
+ * Global function for getting the index of current popup in queue
+ */
+const getQueueStep = exports.getQueueStep = () => document.body.getAttribute('data-swal2-queue-step');
+
+/*
+ * Global function for inserting a popup to the queue
+ */
+const insertQueueStep = exports.insertQueueStep = (step, index) => {
+  if (index && index < currentSteps.length) {
+    return currentSteps.splice(index, 0, step);
+  }
+  return currentSteps.push(step);
+};
+
+/*
+ * Global function for deleting a popup from the queue
+ */
+const deleteQueueStep = exports.deleteQueueStep = index => {
+  if (typeof currentSteps[index] !== 'undefined') {
+    currentSteps.splice(index, 1);
+  }
+};
+},{}],85:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.resetDefaults = exports.setDefaults = undefined;
+
+var _utils = require('../utils/utils');
+
+var _params = require('../utils/params');
+
+var _params2 = _interopRequireDefault(_params);
+
+var _globalState = require('../globalState');
+
+var _globalState2 = _interopRequireDefault(_globalState);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/**
+ * Set default params for each popup
+ * @param {Object} userParams
+ */
+const setDefaults = exports.setDefaults = userParams => {
+  if (!userParams || typeof userParams !== 'object') {
+    return (0, _utils.error)('the argument for setDefaults() is required and has to be a object');
+  }
+
+  (0, _params.showWarningsForParams)(userParams);
+
+  // assign valid params from userParams to popupParams
+  for (const param in userParams) {
+    if ((0, _params.isValidParameter)(param)) {
+      _globalState2.default.popupParams[param] = userParams[param];
+    }
+  }
+};
+
+/**
+ * Reset default params for each popup
+ */
+const resetDefaults = exports.resetDefaults = () => {
+  _globalState2.default.popupParams = Object.assign({}, _params2.default);
+};
+},{"../utils/utils":76,"../utils/params":88,"../globalState":95}],90:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.enableLoading = exports.showLoading = undefined;
+
+var _index = require('../utils/dom/index');
+
+var dom = _interopRequireWildcard(_index);
+
+var _sweetalert = require('../sweetalert2');
+
+var _sweetalert2 = _interopRequireDefault(_sweetalert);
+
+var _classes = require('../utils/classes');
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+/**
+ * Show spinner instead of Confirm button and disable Cancel button
+ */
+const showLoading = () => {
+  let popup = dom.getPopup();
+  if (!popup) {
+    (0, _sweetalert2.default)('');
+  }
+  popup = dom.getPopup();
+  const actions = dom.getActions();
+  const confirmButton = dom.getConfirmButton();
+  const cancelButton = dom.getCancelButton();
+
+  dom.show(actions);
+  dom.show(confirmButton);
+  dom.addClass([popup, actions], _classes.swalClasses.loading);
+  confirmButton.disabled = true;
+  cancelButton.disabled = true;
+
+  popup.setAttribute('data-loading', true);
+  popup.setAttribute('aria-busy', true);
+  popup.focus();
+};
+
+exports.showLoading = showLoading;
+exports.enableLoading = showLoading;
+},{"../utils/dom/index":101,"../sweetalert2":73,"../utils/classes":96}],87:[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.fire = fire;
+function fire(...args) {
+  const Swal = this;
+  return new Swal(...args);
+}
+},{}],77:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _argsToParams = require('./staticMethods/argsToParams');
+
+Object.keys(_argsToParams).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function () {
+      return _argsToParams[key];
+    }
+  });
+});
+
+var _adaptInputValidator = require('./staticMethods/adaptInputValidator');
+
+Object.keys(_adaptInputValidator).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function () {
+      return _adaptInputValidator[key];
+    }
+  });
+});
+
+var _close = require('./staticMethods/close');
+
+Object.keys(_close).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function () {
+      return _close[key];
+    }
+  });
+});
+
+var _dom = require('./staticMethods/dom');
+
+Object.keys(_dom).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function () {
+      return _dom[key];
+    }
+  });
+});
+
+var _mixin = require('./staticMethods/mixin');
+
+Object.keys(_mixin).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function () {
+      return _mixin[key];
+    }
+  });
+});
+
+var _queue = require('./staticMethods/queue');
+
+Object.keys(_queue).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function () {
+      return _queue[key];
+    }
+  });
+});
+
+var _setResetDefaults = require('./staticMethods/set-reset-defaults');
+
+Object.keys(_setResetDefaults).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function () {
+      return _setResetDefaults[key];
+    }
+  });
+});
+
+var _showLoading = require('./staticMethods/showLoading');
+
+Object.keys(_showLoading).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function () {
+      return _showLoading[key];
+    }
+  });
+});
+
+var _fire = require('./staticMethods/fire');
+
+Object.keys(_fire).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function () {
+      return _fire[key];
+    }
+  });
+});
+
+var _params = require('./utils/params');
+
+Object.defineProperty(exports, 'isValidParameter', {
+  enumerable: true,
+  get: function () {
+    return _params.isValidParameter;
+  }
+});
+Object.defineProperty(exports, 'isDeprecatedParameter', {
+  enumerable: true,
+  get: function () {
+    return _params.isDeprecatedParameter;
+  }
+});
+},{"./staticMethods/argsToParams":80,"./staticMethods/adaptInputValidator":81,"./staticMethods/close":86,"./staticMethods/dom":82,"./staticMethods/mixin":83,"./staticMethods/queue":84,"./staticMethods/set-reset-defaults":85,"./staticMethods/showLoading":90,"./staticMethods/fire":87,"./utils/params":88}],89:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.disableLoading = exports.hideLoading = undefined;
+
+var _index = require('../utils/dom/index');
+
+var dom = _interopRequireWildcard(_index);
+
+var _classes = require('../utils/classes');
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+/**
+ * Show spinner instead of Confirm button and disable Cancel button
+ */
+function hideLoading() {
+  const domCache = this._domCache;
+  if (!this.params.showConfirmButton) {
+    dom.hide(domCache.confirmButton);
+    if (!this.params.showCancelButton) {
+      dom.hide(domCache.actions);
+    }
+  }
+  dom.removeClass([domCache.popup, domCache.actions], _classes.swalClasses.loading);
+  domCache.popup.removeAttribute('aria-busy');
+  domCache.popup.removeAttribute('data-loading');
+  domCache.confirmButton.disabled = false;
+  domCache.cancelButton.disabled = false;
+}
+
+exports.hideLoading = hideLoading;
+exports.disableLoading = hideLoading;
+},{"../utils/dom/index":101,"../utils/classes":96}],91:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.getInput = getInput;
+
+var _index = require('../utils/dom/index');
+
+var dom = _interopRequireWildcard(_index);
+
+var _classes = require('../utils/classes');
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+// Get input element by specified type or, if type isn't specified, by params.input
+function getInput(inputType) {
+  const domCache = this._domCache;
+  inputType = inputType || this.params.input;
+  if (!inputType) {
+    return null;
+  }
+  switch (inputType) {
+    case 'select':
+    case 'textarea':
+    case 'file':
+      return dom.getChildByClass(domCache.content, _classes.swalClasses[inputType]);
+    case 'checkbox':
+      return domCache.popup.querySelector(`.${_classes.swalClasses.checkbox} input`);
+    case 'radio':
+      return domCache.popup.querySelector(`.${_classes.swalClasses.radio} input:checked`) || domCache.popup.querySelector(`.${_classes.swalClasses.radio} input:first-child`);
+    case 'range':
+      return domCache.popup.querySelector(`.${_classes.swalClasses.range} input`);
+    default:
+      return dom.getChildByClass(domCache.content, _classes.swalClasses.input);
+  }
+}
+},{"../utils/dom/index":101,"../utils/classes":96}],92:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.enableButtons = enableButtons;
+exports.disableButtons = disableButtons;
+exports.enableConfirmButton = enableConfirmButton;
+exports.disableConfirmButton = disableConfirmButton;
+exports.enableInput = enableInput;
+exports.disableInput = disableInput;
+function enableButtons() {
+  this._domCache.confirmButton.disabled = false;
+  this._domCache.cancelButton.disabled = false;
+}
+
+function disableButtons() {
+  this._domCache.confirmButton.disabled = true;
+  this._domCache.cancelButton.disabled = true;
+}
+
+function enableConfirmButton() {
+  this._domCache.confirmButton.disabled = false;
+}
+
+function disableConfirmButton() {
+  this._domCache.confirmButton.disabled = true;
+}
+
+function enableInput() {
+  const input = this.getInput();
+  if (!input) {
+    return false;
+  }
+  if (input.type === 'radio') {
+    const radiosContainer = input.parentNode.parentNode;
+    const radios = radiosContainer.querySelectorAll('input');
+    for (let i = 0; i < radios.length; i++) {
+      radios[i].disabled = false;
+    }
+  } else {
+    input.disabled = false;
+  }
+}
+
+function disableInput() {
+  const input = this.getInput();
+  if (!input) {
+    return false;
+  }
+  if (input && input.type === 'radio') {
+    const radiosContainer = input.parentNode.parentNode;
+    const radios = radiosContainer.querySelectorAll('input');
+    for (let i = 0; i < radios.length; i++) {
+      radios[i].disabled = true;
+    }
+  } else {
+    input.disabled = true;
+  }
+}
+},{}],93:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.showValidationError = showValidationError;
+exports.resetValidationError = resetValidationError;
+
+var _index = require('../utils/dom/index');
+
+var dom = _interopRequireWildcard(_index);
+
+var _classes = require('../utils/classes');
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+// Show block with validation error
+function showValidationError(error) {
+  const domCache = this._domCache;
+  domCache.validationError.innerHTML = error;
+  const popupComputedStyle = window.getComputedStyle(domCache.popup);
+  domCache.validationError.style.marginLeft = `-${popupComputedStyle.getPropertyValue('padding-left')}`;
+  domCache.validationError.style.marginRight = `-${popupComputedStyle.getPropertyValue('padding-right')}`;
+  dom.show(domCache.validationError);
+
+  const input = this.getInput();
+  if (input) {
+    input.setAttribute('aria-invalid', true);
+    input.setAttribute('aria-describedBy', _classes.swalClasses.validationerror);
+    dom.focusInput(input);
+    dom.addClass(input, _classes.swalClasses.inputerror);
+  }
+}
+
+// Hide block with validation error
+function resetValidationError() {
+  const domCache = this._domCache;
+  if (domCache.validationError) {
+    dom.hide(domCache.validationError);
+  }
+
+  const input = this.getInput();
+  if (input) {
+    input.removeAttribute('aria-invalid');
+    input.removeAttribute('aria-describedBy');
+    dom.removeClass(input, _classes.swalClasses.inputerror);
+  }
+}
+},{"../utils/dom/index":101,"../utils/classes":96}],102:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = {
+  email: string => {
+    return (/^[a-zA-Z0-9.+_-]+@[a-zA-Z0-9.-]+\.[a-zA-Z0-9-]{2,24}$/.test(string) ? Promise.resolve() : Promise.reject('Invalid email address')
+    );
+  },
+  url: string => {
+    // taken from https://stackoverflow.com/a/3809435/1331425
+    return (/^https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_+.~#?&//=]*)$/.test(string) ? Promise.resolve() : Promise.reject('Invalid URL')
+    );
+  }
+};
+},{}],99:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = setParameters;
+
+var _classes = require('./classes.js');
+
+var _utils = require('./utils.js');
+
+var _index = require('./dom/index');
+
+var dom = _interopRequireWildcard(_index);
+
+var _sweetalert = require('../sweetalert2');
+
+var _sweetalert2 = _interopRequireDefault(_sweetalert);
+
+var _defaultInputValidators = require('./defaultInputValidators');
+
+var _defaultInputValidators2 = _interopRequireDefault(_defaultInputValidators);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+/**
+ * Set type, text and actions on popup
+ *
+ * @param params
+ * @returns {boolean}
+ */
+function setParameters(params) {
+  // Use default `inputValidator` for supported input types if not provided
+  if (!params.inputValidator) {
+    Object.keys(_defaultInputValidators2.default).forEach(key => {
+      if (params.input === key) {
+        params.inputValidator = params.expectRejections ? _defaultInputValidators2.default[key] : _sweetalert2.default.adaptInputValidator(_defaultInputValidators2.default[key]);
+      }
+    });
+  }
+
+  // Determine if the custom target element is valid
+  if (!params.target || typeof params.target === 'string' && !document.querySelector(params.target) || typeof params.target !== 'string' && !params.target.appendChild) {
+    (0, _utils.warn)('Target parameter is not valid, defaulting to "body"');
+    params.target = 'body';
+  }
+
+  let popup;
+  const oldPopup = dom.getPopup();
+  let targetElement = typeof params.target === 'string' ? document.querySelector(params.target) : params.target;
+  // If the model target has changed, refresh the popup
+  if (oldPopup && targetElement && oldPopup.parentNode !== targetElement.parentNode) {
+    popup = dom.init(params);
+  } else {
+    popup = oldPopup || dom.init(params);
+  }
+
+  // Set popup width
+  if (params.width) {
+    popup.style.width = typeof params.width === 'number' ? params.width + 'px' : params.width;
+  }
+
+  // Set popup padding
+  if (params.padding) {
+    popup.style.padding = typeof params.padding === 'number' ? params.padding + 'px' : params.padding;
+  }
+
+  // Set popup background
+  if (params.background) {
+    popup.style.background = params.background;
+  }
+  const popupBackgroundColor = window.getComputedStyle(popup).getPropertyValue('background-color');
+  const successIconParts = popup.querySelectorAll('[class^=swal2-success-circular-line], .swal2-success-fix');
+  for (let i = 0; i < successIconParts.length; i++) {
+    successIconParts[i].style.backgroundColor = popupBackgroundColor;
+  }
+
+  const container = dom.getContainer();
+  const title = dom.getTitle();
+  const content = dom.getContent().querySelector('#' + _classes.swalClasses.content);
+  const actions = dom.getActions();
+  const confirmButton = dom.getConfirmButton();
+  const cancelButton = dom.getCancelButton();
+  const closeButton = dom.getCloseButton();
+  const footer = dom.getFooter();
+
+  // Title
+  if (params.titleText) {
+    title.innerText = params.titleText;
+  } else if (params.title) {
+    title.innerHTML = params.title.split('\n').join('<br />');
+  }
+
+  if (typeof params.backdrop === 'string') {
+    dom.getContainer().style.background = params.backdrop;
+  } else if (!params.backdrop) {
+    dom.addClass([document.documentElement, document.body], _classes.swalClasses['no-backdrop']);
+  }
+
+  // Content as HTML
+  if (params.html) {
+    dom.parseHtmlToContainer(params.html, content);
+
+    // Content as plain text
+  } else if (params.text) {
+    content.textContent = params.text;
+    dom.show(content);
+  } else {
+    dom.hide(content);
+  }
+
+  // Position
+  if (params.position in _classes.swalClasses) {
+    dom.addClass(container, _classes.swalClasses[params.position]);
+  } else {
+    (0, _utils.warn)('The "position" parameter is not valid, defaulting to "center"');
+    dom.addClass(container, _classes.swalClasses.center);
+  }
+
+  // Grow
+  if (params.grow && typeof params.grow === 'string') {
+    let growClass = 'grow-' + params.grow;
+    if (growClass in _classes.swalClasses) {
+      dom.addClass(container, _classes.swalClasses[growClass]);
+    }
+  }
+
+  // Animation
+  if (typeof params.animation === 'function') {
+    params.animation = params.animation.call();
+  }
+
+  // Close button
+  if (params.showCloseButton) {
+    closeButton.setAttribute('aria-label', params.closeButtonAriaLabel);
+    dom.show(closeButton);
+  } else {
+    dom.hide(closeButton);
+  }
+
+  // Default Class
+  popup.className = _classes.swalClasses.popup;
+  if (params.toast) {
+    dom.addClass([document.documentElement, document.body], _classes.swalClasses['toast-shown']);
+    dom.addClass(popup, _classes.swalClasses.toast);
+  } else {
+    dom.addClass(popup, _classes.swalClasses.modal);
+  }
+
+  // Custom Class
+  if (params.customClass) {
+    dom.addClass(popup, params.customClass);
+  }
+
+  // Progress steps
+  let progressStepsContainer = dom.getProgressSteps();
+  let currentProgressStep = parseInt(params.currentProgressStep === null ? _sweetalert2.default.getQueueStep() : params.currentProgressStep, 10);
+  if (params.progressSteps && params.progressSteps.length) {
+    dom.show(progressStepsContainer);
+    dom.empty(progressStepsContainer);
+    if (currentProgressStep >= params.progressSteps.length) {
+      (0, _utils.warn)('Invalid currentProgressStep parameter, it should be less than progressSteps.length ' + '(currentProgressStep like JS arrays starts from 0)');
+    }
+    params.progressSteps.forEach((step, index) => {
+      let circle = document.createElement('li');
+      dom.addClass(circle, _classes.swalClasses.progresscircle);
+      circle.innerHTML = step;
+      if (index === currentProgressStep) {
+        dom.addClass(circle, _classes.swalClasses.activeprogressstep);
+      }
+      progressStepsContainer.appendChild(circle);
+      if (index !== params.progressSteps.length - 1) {
+        let line = document.createElement('li');
+        dom.addClass(line, _classes.swalClasses.progressline);
+        if (params.progressStepsDistance) {
+          line.style.width = params.progressStepsDistance;
+        }
+        progressStepsContainer.appendChild(line);
+      }
+    });
+  } else {
+    dom.hide(progressStepsContainer);
+  }
+
+  // Icon
+  const icons = dom.getIcons();
+  for (let i = 0; i < icons.length; i++) {
+    dom.hide(icons[i]);
+  }
+  if (params.type) {
+    let validType = false;
+    for (let iconType in _classes.iconTypes) {
+      if (params.type === iconType) {
+        validType = true;
+        break;
+      }
+    }
+    if (!validType) {
+      (0, _utils.error)(`Unknown alert type: ${params.type}`);
+      return false;
+    }
+    const icon = popup.querySelector(`.${_classes.swalClasses.icon}.${_classes.iconTypes[params.type]}`);
+    dom.show(icon);
+
+    // Animate icon
+    if (params.animation) {
+      dom.addClass(icon, `swal2-animate-${params.type}-icon`);
+    }
+  }
+
+  // Custom image
+  const image = dom.getImage();
+  if (params.imageUrl) {
+    image.setAttribute('src', params.imageUrl);
+    image.setAttribute('alt', params.imageAlt);
+    dom.show(image);
+
+    if (params.imageWidth) {
+      image.setAttribute('width', params.imageWidth);
+    } else {
+      image.removeAttribute('width');
+    }
+
+    if (params.imageHeight) {
+      image.setAttribute('height', params.imageHeight);
+    } else {
+      image.removeAttribute('height');
+    }
+
+    image.className = _classes.swalClasses.image;
+    if (params.imageClass) {
+      dom.addClass(image, params.imageClass);
+    }
+  } else {
+    dom.hide(image);
+  }
+
+  // Cancel button
+  if (params.showCancelButton) {
+    cancelButton.style.display = 'inline-block';
+  } else {
+    dom.hide(cancelButton);
+  }
+
+  // Confirm button
+  if (params.showConfirmButton) {
+    dom.removeStyleProperty(confirmButton, 'display');
+  } else {
+    dom.hide(confirmButton);
+  }
+
+  // Actions (buttons) wrapper
+  if (!params.showConfirmButton && !params.showCancelButton) {
+    dom.hide(actions);
+  } else {
+    dom.show(actions);
+  }
+
+  // Edit text on confirm and cancel buttons
+  confirmButton.innerHTML = params.confirmButtonText;
+  cancelButton.innerHTML = params.cancelButtonText;
+
+  // ARIA labels for confirm and cancel buttons
+  confirmButton.setAttribute('aria-label', params.confirmButtonAriaLabel);
+  cancelButton.setAttribute('aria-label', params.cancelButtonAriaLabel);
+
+  // Add buttons custom classes
+  confirmButton.className = _classes.swalClasses.confirm;
+  dom.addClass(confirmButton, params.confirmButtonClass);
+  cancelButton.className = _classes.swalClasses.cancel;
+  dom.addClass(cancelButton, params.cancelButtonClass);
+
+  // Buttons styling
+  if (params.buttonsStyling) {
+    dom.addClass([confirmButton, cancelButton], _classes.swalClasses.styled);
+
+    // Buttons background colors
+    if (params.confirmButtonColor) {
+      confirmButton.style.backgroundColor = params.confirmButtonColor;
+    }
+    if (params.cancelButtonColor) {
+      cancelButton.style.backgroundColor = params.cancelButtonColor;
+    }
+
+    // Loading state
+    const confirmButtonBackgroundColor = window.getComputedStyle(confirmButton).getPropertyValue('background-color');
+    confirmButton.style.borderLeftColor = confirmButtonBackgroundColor;
+    confirmButton.style.borderRightColor = confirmButtonBackgroundColor;
+  } else {
+    dom.removeClass([confirmButton, cancelButton], _classes.swalClasses.styled);
+
+    confirmButton.style.backgroundColor = confirmButton.style.borderLeftColor = confirmButton.style.borderRightColor = '';
+    cancelButton.style.backgroundColor = cancelButton.style.borderLeftColor = cancelButton.style.borderRightColor = '';
+  }
+
+  // Footer
+  dom.parseHtmlToContainer(params.footer, footer);
+
+  // CSS animation
+  if (params.animation === true) {
+    dom.removeClass(popup, _classes.swalClasses.noanimation);
+  } else {
+    dom.addClass(popup, _classes.swalClasses.noanimation);
+  }
+
+  // showLoaderOnConfirm && preConfirm
+  if (params.showLoaderOnConfirm && !params.preConfirm) {
+    (0, _utils.warn)('showLoaderOnConfirm is set to true, but preConfirm is not defined.\n' + 'showLoaderOnConfirm should be used together with preConfirm, see usage example:\n' + 'https://sweetalert2.github.io/#ajax-request');
+  }
+}
+},{"./classes.js":96,"./utils.js":76,"./dom/index":101,"../sweetalert2":73,"./defaultInputValidators":102}],100:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.openPopup = undefined;
+
+var _index = require('./dom/index');
+
+var dom = _interopRequireWildcard(_index);
+
+var _classes = require('./classes');
+
+var _scrollbarFix = require('./scrollbarFix');
+
+var _iosFix = require('./iosFix');
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+/**
+ * Animations
+ *
+ * @param animation
+ * @param onBeforeOpen
+ * @param onComplete
+ */
+const openPopup = exports.openPopup = (animation, onBeforeOpen, onOpen) => {
+  const container = dom.getContainer();
+  const popup = dom.getPopup();
+
+  if (onBeforeOpen !== null && typeof onBeforeOpen === 'function') {
+    onBeforeOpen(popup);
+  }
+
+  if (animation) {
+    dom.addClass(popup, _classes.swalClasses.show);
+    dom.addClass(container, _classes.swalClasses.fade);
+    dom.removeClass(popup, _classes.swalClasses.hide);
+  } else {
+    dom.removeClass(popup, _classes.swalClasses.fade);
+  }
+  dom.show(popup);
+
+  // scrolling is 'hidden' until animation is done, after that 'auto'
+  container.style.overflowY = 'hidden';
+  if (dom.animationEndEvent && !dom.hasClass(popup, _classes.swalClasses.noanimation)) {
+    popup.addEventListener(dom.animationEndEvent, function swalCloseEventFinished() {
+      popup.removeEventListener(dom.animationEndEvent, swalCloseEventFinished);
+      container.style.overflowY = 'auto';
+    });
+  } else {
+    container.style.overflowY = 'auto';
+  }
+
+  dom.addClass([document.documentElement, document.body, container], _classes.swalClasses.shown);
+  if (dom.isModal()) {
+    (0, _scrollbarFix.fixScrollbar)();
+    (0, _iosFix.iOSfix)();
+  }
+  dom.states.previousActiveElement = document.activeElement;
+  if (onOpen !== null && typeof onOpen === 'function') {
+    setTimeout(() => {
+      onOpen(popup);
+    });
+  }
+};
+},{"./dom/index":101,"./classes":96,"./scrollbarFix":97,"./iosFix":98}],94:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports._main = _main;
+
+var _params = require('../utils/params');
+
+var _index = require('../utils/dom/index');
+
+var dom = _interopRequireWildcard(_index);
+
+var _classes = require('../utils/classes');
+
+var _utils = require('../utils/utils');
+
+var _setParameters = require('../utils/setParameters');
+
+var _setParameters2 = _interopRequireDefault(_setParameters);
+
+var _globalState = require('../globalState');
+
+var _globalState2 = _interopRequireDefault(_globalState);
+
+var _openPopup = require('../utils/openPopup');
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+function _main(userParams) {
+  (0, _params.showWarningsForParams)(userParams);
+
+  const params = this.params = Object.assign({}, _globalState2.default.popupParams, userParams);
+  (0, _setParameters2.default)(params);
+  Object.freeze(params);
+
+  const domCache = this._domCache = {
+    popup: dom.getPopup(),
+    container: dom.getContainer(),
+    content: dom.getContent(),
+    actions: dom.getActions(),
+    confirmButton: dom.getConfirmButton(),
+    cancelButton: dom.getCancelButton(),
+    closeButton: dom.getCloseButton(),
+    validationError: dom.getValidationError(),
+    progressSteps: dom.getProgressSteps()
+  };
+
+  const constructor = this.constructor;
+
+  return new Promise((resolve, reject) => {
+    // functions to handle all resolving/rejecting/settling
+    const succeedWith = value => {
+      constructor.closePopup(params.onClose, params.onAfterClose); // TODO: make closePopup an *instance* method
+      if (params.useRejections) {
+        resolve(value);
+      } else {
+        resolve({ value });
+      }
+    };
+    const dismissWith = dismiss => {
+      constructor.closePopup(params.onClose, params.onAfterClose);
+      if (params.useRejections) {
+        reject(dismiss);
+      } else {
+        resolve({ dismiss });
+      }
+    };
+    const errorWith = error => {
+      constructor.closePopup(params.onClose, params.onAfterClose);
+      reject(error);
+    };
+
+    // Close on timer
+    if (params.timer) {
+      domCache.popup.timeout = setTimeout(() => dismissWith('timer'), params.timer);
+    }
+
+    // Get the value of the popup input
+    const getInputValue = () => {
+      const input = this.getInput();
+      if (!input) {
+        return null;
+      }
+      switch (params.input) {
+        case 'checkbox':
+          return input.checked ? 1 : 0;
+        case 'radio':
+          return input.checked ? input.value : null;
+        case 'file':
+          return input.files.length ? input.files[0] : null;
+        default:
+          return params.inputAutoTrim ? input.value.trim() : input.value;
+      }
+    };
+
+    // input autofocus
+    if (params.input) {
+      setTimeout(() => {
+        const input = this.getInput();
+        if (input) {
+          dom.focusInput(input);
+        }
+      }, 0);
+    }
+
+    const confirm = value => {
+      if (params.showLoaderOnConfirm) {
+        constructor.showLoading(); // TODO: make showLoading an *instance* method
+      }
+
+      if (params.preConfirm) {
+        this.resetValidationError();
+        const preConfirmPromise = Promise.resolve().then(() => params.preConfirm(value, params.extraParams));
+        if (params.expectRejections) {
+          preConfirmPromise.then(preConfirmValue => succeedWith(preConfirmValue || value), validationError => {
+            this.hideLoading();
+            if (validationError) {
+              this.showValidationError(validationError);
+            }
+          });
+        } else {
+          preConfirmPromise.then(preConfirmValue => {
+            if (dom.isVisible(domCache.validationError) || preConfirmValue === false) {
+              this.hideLoading();
+            } else {
+              succeedWith(preConfirmValue || value);
+            }
+          }, error => errorWith(error));
+        }
+      } else {
+        succeedWith(value);
+      }
+    };
+
+    // Mouse interactions
+    const onButtonEvent = event => {
+      const e = event || window.event;
+      const target = e.target || e.srcElement;
+      const { confirmButton, cancelButton } = domCache;
+      const targetedConfirm = confirmButton && (confirmButton === target || confirmButton.contains(target));
+      const targetedCancel = cancelButton && (cancelButton === target || cancelButton.contains(target));
+
+      switch (e.type) {
+        case 'click':
+          // Clicked 'confirm'
+          if (targetedConfirm && constructor.isVisible()) {
+            this.disableButtons();
+            if (params.input) {
+              const inputValue = getInputValue();
+
+              if (params.inputValidator) {
+                this.disableInput();
+                const validationPromise = Promise.resolve().then(() => params.inputValidator(inputValue, params.extraParams));
+                if (params.expectRejections) {
+                  validationPromise.then(() => {
+                    this.enableButtons();
+                    this.enableInput();
+                    confirm(inputValue);
+                  }, validationError => {
+                    this.enableButtons();
+                    this.enableInput();
+                    if (validationError) {
+                      this.showValidationError(validationError);
+                    }
+                  });
+                } else {
+                  validationPromise.then(validationError => {
+                    this.enableButtons();
+                    this.enableInput();
+                    if (validationError) {
+                      this.showValidationError(validationError);
+                    } else {
+                      confirm(inputValue);
+                    }
+                  }, error => errorWith(error));
+                }
+              } else {
+                confirm(inputValue);
+              }
+            } else {
+              confirm(true);
+            }
+
+            // Clicked 'cancel'
+          } else if (targetedCancel && constructor.isVisible()) {
+            this.disableButtons();
+            dismissWith(constructor.DismissReason.cancel);
+          }
+          break;
+        default:
+      }
+    };
+
+    const buttons = domCache.popup.querySelectorAll('button');
+    for (let i = 0; i < buttons.length; i++) {
+      buttons[i].onclick = onButtonEvent;
+      buttons[i].onmouseover = onButtonEvent;
+      buttons[i].onmouseout = onButtonEvent;
+      buttons[i].onmousedown = onButtonEvent;
+    }
+
+    // Closing popup by close button
+    domCache.closeButton.onclick = () => {
+      dismissWith(constructor.DismissReason.close);
+    };
+
+    if (params.toast) {
+      // Closing popup by internal click
+      domCache.popup.onclick = e => {
+        if (params.showConfirmButton || params.showCancelButton || params.showCloseButton || params.input) {
+          return;
+        }
+        constructor.closePopup(params.onClose, params.onAfterClose);
+        dismissWith(constructor.DismissReason.close);
+      };
+    } else {
+      let ignoreOutsideClick = false;
+
+      // Ignore click events that had mousedown on the popup but mouseup on the container
+      // This can happen when the user drags a slider
+      domCache.popup.onmousedown = () => {
+        domCache.container.onmouseup = function (e) {
+          domCache.container.onmouseup = undefined;
+          // We only check if the mouseup target is the container because usually it doesn't
+          // have any other direct children aside of the popup
+          if (e.target === domCache.container) {
+            ignoreOutsideClick = true;
+          }
+        };
+      };
+
+      // Ignore click events that had mousedown on the container but mouseup on the popup
+      domCache.container.onmousedown = () => {
+        domCache.popup.onmouseup = function (e) {
+          domCache.popup.onmouseup = undefined;
+          // We also need to check if the mouseup target is a child of the popup
+          if (e.target === domCache.popup || domCache.popup.contains(e.target)) {
+            ignoreOutsideClick = true;
+          }
+        };
+      };
+
+      domCache.container.onclick = e => {
+        if (ignoreOutsideClick) {
+          ignoreOutsideClick = false;
+          return;
+        }
+        if (e.target !== domCache.container) {
+          return;
+        }
+        if ((0, _utils.callIfFunction)(params.allowOutsideClick)) {
+          dismissWith(constructor.DismissReason.backdrop);
+        }
+      };
+    }
+
+    // Reverse buttons (Confirm on the right side)
+    if (params.reverseButtons) {
+      domCache.confirmButton.parentNode.insertBefore(domCache.cancelButton, domCache.confirmButton);
+    } else {
+      domCache.confirmButton.parentNode.insertBefore(domCache.confirmButton, domCache.cancelButton);
+    }
+
+    // Focus handling
+    const setFocus = (index, increment) => {
+      const focusableElements = dom.getFocusableElements(params.focusCancel);
+      // search for visible elements and select the next possible match
+      for (let i = 0; i < focusableElements.length; i++) {
+        index = index + increment;
+
+        // rollover to first item
+        if (index === focusableElements.length) {
+          index = 0;
+
+          // go to last item
+        } else if (index === -1) {
+          index = focusableElements.length - 1;
+        }
+
+        // determine if element is visible
+        const el = focusableElements[index];
+        if (dom.isVisible(el)) {
+          return el.focus();
+        }
+      }
+    };
+
+    const handleKeyDown = event => {
+      const e = event || window.event;
+
+      const arrowKeys = ['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown', 'Left', 'Right', 'Up', 'Down' // IE11
+      ];
+
+      if (e.key === 'Enter' && !e.isComposing) {
+        if (e.target === this.getInput()) {
+          if (['textarea', 'file'].includes(params.input)) {
+            return; // do not submit
+          }
+
+          constructor.clickConfirm();
+          e.preventDefault();
+        }
+
+        // TAB
+      } else if (e.key === 'Tab') {
+        const targetElement = e.target || e.srcElement;
+
+        const focusableElements = dom.getFocusableElements(params.focusCancel);
+        let btnIndex = -1; // Find the button - note, this is a nodelist, not an array.
+        for (let i = 0; i < focusableElements.length; i++) {
+          if (targetElement === focusableElements[i]) {
+            btnIndex = i;
+            break;
+          }
+        }
+
+        if (!e.shiftKey) {
+          // Cycle to the next button
+          setFocus(btnIndex, 1);
+        } else {
+          // Cycle to the prev button
+          setFocus(btnIndex, -1);
+        }
+        e.stopPropagation();
+        e.preventDefault();
+
+        // ARROWS - switch focus between buttons
+      } else if (arrowKeys.includes(e.key)) {
+        // focus Cancel button if Confirm button is currently focused
+        if (document.activeElement === domCache.confirmButton && dom.isVisible(domCache.cancelButton)) {
+          domCache.cancelButton.focus();
+          // and vice versa
+        } else if (document.activeElement === domCache.cancelButton && dom.isVisible(domCache.confirmButton)) {
+          domCache.confirmButton.focus();
+        }
+
+        // ESC
+      } else if ((e.key === 'Escape' || e.key === 'Esc') && (0, _utils.callIfFunction)(params.allowEscapeKey) === true) {
+        dismissWith(constructor.DismissReason.esc);
+      }
+    };
+
+    if (params.toast && _globalState2.default.windowOnkeydownOverridden) {
+      window.onkeydown = _globalState2.default.previousWindowKeyDown;
+      _globalState2.default.windowOnkeydownOverridden = false;
+    }
+
+    if (!params.toast && !_globalState2.default.windowOnkeydownOverridden) {
+      _globalState2.default.previousWindowKeyDown = window.onkeydown;
+      _globalState2.default.windowOnkeydownOverridden = true;
+      window.onkeydown = handleKeyDown;
+    }
+
+    this.enableButtons();
+    this.hideLoading();
+    this.resetValidationError();
+
+    if (params.input) {
+      dom.addClass(document.body, _classes.swalClasses['has-input']);
+    }
+
+    // inputs
+    const inputTypes = ['input', 'file', 'range', 'select', 'radio', 'checkbox', 'textarea'];
+    let input;
+    for (let i = 0; i < inputTypes.length; i++) {
+      const inputClass = _classes.swalClasses[inputTypes[i]];
+      const inputContainer = dom.getChildByClass(domCache.content, inputClass);
+      input = this.getInput(inputTypes[i]);
+
+      // set attributes
+      if (input) {
+        for (let j in input.attributes) {
+          if (input.attributes.hasOwnProperty(j)) {
+            const attrName = input.attributes[j].name;
+            if (attrName !== 'type' && attrName !== 'value') {
+              input.removeAttribute(attrName);
+            }
+          }
+        }
+        for (let attr in params.inputAttributes) {
+          input.setAttribute(attr, params.inputAttributes[attr]);
+        }
+      }
+
+      // set class
+      inputContainer.className = inputClass;
+      if (params.inputClass) {
+        dom.addClass(inputContainer, params.inputClass);
+      }
+
+      dom.hide(inputContainer);
+    }
+
+    let populateInputOptions;
+    switch (params.input) {
+      case 'text':
+      case 'email':
+      case 'password':
+      case 'number':
+      case 'tel':
+      case 'url':
+        input = dom.getChildByClass(domCache.content, _classes.swalClasses.input);
+        input.value = params.inputValue;
+        input.placeholder = params.inputPlaceholder;
+        input.type = params.input;
+        dom.show(input);
+        break;
+      case 'file':
+        input = dom.getChildByClass(domCache.content, _classes.swalClasses.file);
+        input.placeholder = params.inputPlaceholder;
+        input.type = params.input;
+        dom.show(input);
+        break;
+      case 'range':
+        const range = dom.getChildByClass(domCache.content, _classes.swalClasses.range);
+        const rangeInput = range.querySelector('input');
+        const rangeOutput = range.querySelector('output');
+        rangeInput.value = params.inputValue;
+        rangeInput.type = params.input;
+        rangeOutput.value = params.inputValue;
+        dom.show(range);
+        break;
+      case 'select':
+        const select = dom.getChildByClass(domCache.content, _classes.swalClasses.select);
+        select.innerHTML = '';
+        if (params.inputPlaceholder) {
+          const placeholder = document.createElement('option');
+          placeholder.innerHTML = params.inputPlaceholder;
+          placeholder.value = '';
+          placeholder.disabled = true;
+          placeholder.selected = true;
+          select.appendChild(placeholder);
+        }
+        populateInputOptions = inputOptions => {
+          inputOptions.forEach(([optionValue, optionLabel]) => {
+            const option = document.createElement('option');
+            option.value = optionValue;
+            option.innerHTML = optionLabel;
+            if (params.inputValue.toString() === optionValue.toString()) {
+              option.selected = true;
+            }
+            select.appendChild(option);
+          });
+          dom.show(select);
+          select.focus();
+        };
+        break;
+      case 'radio':
+        const radio = dom.getChildByClass(domCache.content, _classes.swalClasses.radio);
+        radio.innerHTML = '';
+        populateInputOptions = inputOptions => {
+          inputOptions.forEach(([radioValue, radioLabel]) => {
+            const radioInput = document.createElement('input');
+            const radioLabelElement = document.createElement('label');
+            radioInput.type = 'radio';
+            radioInput.name = _classes.swalClasses.radio;
+            radioInput.value = radioValue;
+            if (params.inputValue.toString() === radioValue.toString()) {
+              radioInput.checked = true;
+            }
+            radioLabelElement.innerHTML = radioLabel;
+            radioLabelElement.insertBefore(radioInput, radioLabelElement.firstChild);
+            radio.appendChild(radioLabelElement);
+          });
+          dom.show(radio);
+          const radios = radio.querySelectorAll('input');
+          if (radios.length) {
+            radios[0].focus();
+          }
+        };
+        break;
+      case 'checkbox':
+        const checkbox = dom.getChildByClass(domCache.content, _classes.swalClasses.checkbox);
+        const checkboxInput = this.getInput('checkbox');
+        checkboxInput.type = 'checkbox';
+        checkboxInput.value = 1;
+        checkboxInput.id = _classes.swalClasses.checkbox;
+        checkboxInput.checked = Boolean(params.inputValue);
+        let label = checkbox.getElementsByTagName('span');
+        if (label.length) {
+          checkbox.removeChild(label[0]);
+        }
+        label = document.createElement('span');
+        label.innerHTML = params.inputPlaceholder;
+        checkbox.appendChild(label);
+        dom.show(checkbox);
+        break;
+      case 'textarea':
+        const textarea = dom.getChildByClass(domCache.content, _classes.swalClasses.textarea);
+        textarea.value = params.inputValue;
+        textarea.placeholder = params.inputPlaceholder;
+        dom.show(textarea);
+        break;
+      case null:
+        break;
+      default:
+        (0, _utils.error)(`Unexpected type of input! Expected "text", "email", "password", "number", "tel", "select", "radio", "checkbox", "textarea", "file" or "url", got "${params.input}"`);
+        break;
+    }
+
+    if (params.input === 'select' || params.input === 'radio') {
+      const processInputOptions = inputOptions => populateInputOptions((0, _utils.formatInputOptions)(inputOptions));
+      if ((0, _utils.isThenable)(params.inputOptions)) {
+        constructor.showLoading();
+        params.inputOptions.then(inputOptions => {
+          this.hideLoading();
+          processInputOptions(inputOptions);
+        });
+      } else if (typeof params.inputOptions === 'object') {
+        processInputOptions(params.inputOptions);
+      } else {
+        (0, _utils.error)('Unexpected type of inputOptions! Expected object, Map or Promise, got ' + typeof params.inputOptions);
+      }
+    } else if (['text', 'email', 'number', 'tel', 'textarea'].includes(params.input) && (0, _utils.isThenable)(params.inputValue)) {
+      constructor.showLoading();
+      dom.hide(input);
+      params.inputValue.then(inputValue => {
+        input.value = params.input === 'number' ? parseFloat(inputValue) || 0 : inputValue + '';
+        dom.show(input);
+        this.hideLoading();
+      }).catch(err => {
+        (0, _utils.error)('Error in inputValue promise: ' + err);
+        input.value = '';
+        dom.show(input);
+        this.hideLoading();
+      });
+    }
+
+    (0, _openPopup.openPopup)(params.animation, params.onBeforeOpen, params.onOpen);
+
+    if (!params.toast) {
+      if (!(0, _utils.callIfFunction)(params.allowEnterKey)) {
+        if (document.activeElement) {
+          document.activeElement.blur();
+        }
+      } else if (params.focusCancel && dom.isVisible(domCache.cancelButton)) {
+        domCache.cancelButton.focus();
+      } else if (params.focusConfirm && dom.isVisible(domCache.confirmButton)) {
+        domCache.confirmButton.focus();
+      } else {
+        setFocus(-1, 1);
+      }
+    }
+
+    // fix scroll
+    domCache.container.scrollTop = 0;
+  });
+}
+},{"../utils/params":88,"../utils/dom/index":101,"../utils/classes":96,"../utils/utils":76,"../utils/setParameters":99,"../globalState":95,"../utils/openPopup":100}],78:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _hideLoading = require('./instanceMethods/hideLoading');
+
+Object.keys(_hideLoading).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function () {
+      return _hideLoading[key];
+    }
+  });
+});
+
+var _getInput = require('./instanceMethods/getInput');
+
+Object.keys(_getInput).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function () {
+      return _getInput[key];
+    }
+  });
+});
+
+var _enableDisableElements = require('./instanceMethods/enable-disable-elements');
+
+Object.keys(_enableDisableElements).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function () {
+      return _enableDisableElements[key];
+    }
+  });
+});
+
+var _showResetValidationError = require('./instanceMethods/show-reset-validation-error');
+
+Object.keys(_showResetValidationError).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function () {
+      return _showResetValidationError[key];
+    }
+  });
+});
+
+var _main = require('./instanceMethods/_main');
+
+Object.keys(_main).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function () {
+      return _main[key];
+    }
+  });
+});
+},{"./instanceMethods/hideLoading":89,"./instanceMethods/getInput":91,"./instanceMethods/enable-disable-elements":92,"./instanceMethods/show-reset-validation-error":93,"./instanceMethods/_main":94}],73:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _utils = require('./utils/utils.js');
+
+var _DismissReason = require('./utils/DismissReason');
+
+var _package = require('../package.json');
+
+var _staticMethods = require('./staticMethods');
+
+var staticMethods = _interopRequireWildcard(_staticMethods);
+
+var _instanceMethods = require('./instanceMethods');
+
+var instanceMethods = _interopRequireWildcard(_instanceMethods);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+let currentInstance;
+
+// SweetAlert constructor
+function SweetAlert(...args) {
+  // Prevent run in Node env
+  if (typeof window === 'undefined') {
+    return;
+  }
+
+  // Check for the existence of Promise
+  if (typeof Promise === 'undefined') {
+    (0, _utils.error)('This package requires a Promise library, please include a shim to enable it in this browser (See: https://github.com/sweetalert2/sweetalert2/wiki/Migration-from-SweetAlert-to-SweetAlert2#1-ie-support)');
+  }
+
+  if (typeof args[0] === 'undefined') {
+    (0, _utils.error)('SweetAlert2 expects at least 1 attribute!');
+    return false;
+  }
+
+  // handle things when constructor is invoked without the `new` keyword
+  if (!(this instanceof SweetAlert)) {
+    return new SweetAlert(...args);
+  }
+
+  currentInstance = this;
+
+  this._promise = this._main(this.constructor.argsToParams(args));
+}
+
+// `catch` cannot be the name of a module export, so we define our thenable methods here instead
+SweetAlert.prototype.then = function (onFulfilled, onRejected) {
+  return this._promise.then(onFulfilled, onRejected);
+};
+SweetAlert.prototype.catch = function (onRejected) {
+  return this._promise.catch(onRejected);
+};
+SweetAlert.prototype.finally = function (onFinally) {
+  return this._promise.finally(onFinally);
+};
+
+// Assign instance methods from src/instanceMethods/*.js to prototype
+Object.assign(SweetAlert.prototype, instanceMethods);
+
+// Assign static methods from src/staticMethods/*.js to constructor
+Object.assign(SweetAlert, staticMethods);
+
+// Proxy to instance methods to constructor, for now, for backwards compatibility
+Object.keys(instanceMethods).forEach(key => {
+  SweetAlert[key] = function (...args) {
+    if (currentInstance) {
+      return currentInstance[key](...args);
+    }
+  };
+});
+
+SweetAlert.DismissReason = _DismissReason.DismissReason;
+
+SweetAlert.noop = () => {};
+
+SweetAlert.version = _package.version;
+
+SweetAlert.default = SweetAlert;
+
+/**
+ * Set default params if `window._swalDefaults` is an object
+ */
+if (typeof window !== 'undefined' && typeof window._swalDefaults === 'object') {
+  SweetAlert.setDefaults(window._swalDefaults);
+}
+
+exports.default = SweetAlert;
+},{"./utils/utils.js":76,"./utils/DismissReason":79,"../package.json":75,"./staticMethods":77,"./instanceMethods":78}],22:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -59374,6 +62195,10 @@ var _react = require('react');
 var _react2 = _interopRequireDefault(_react);
 
 require('./Editor.scss');
+
+var _sweetalert = require('sweetalert2');
+
+var _sweetalert2 = _interopRequireDefault(_sweetalert);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -59409,6 +62234,11 @@ var Editor = function (_Component) {
       this.props.checkToBackground();
     }
   }, {
+    key: 'makeNewRole',
+    value: function makeNewRole() {
+      console.log((0, _sweetalert2.default)('暂不支持角色建模，请从素材库中选择素材'));
+    }
+  }, {
     key: 'render',
     value: function render() {
       var _state = this.state,
@@ -59431,14 +62261,14 @@ var Editor = function (_Component) {
             _react2.default.createElement(
               'span',
               { className: 'gra-editor-role-title' },
-              '\u89D2\u8272'
+              '\u7D20\u6750'
             ),
             _react2.default.createElement(
               'span',
               { className: 'gra-editor-role-operate' },
-              '\u65B0\u5EFA\u89D2\u8272:',
+              '\u65B0\u5EFA\u7D20\u6750:',
               _react2.default.createElement('i', { className: 'iconfont icon-addrole gra-icon-addrole', onClick: this.addBackground.bind(this, 'role') }),
-              _react2.default.createElement('i', { className: 'iconfont icon-huabi gra-icon-draw' }),
+              _react2.default.createElement('i', { className: 'iconfont icon-huabi gra-icon-draw', onClick: this.makeNewRole.bind(this) }),
               _react2.default.createElement('i', { className: 'iconfont icon-shangchuan1 gra-icon-upload' }),
               _react2.default.createElement('i', { className: 'iconfont icon-xiangji gra-icon-camera' })
             )
@@ -59484,7 +62314,8 @@ var Editor = function (_Component) {
                 _react2.default.createElement('i', { className: 'iconfont icon-xiangji gra-icon-camera' })
               )
             )
-          )
+          ),
+          _react2.default.createElement('div', { className: 'gra-editor-main-role-wrapper', id: 'gra-role-wrapper' })
         )
       );
     }
@@ -59494,13 +62325,13 @@ var Editor = function (_Component) {
 }(_react.Component);
 
 exports.default = Editor;
-},{"react":39,"./Editor.scss":31}],43:[function(require,module,exports) {
+},{"react":57,"./Editor.scss":48,"sweetalert2":73}],55:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":12}],35:[function(require,module,exports) {
+},{"_css_loader":10}],52:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -59567,7 +62398,8 @@ var Tablist = function (_Component) {
           'ul',
           { className: 'gra-content-list' },
           tabList.map(function (item, i) {
-            if (role === 'background' && i === 3) return null;else if (role === 'role' && i === 1) return null;
+            // if (role === 'background' && i === 3) return null
+            // else if (role === 'role' && i === 1) return null
             return _react2.default.createElement(
               'li',
               {
@@ -59586,19 +62418,19 @@ var Tablist = function (_Component) {
 }(_react.Component);
 
 exports.default = Tablist;
-},{"react":39,"./Tablist.scss":43}],34:[function(require,module,exports) {
+},{"react":57,"./Tablist.scss":55}],49:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":12}],50:[function(require,module,exports) {
+},{"_css_loader":10}],68:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":12}],46:[function(require,module,exports) {
+},{"_css_loader":10}],64:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -59640,7 +62472,27 @@ var Script = function (_Component) {
   }, {
     key: 'componentDidMount',
     value: function componentDidMount() {
-      var workspace = Blockly.inject('blocklyDiv', { toolbox: document.getElementById('toolbox') });
+      window.workspace = Blockly.inject('blocklyDiv', {
+        media: '../../../../assets/media/',
+        toolbox: document.getElementById('toolbox')
+      });
+
+      function myUpdateFunction(event) {
+        var code = Blockly.JavaScript.workspaceToCode(workspace);
+        var xml = Blockly.Xml.workspaceToDom(workspace);
+
+        document.getElementById('textarea').value = code;
+
+        var object = editor.selected;
+        var script = editor.scripts[object.uuid] && editor.scripts[object.uuid][0];
+
+        if (script) {
+          script.source = code;
+          script.xml = xml;
+        }
+      }
+
+      workspace.addChangeListener(myUpdateFunction);
     }
   }, {
     key: 'render',
@@ -59648,7 +62500,8 @@ var Script = function (_Component) {
       return _react2.default.createElement(
         'section',
         { className: 'gra-content-script-editor' },
-        _react2.default.createElement('div', { id: 'blocklyDiv', className: 'gra-content-script-blockly' })
+        _react2.default.createElement('div', { id: 'blocklyDiv', className: 'gra-content-script-blockly' }),
+        _react2.default.createElement('textarea', { id: 'textarea' })
       );
     }
   }]);
@@ -59657,7 +62510,7 @@ var Script = function (_Component) {
 }(_react.Component);
 
 exports.default = Script;
-},{"react":39,"./Script.scss":50}],47:[function(require,module,exports) {
+},{"react":57,"./Script.scss":68}],65:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -59702,13 +62555,13 @@ var Voice = function (_Component) {
 }(_react.Component);
 
 exports.default = Voice;
-},{"react":39}],51:[function(require,module,exports) {
+},{"react":57}],69:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":12}],49:[function(require,module,exports) {
+},{"_css_loader":10}],66:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -59737,16 +62590,179 @@ var Background = function (_Component) {
   function Background() {
     _classCallCheck(this, Background);
 
-    return _possibleConstructorReturn(this, (Background.__proto__ || Object.getPrototypeOf(Background)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (Background.__proto__ || Object.getPrototypeOf(Background)).call(this));
   }
 
   _createClass(Background, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      window.URL = window.URL || window.webkitURL;
+      window.BlobBuilder = window.BlobBuilder || window.WebKitBlobBuilder || window.MozBlobBuilder;
+
+      Number.prototype.format = function () {
+        return this.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,");
+      };
+
+      //
+
+      window.editor = new Editor();
+
+      window.viewport = new Viewport(editor);
+      document.body.appendChild(viewport.dom);
+      this._container.appendChild(viewport.dom);
+
+      window.script = new Script(editor);
+      this._container.appendChild(script.dom);
+
+      window.player = new Player(editor);
+      document.querySelector('#gra-screen-main-player').appendChild(player.dom);
+
+      window.toolbar = new Toolbar(editor);
+      this._container.appendChild(toolbar.dom);
+
+      window.menubar = new Menubar(editor);
+      this._container.appendChild(menubar.dom);
+      menubar.dom.style.visibility = 'hidden';
+
+      window.sidebar = new Sidebar(editor);
+      document.querySelector('#gra-role-wrapper').appendChild(sidebar.dom);
+      // sidebar.dom.style.visibility = 'hidden';
+
+      window.modal = new UI.Modal();
+      this._container.appendChild(modal.dom);
+
+      // new Viewport.Info( editor )
+      //
+
+      window.editor.setTheme(editor.config.getKey('theme'));
+
+      window.editor.storage.init(function () {
+
+        window.editor.storage.get(function (state) {
+
+          if (isLoadingFromHash) return;
+
+          if (state !== undefined) {
+
+            window.editor.fromJSON(state);
+          }
+
+          var selected = editor.config.getKey('selected');
+
+          if (selected !== undefined) {
+
+            window.editor.selectByUuid(selected);
+          }
+        });
+
+        //
+
+        window.timeout;
+
+        function saveState(scene) {
+
+          if (window.editor.config.getKey('autosave') === false) {
+
+            return;
+          }
+
+          clearTimeout(window.timeout);
+
+          window.timeout = setTimeout(function () {
+
+            window.editor.signals.savingStarted.dispatch();
+
+            window.timeout = setTimeout(function () {
+
+              window.editor.storage.set(editor.toJSON());
+
+              window.editor.signals.savingFinished.dispatch();
+            }, 100);
+          }, 1000);
+        };
+
+        window.signals = editor.signals;
+
+        window.signals.geometryChanged.add(saveState);
+        window.signals.objectAdded.add(saveState);
+        window.signals.objectChanged.add(saveState);
+        window.signals.objectRemoved.add(saveState);
+        window.signals.materialChanged.add(saveState);
+        window.signals.sceneBackgroundChanged.add(saveState);
+        window.signals.sceneFogChanged.add(saveState);
+        window.signals.sceneGraphChanged.add(saveState);
+        window.signals.scriptChanged.add(saveState);
+        window.signals.historyChanged.add(saveState);
+
+        window.signals.showModal.add(function (content) {
+
+          window.modal.show(content);
+        });
+      });
+
+      //
+
+      document.addEventListener('dragover', function (event) {
+
+        event.preventDefault();
+        event.dataTransfer.dropEffect = 'copy';
+      }, false);
+
+      document.addEventListener('drop', function (event) {
+
+        event.preventDefault();
+
+        if (event.dataTransfer.files.length > 0) {
+
+          editor.loader.loadFile(event.dataTransfer.files[0]);
+        }
+      }, false);
+
+      function onWindowResize(event) {
+
+        window.editor.signals.windowResize.dispatch();
+      }
+
+      // window.addEventListener( 'resize', onWindowResize, false );
+      //
+
+      var isLoadingFromHash = false;
+      var hash = window.location.hash;
+
+      if (hash.substr(1, 5) === 'file=') {
+
+        var file = hash.substr(6);
+
+        if (confirm('Any unsaved data will be lost. Are you sure?')) {
+
+          var loader = new THREE.FileLoader();
+          loader.crossOrigin = '';
+          loader.load(file, function (text) {
+
+            editor.clear();
+            editor.fromJSON(JSON.parse(text));
+          });
+
+          isLoadingFromHash = true;
+        }
+      }
+    }
+  }, {
+    key: 'getCanvasView',
+    value: function getCanvasView() {
+      window.editor.signals.windowResize.dispatch();
+    }
+  }, {
     key: 'render',
     value: function render() {
+      var _this2 = this;
+
       return _react2.default.createElement(
         'section',
         { className: 'gra-content-background-editor' },
-        _react2.default.createElement('iframe', { src: 'http://localhost:4040/' })
+        _react2.default.createElement('div', { className: 'gra-content-background-editor-container', ref: function ref(container) {
+            return _this2._container = container;
+          } })
       );
     }
   }]);
@@ -59755,7 +62771,7 @@ var Background = function (_Component) {
 }(_react.Component);
 
 exports.default = Background;
-},{"react":39,"./Background.scss":51}],48:[function(require,module,exports) {
+},{"react":57,"./Background.scss":69}],67:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -59800,7 +62816,7 @@ var Handsome = function (_Component) {
 }(_react.Component);
 
 exports.default = Handsome;
-},{"react":39}],40:[function(require,module,exports) {
+},{"react":57}],59:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -59830,7 +62846,7 @@ exports.Script = _Script2.default;
 exports.Background = _Background2.default;
 exports.Voice = _Voice2.default;
 exports.Handsome = _Handsome2.default;
-},{"./Script":46,"./Voice":47,"./Background":49,"./Handsome":48}],22:[function(require,module,exports) {
+},{"./Script":64,"./Voice":65,"./Background":66,"./Handsome":67}],23:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -59876,20 +62892,34 @@ var Content = function (_Component) {
   _createClass(Content, [{
     key: 'indexChange',
     value: function indexChange(index) {
+      var _this2 = this;
+
+      this.background.getCanvasView();
       this.setState({
         tabIndex: index
+      }, function () {
+        _this2.background.getCanvasView();
       });
+    }
+  }, {
+    key: 'checkToBackgroundTab',
+    value: function checkToBackgroundTab() {
+      this.tabList.changeIndex(1);
     }
   }, {
     key: 'render',
     value: function render() {
+      var _this3 = this;
+
       var tabIndex = this.state.tabIndex;
 
 
       return _react2.default.createElement(
         'section',
         { className: 'gra-content-wrapper' },
-        _react2.default.createElement(_Tablist2.default, { getTab: this.indexChange.bind(this), role: this.props.role }),
+        _react2.default.createElement(_Tablist2.default, { getTab: this.indexChange.bind(this), role: this.props.role, ref: function ref(tabList) {
+            return _this3.tabList = tabList;
+          } }),
         _react2.default.createElement(
           'div',
           { className: 'gra-content-main-wrapper' },
@@ -59901,7 +62931,9 @@ var Content = function (_Component) {
           _react2.default.createElement(
             'div',
             { className: 'gra-content-main-container ' + (tabIndex === 1 ? '' : 'hidden') },
-            _react2.default.createElement(_editors.Background, null)
+            _react2.default.createElement(_editors.Background, { ref: function ref(background) {
+                return _this3.background = background;
+              } })
           ),
           _react2.default.createElement(
             'div',
@@ -59922,13 +62954,45 @@ var Content = function (_Component) {
 }(_react.Component);
 
 exports.default = Content;
-},{"react":39,"./Tablist":35,"./Content.scss":34,"./editors":40}],36:[function(require,module,exports) {
+},{"react":57,"./Tablist":52,"./Content.scss":49,"./editors":59}],50:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":12}],23:[function(require,module,exports) {
+},{"_css_loader":10}],31:[function(require,module,exports) {
+module.exports="/dist/4dda97cbd21f46ab29ef219fe13471a8.png";
+},{}],32:[function(require,module,exports) {
+module.exports="/dist/691960d58391147427ef84992d984aff.png";
+},{}],33:[function(require,module,exports) {
+module.exports="/dist/2d5d928684e1ba09cc6289631cf871e3.png";
+},{}],34:[function(require,module,exports) {
+module.exports="/dist/31e9681429ced19c1b89a597018ad8e1.png";
+},{}],35:[function(require,module,exports) {
+module.exports="/dist/dd81daa949a06924a30400a047187b0a.png";
+},{}],36:[function(require,module,exports) {
+module.exports="/dist/26dfc5ff8caf9840410021e71e9760d9.png";
+},{}],37:[function(require,module,exports) {
+module.exports="/dist/338eb6349b98a0ed65753e80612014e1.png";
+},{}],38:[function(require,module,exports) {
+module.exports="/dist/a34888e6f3120af4307db7b8ac969586.png";
+},{}],39:[function(require,module,exports) {
+module.exports="/dist/ca546eb573bc197ff93eaf8792772a8d.png";
+},{}],40:[function(require,module,exports) {
+module.exports="/dist/aff94a967e865155c2394e3d323cc391.png";
+},{}],41:[function(require,module,exports) {
+module.exports="/dist/7d8bf94ddec1df305f46a3a326a15dc7.png";
+},{}],42:[function(require,module,exports) {
+module.exports="/dist/50f6351bf665cf2c04d23ac576876974.png";
+},{}],43:[function(require,module,exports) {
+module.exports="/dist/5202fb81a9109645d5c728aff7ca41d7.png";
+},{}],44:[function(require,module,exports) {
+module.exports="/dist/53614079770d1b20ae6f3008c5366b34.png";
+},{}],45:[function(require,module,exports) {
+module.exports="/dist/bdbc8b2f505953664d5d808f27025e09.png";
+},{}],46:[function(require,module,exports) {
+module.exports="/dist/313379688bf732fa9e42ac0b9efe008a.png";
+},{}],24:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -59968,7 +63032,7 @@ var Checkmodal = function (_Component) {
             part: '分类',
             children: [{
               name: '全部',
-              isActive: true,
+              isActive: false,
               data: []
             }, {
               name: '测试',
@@ -59985,37 +63049,282 @@ var Checkmodal = function (_Component) {
           }]
         },
         role: {
-          title: '角色库',
+          title: '素材库',
           data: [{
             part: '分类',
             children: [{
-              name: '全部',
+              name: '组合',
               isActive: false,
-              data: []
+              data: [{
+                title: 'Group',
+                avatar: require('../../../assets/image/Group.png'),
+                func: function func() {
+                  var mesh = new THREE.Group();
+                  mesh.name = 'Group';
+
+                  editor.execute(new AddObjectCommand(mesh));
+                  var script = { name: '', source: '', xml: document.querySelector('#function_update') };
+                  editor.execute(new AddScriptCommand(editor.selected, script));
+                  editor.getWorkspace();
+                }
+              }]
             }, {
-              name: '测试',
+              name: '形状',
               isActive: false,
-              data: []
-            }]
-          }, {
-            part: '主题',
-            children: [{
-              name: '测试',
-              isActive: true,
-              data: []
+              data: [{
+                title: 'Plane',
+                avatar: require('../../../assets/image/Plane.png'),
+                func: function func() {
+                  var geometry = new THREE.PlaneBufferGeometry(1, 1, 1, 1);
+                  var material = new THREE.MeshStandardMaterial();
+                  var mesh = new THREE.Mesh(geometry, material);
+                  mesh.name = 'Plane';
+
+                  editor.execute(new AddObjectCommand(mesh));
+                  var script = { name: '', source: '', xml: document.querySelector('#function_update') };
+                  editor.execute(new AddScriptCommand(editor.selected, script));
+                  editor.getWorkspace();
+                }
+              }, {
+                title: 'Box',
+                avatar: require('../../../assets/image/Box.png'),
+                func: function func() {
+                  var geometry = new THREE.BoxBufferGeometry(1, 1, 1, 1, 1, 1);
+                  var mesh = new THREE.Mesh(geometry, new THREE.MeshStandardMaterial());
+                  mesh.name = 'Box';
+
+                  editor.execute(new AddObjectCommand(mesh));
+                  var script = { name: '', source: '', xml: document.querySelector('#function_update') };
+                  editor.execute(new AddScriptCommand(editor.selected, script));
+                  editor.getWorkspace();
+                }
+              }, {
+                title: 'Circle',
+                avatar: require('../../../assets/image/Circle.png'),
+                func: function func() {
+                  var geometry = new THREE.CircleBufferGeometry(1, 8, 0, Math.PI * 2);
+                  var mesh = new THREE.Mesh(geometry, new THREE.MeshStandardMaterial());
+                  mesh.name = 'Circle';
+
+                  editor.execute(new AddObjectCommand(mesh));
+                  var script = { name: '', source: '', xml: document.querySelector('#function_update') };
+                  editor.execute(new AddScriptCommand(editor.selected, script));
+                  editor.getWorkspace();
+                }
+              }, {
+                title: 'Cylinder',
+                avatar: require('../../../assets/image/Cylinder.png'),
+                func: function func() {
+                  var geometry = new THREE.CylinderBufferGeometry(1, 1, 1, 8, 1, false, 0, Math.PI * 2);
+                  var mesh = new THREE.Mesh(geometry, new THREE.MeshStandardMaterial());
+                  mesh.name = 'Cylinder';
+
+                  editor.execute(new AddObjectCommand(mesh));
+                  var script = { name: '', source: '', xml: document.querySelector('#function_update') };
+                  editor.execute(new AddScriptCommand(editor.selected, script));
+                  editor.getWorkspace();
+                }
+              }, {
+                title: 'Sphere',
+                avatar: require('../../../assets/image/Sphere.png'),
+                func: function func() {
+                  var geometry = new THREE.SphereBufferGeometry(1, 8, 6, 0, Math.PI * 2, 0, Math.PI);
+                  var mesh = new THREE.Mesh(geometry, new THREE.MeshStandardMaterial());
+                  mesh.name = 'Sphere';
+
+                  editor.execute(new AddObjectCommand(mesh));
+                  var script = { name: '', source: '', xml: document.querySelector('#function_update') };
+                  editor.execute(new AddScriptCommand(editor.selected, script));
+                  editor.getWorkspace();
+                }
+              }, {
+                title: 'Icosahedron',
+                avatar: require('../../../assets/image/Lcosahedron.png'),
+                func: function func() {
+                  var geometry = new THREE.IcosahedronGeometry(1, 0);
+                  var mesh = new THREE.Mesh(geometry, new THREE.MeshStandardMaterial());
+                  mesh.name = 'Icosahedron';
+
+                  editor.execute(new AddObjectCommand(mesh));
+                  var script = { name: '', source: '', xml: document.querySelector('#function_update') };
+                  editor.execute(new AddScriptCommand(editor.selected, script));
+                  editor.getWorkspace();
+                }
+              }, {
+                title: 'Torus',
+                avatar: require('../../../assets/image/Torus.png'),
+                func: function func() {
+                  var geometry = new THREE.TorusBufferGeometry(1, 0.4, 8, 6, Math.PI * 2);
+                  var mesh = new THREE.Mesh(geometry, new THREE.MeshStandardMaterial());
+                  mesh.name = 'Torus';
+
+                  editor.execute(new AddObjectCommand(mesh));
+                  var script = { name: '', source: '', xml: document.querySelector('#function_update') };
+                  editor.execute(new AddScriptCommand(editor.selected, script));
+                  editor.getWorkspace();
+                }
+              }, {
+                title: 'TorusKnot',
+                avatar: require('../../../assets/image/TorusKnot.png'),
+                func: function func() {
+                  var geometry = new THREE.TorusKnotBufferGeometry(1, 0.4, 64, 8, 2, 3);
+                  var mesh = new THREE.Mesh(geometry, new THREE.MeshStandardMaterial());
+                  mesh.name = 'TorusKnot';
+
+                  editor.execute(new AddObjectCommand(mesh));
+                  var script = { name: '', source: '', xml: document.querySelector('#function_update') };
+                  editor.execute(new AddScriptCommand(editor.selected, script));
+                  editor.getWorkspace();
+                }
+              }, {
+                title: 'Lathe',
+                avatar: require('../../../assets/image/Lathe.png'),
+                func: function func() {
+                  var points = [new THREE.Vector2(0, 0), new THREE.Vector2(0.4, 0), new THREE.Vector2(0.35, 0.05), new THREE.Vector2(0.1, 0.075), new THREE.Vector2(0.08, 0.1), new THREE.Vector2(0.08, 0.4), new THREE.Vector2(0.1, 0.42), new THREE.Vector2(0.14, 0.48), new THREE.Vector2(0.2, 0.5), new THREE.Vector2(0.25, 0.54), new THREE.Vector2(0.3, 1.2)];
+
+                  var geometry = new THREE.LatheBufferGeometry(points, 12, 0, Math.PI * 2);
+                  var mesh = new THREE.Mesh(geometry, new THREE.MeshStandardMaterial({ side: THREE.DoubleSide }));
+                  mesh.name = 'Lathe';
+
+                  editor.execute(new AddObjectCommand(mesh));
+                  var script = { name: '', source: '', xml: document.querySelector('#function_update') };
+                  editor.execute(new AddScriptCommand(editor.selected, script));
+                  editor.getWorkspace();
+                }
+              }, {
+                title: 'Sprite',
+                avatar: require('../../../assets/image/Sprite.png'),
+                func: function func() {
+                  var sprite = new THREE.Sprite(new THREE.SpriteMaterial());
+                  sprite.name = 'Sprite';
+
+                  editor.execute(new AddObjectCommand(sprite));
+                }
+              }]
+            }, {
+              name: '光线',
+              isActive: false,
+              data: [{
+                title: 'PointLight',
+                avatar: require('../../../assets/image/PointLight.png'),
+                func: function func() {
+                  var color = 0xffffff;
+                  var intensity = 1;
+                  var distance = 0;
+
+                  var light = new THREE.PointLight(color, intensity, distance);
+                  light.name = 'PointLight';
+
+                  editor.execute(new AddObjectCommand(light));
+                }
+              }, {
+                title: 'SpotLight',
+                avatar: require('../../../assets/image/SpotLight.png'),
+                func: function func() {
+                  var color = 0xffffff;
+                  var intensity = 1;
+                  var distance = 0;
+                  var angle = Math.PI * 0.1;
+                  var penumbra = 0;
+
+                  var light = new THREE.SpotLight(color, intensity, distance, angle, penumbra);
+                  light.name = 'SpotLight';
+                  light.target.name = 'SpotLight Target';
+
+                  light.position.set(5, 10, 7.5);
+
+                  editor.execute(new AddObjectCommand(light));
+                }
+              }, {
+                title: 'DirectionalLight',
+                avatar: require('../../../assets/image/DirectionalLight.png'),
+                func: function func() {
+                  var color = 0xffffff;
+                  var intensity = 1;
+
+                  var light = new THREE.DirectionalLight(color, intensity);
+                  light.name = 'DirectionalLight';
+                  light.target.name = 'DirectionalLight Target';
+
+                  light.position.set(5, 10, 7.5);
+
+                  editor.execute(new AddObjectCommand(light));
+                }
+              }, {
+                title: 'HemisphereLight',
+                avatar: require('../../../assets/image/HemisphereLight.png'),
+                func: function func() {
+                  var skyColor = 0x00aaff;
+                  var groundColor = 0xffaa00;
+                  var intensity = 1;
+
+                  var light = new THREE.HemisphereLight(skyColor, groundColor, intensity);
+                  light.name = 'HemisphereLight';
+
+                  light.position.set(0, 10, 0);
+
+                  editor.execute(new AddObjectCommand(light));
+                }
+              }, {
+                title: 'AmbientLight',
+                avatar: '',
+                func: function func() {
+                  var color = 0x222222;
+
+                  var light = new THREE.AmbientLight(color);
+                  light.name = 'AmbientLight';
+
+                  editor.execute(new AddObjectCommand(light));
+                }
+              }]
+            }, {
+              name: '视角相机',
+              isActive: false,
+              data: [{
+                title: 'PerspectiveCamera',
+                avatar: require('../../../assets/image/PerspectiveCamera.png'),
+                func: function func() {
+                  var camera = new THREE.PerspectiveCamera(50, 1, 1, 10000);
+                  camera.name = 'PerspectiveCamera';
+
+                  editor.execute(new AddObjectCommand(camera));
+                }
+              }]
             }]
           }]
         }
-      }
+      },
+      models: [],
+      modelIndex: -1
     };
     return _this;
   }
 
   _createClass(Checkmodal, [{
+    key: 'addNewModel',
+    value: function addNewModel() {
+      if (this.state.modelIndex !== -1) {
+        this.state.models[this.state.modelIndex].func();
+        this.closeModal();
+        this.props.checkToBackground();
+        this.props.checkToBackgroundView();
+        this.setState({
+          modelIndex: -1
+        });
+      }
+    }
+  }, {
     key: 'closeModal',
     value: function closeModal() {
       this.setState({
         showModal: false
+      });
+    }
+  }, {
+    key: 'modelCheck',
+    value: function modelCheck(index) {
+      this.setState({
+        modelIndex: index
       });
     }
   }, {
@@ -60044,7 +63353,9 @@ var Checkmodal = function (_Component) {
         data[role].data[i].children[index].isActive = true;
 
         return {
-          data: data
+          data: data,
+          modelIndex: -1,
+          models: data[role].data[i].children[index].data
         };
       });
     }
@@ -60055,7 +63366,9 @@ var Checkmodal = function (_Component) {
 
       var _state = this.state,
           showModal = _state.showModal,
-          data = _state.data;
+          data = _state.data,
+          models = _state.models,
+          modelIndex = _state.modelIndex;
       var role = this.props.role;
 
 
@@ -60103,13 +63416,35 @@ var Checkmodal = function (_Component) {
           _react2.default.createElement(
             'div',
             { className: 'gra-modal-right-wrapper' },
-            _react2.default.createElement('div', { className: 'gra-modal-content-wrapper' }),
+            _react2.default.createElement(
+              'div',
+              { className: 'gra-modal-content-wrapper' },
+              _react2.default.createElement(
+                'ul',
+                { className: 'gra-modal-content-list' },
+                models.map(function (item, i) {
+                  return _react2.default.createElement(
+                    'li',
+                    {
+                      className: 'gra-modal-content-list-item ' + (modelIndex === i ? 'active' : ''),
+                      onClick: _this2.modelCheck.bind(_this2, i),
+                      key: item.title },
+                    _react2.default.createElement('img', { src: item.avatar, className: 'gra-modal-content-list-item-avatar' }),
+                    _react2.default.createElement(
+                      'p',
+                      { className: 'gra-modal-content-list-item-desc' },
+                      item.title
+                    )
+                  );
+                })
+              )
+            ),
             _react2.default.createElement(
               'div',
               { className: 'gra-modal-content-operate-wrapper' },
               _react2.default.createElement(
                 'a',
-                { href: 'javascript:;', className: 'btn btn-primary' },
+                { href: 'javascript:;', className: 'btn btn-primary', onClick: this.addNewModel.bind(this) },
                 '\u786E\u5B9A'
               ),
               _react2.default.createElement(
@@ -60128,13 +63463,13 @@ var Checkmodal = function (_Component) {
 }(_react.Component);
 
 exports.default = Checkmodal;
-},{"react":39,"./Checkmodal.scss":36}],19:[function(require,module,exports) {
+},{"react":57,"./Checkmodal.scss":50,"../../../assets/image/Group.png":31,"../../../assets/image/Plane.png":32,"../../../assets/image/Box.png":33,"../../../assets/image/Circle.png":34,"../../../assets/image/Cylinder.png":35,"../../../assets/image/Sphere.png":36,"../../../assets/image/Lcosahedron.png":37,"../../../assets/image/Torus.png":38,"../../../assets/image/TorusKnot.png":39,"../../../assets/image/Lathe.png":40,"../../../assets/image/Sprite.png":41,"../../../assets/image/PointLight.png":42,"../../../assets/image/SpotLight.png":43,"../../../assets/image/DirectionalLight.png":44,"../../../assets/image/HemisphereLight.png":45,"../../../assets/image/PerspectiveCamera.png":46}],20:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":12}],16:[function(require,module,exports) {
+},{"_css_loader":10}],18:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -60195,19 +63530,30 @@ var Container = function (_Component) {
       });
     }
   }, {
+    key: 'checkToBackgroundView',
+    value: function checkToBackgroundView() {
+      this.contentContainer.checkToBackgroundTab();
+      this.contentContainer.indexChange(1);
+    }
+  }, {
     key: 'showModal',
     value: function showModal(role) {
+      var _this2 = this;
+
       if (role) {
         this.setState({
           role: role
+        }, function () {
+          _this2.checkModal.showModal();
         });
+      } else {
+        this.checkModal.showModal();
       }
-      this.checkModal.showModal();
     }
   }, {
     key: 'render',
     value: function render() {
-      var _this2 = this;
+      var _this3 = this;
 
       var role = this.state.role;
 
@@ -60226,16 +63572,27 @@ var Container = function (_Component) {
           _react2.default.createElement(
             'div',
             { className: 'gra-left-bottom-wrapper' },
-            _react2.default.createElement(_Editor2.default, { role: role, checkToBackground: this.checkToBackground.bind(this), showModal: this.showModal.bind(this) })
+            _react2.default.createElement(_Editor2.default, {
+              role: role,
+              checkToBackground: this.checkToBackground.bind(this),
+              showModal: this.showModal.bind(this) })
           )
         ),
         _react2.default.createElement(
           'div',
           { className: 'gra-right-wrapper' },
-          _react2.default.createElement(_Content2.default, { role: role })
+          _react2.default.createElement(_Content2.default, {
+            role: role,
+            ref: function ref(contentContainer) {
+              return _this3.contentContainer = contentContainer;
+            } })
         ),
-        _react2.default.createElement(_Checkmodal2.default, { role: role, ref: function ref(checkModal) {
-            return _this2.checkModal = checkModal;
+        _react2.default.createElement(_Checkmodal2.default, {
+          role: role,
+          checkToBackground: this.checkToBackground.bind(this),
+          checkToBackgroundView: this.checkToBackgroundView.bind(this),
+          ref: function ref(checkModal) {
+            return _this3.checkModal = checkModal;
           } })
       );
     }
@@ -60245,7 +63602,7 @@ var Container = function (_Component) {
 }(_react.Component);
 
 exports.default = Container;
-},{"react":39,"./Screen/Screen":20,"./Editor/Editor":21,"./Content/Content":22,"./Checkmodal/Checkmodal":23,"./Container.scss":19}],9:[function(require,module,exports) {
+},{"react":57,"./Screen/Screen":21,"./Editor/Editor":22,"./Content/Content":23,"./Checkmodal/Checkmodal":24,"./Container.scss":20}],12:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -60299,19 +63656,25 @@ var App = function (_Component) {
 }(_react.Component);
 
 exports.default = App;
-},{"react":39,"./components/Header/Header":17,"./components/Container":16}],10:[function(require,module,exports) {
+},{"react":57,"./components/Header/Header":19,"./components/Container":18}],11:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":12}],11:[function(require,module,exports) {
+},{"_css_loader":10}],13:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"./iconfont.eot":[["52fc726a6e8818256ee0fc6c50b9e084.eot",13],13],"./iconfont.ttf":[["04e0360c30e5af3cd8fde800632c3cf1.ttf",14],14],"./iconfont.svg":[["26565906627a51cc3d91a6dd519f3436.svg",15],15],"_css_loader":12}],3:[function(require,module,exports) {
+},{"./iconfont.eot":[["52fc726a6e8818256ee0fc6c50b9e084.eot",15],15],"./iconfont.ttf":[["04e0360c30e5af3cd8fde800632c3cf1.ttf",16],16],"./iconfont.svg":[["26565906627a51cc3d91a6dd519f3436.svg",17],17],"_css_loader":10}],3:[function(require,module,exports) {
+
+        var reloadCSS = require('_css_loader');
+        module.hot.dispose(reloadCSS);
+        module.hot.accept(reloadCSS);
+      
+},{"_css_loader":10}],4:[function(require,module,exports) {
 'use strict';
 
 var _react = require('react');
@@ -60330,10 +63693,12 @@ require('./assets/css/reset.css');
 
 require('./assets/icon/iconfont.css');
 
+require('sweetalert2/dist/sweetalert2.min.css');
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 _reactDom2.default.render(_react2.default.createElement(_App2.default, null), document.querySelector('#app'));
-},{"react":39,"react-dom":38,"./src/App":9,"./assets/css/reset.css":10,"./assets/icon/iconfont.css":11}],92:[function(require,module,exports) {
+},{"react":57,"react-dom":58,"./src/App":12,"./assets/css/reset.css":11,"./assets/icon/iconfont.css":13,"sweetalert2/dist/sweetalert2.min.css":3}],126:[function(require,module,exports) {
 
 var global = (1, eval)('this');
 var OldModule = module.bundle.Module;
@@ -60355,7 +63720,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '33533' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '41792' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -60456,5 +63821,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.require, id);
   });
 }
-},{}]},{},[92,3])
+},{}]},{},[126,4])
 //# sourceMappingURL=/dist/491ce5ddacbb3a68e098914ade110dda.map

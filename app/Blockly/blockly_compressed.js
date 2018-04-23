@@ -1626,7 +1626,20 @@ Blockly.onKeyDown_=function(a){if(!Blockly.mainWorkspace.options.readOnly&&!Bloc
 Blockly.copy_(Blockly.selected)):88!=a.keyCode||Blockly.selected.workspace.isFlyout||(Blockly.copy_(Blockly.selected),b=!0));86==a.keyCode?Blockly.clipboardXml_&&(Blockly.Events.setGroup(!0),a=Blockly.clipboardSource_,a.isFlyout&&(a=a.targetWorkspace),a.paste(Blockly.clipboardXml_),Blockly.Events.setGroup(!1)):90==a.keyCode&&(Blockly.hideChaff(),Blockly.mainWorkspace.undo(a.shiftKey))}b&&!Blockly.selected.workspace.isFlyout&&(Blockly.Events.setGroup(!0),Blockly.hideChaff(),Blockly.selected.dispose(!0,
 !0),Blockly.Events.setGroup(!1))}};Blockly.copy_=function(a){var b=Blockly.Xml.blockToDom(a);Blockly.Xml.deleteNext(b);var c=a.getRelativeToSurfaceXY();b.setAttribute("x",a.RTL?-c.x:c.x);b.setAttribute("y",c.y);Blockly.clipboardXml_=b;Blockly.clipboardSource_=a.workspace};Blockly.duplicate_=function(a){var b=Blockly.clipboardXml_,c=Blockly.clipboardSource_;Blockly.copy_(a);a.workspace.paste(Blockly.clipboardXml_);Blockly.clipboardXml_=b;Blockly.clipboardSource_=c};
 Blockly.onContextMenu_=function(a){Blockly.utils.isTargetInput(a)||a.preventDefault()};Blockly.hideChaff=function(a){Blockly.Tooltip.hide();Blockly.WidgetDiv.hide();a||(a=Blockly.getMainWorkspace(),a.toolbox_&&a.toolbox_.flyout_&&a.toolbox_.flyout_.autoClose&&a.toolbox_.clearSelection())};Blockly.addChangeListener=function(a){console.warn("Deprecated call to Blockly.addChangeListener, use workspace.addChangeListener instead.");return Blockly.getMainWorkspace().addChangeListener(a)};
-Blockly.getMainWorkspace=function(){return Blockly.mainWorkspace};Blockly.alert=function(a,b){window.alert(a);b&&b()};Blockly.confirm=function(a,b){b(window.confirm(a))};Blockly.prompt=function(a,b,c){c(window.prompt(a,b))};Blockly.jsonInitFactory_=function(a){return function(){this.jsonInit(a)}};
+Blockly.getMainWorkspace=function(){return Blockly.mainWorkspace};Blockly.alert=function(a,b){window.alert(a);b&&b()};Blockly.confirm=function(a,b){b(window.confirm(a))};Blockly.prompt=function(a,b,c){
+  sweetalert2({
+    title: a,
+    input: 'text',
+    showCancelButton: true,
+    confirmButtonText: '确定',
+    showLoaderOnConfirm: true,
+    allowOutsideClick: () => !sweetalert2.isLoading()
+  }).then((result) => {
+    if (result.value) {
+      c(result.value)
+    }
+  })
+};Blockly.jsonInitFactory_=function(a){return function(){this.jsonInit(a)}};
 Blockly.defineBlocksWithJsonArray=function(a){for(var b=0,c;c=a[b];b++){var d=c.type;null==d||""===d?console.warn("Block definition #"+b+" in JSON array is missing a type attribute. Skipping."):(Blockly.Blocks[d]&&console.warn("Block definition #"+b+' in JSON array overwrites prior definition of "'+d+'".'),Blockly.Blocks[d]={init:Blockly.jsonInitFactory_(c)})}};
 Blockly.bindEventWithChecks_=function(a,b,c,d,e,f){var g=!1,h=function(a){var b=!e;a=Blockly.Touch.splitEventByTouches(a);for(var f=0,h;h=a[f];f++)if(!b||Blockly.Touch.shouldHandleEvent(h))Blockly.Touch.setClientFromTouch(h),c?d.call(c,h):d(h),g=!0};a.addEventListener(b,h,!1);var k=[[a,b,h]];if(b in Blockly.Touch.TOUCH_MAP)for(var n=function(a){h(a);var b=!f;g&&b&&a.preventDefault()},p=0,l;l=Blockly.Touch.TOUCH_MAP[b][p];p++)a.addEventListener(l,n,!1),k.push([a,l,n]);return k};
 Blockly.bindEvent_=function(a,b,c,d){var e=function(a){c?d.call(c,a):d(a)};a.addEventListener(b,e,!1);var f=[[a,b,e]];if(b in Blockly.Touch.TOUCH_MAP)for(var g=function(a){if(a.changedTouches&&1==a.changedTouches.length){var b=a.changedTouches[0];a.clientX=b.clientX;a.clientY=b.clientY}e(a);a.preventDefault()},h=0,k;k=Blockly.Touch.TOUCH_MAP[b][h];h++)a.addEventListener(k,g,!1),f.push([a,k,g]);return f};

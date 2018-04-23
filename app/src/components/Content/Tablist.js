@@ -28,8 +28,8 @@ export default class Tablist extends Component {
       <div className="gra-content-tab-list">
         <ul className="gra-content-list">
           {tabList.map((item, i) => {
-            if (role === 'background' && i === 3) return null
-            else if (role === 'role' && i === 1) return null
+            // if (role === 'background' && i === 3) return null
+            // else if (role === 'role' && i === 1) return null
             return (
               <li 
                 className={`gra-content-list-item ${tabIndex === i ? 'active' : ''}`}

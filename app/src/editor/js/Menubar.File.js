@@ -379,10 +379,12 @@ Menubar.File = function ( editor ) {
 	}
 
 	function saveString( text, filename ) {
-
+	
 		save( new Blob( [ text ], { type: 'text/plain' } ), filename );
 
 	}
+
+	window.saveString = saveString
 
 	return container;
 

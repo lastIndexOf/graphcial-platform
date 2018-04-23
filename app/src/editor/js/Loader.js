@@ -620,6 +620,19 @@ var Loader = function ( editor ) {
 
 			case 'app':
 
+				for (let key in data.scripts) {
+					data.scripts[key][0].xml = 
+						(function () {
+							let xml = document.createElement('xml')
+							
+							xml.innerHTML = data.scripts[key][0].xml
+
+							return xml
+						})() 
+						|| ''
+				}
+
+				console.log(data)
 				editor.fromJSON( data );
 
 				break;

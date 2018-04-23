@@ -83,7 +83,7 @@ var Script = function ( editor ) {
 			if ( typeof( currentScript ) === 'object' ) {
 
 				if ( value !== currentScript.source ) {
-
+					// console.log(value)
 					editor.execute( new SetScriptValueCommand( currentObject, currentScript, 'source', value ) );
 
 				}

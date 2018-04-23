@@ -1,0 +1,23 @@
+{
+	"metadata": {
+		"version": 4.5,
+		"type": "Object",
+		"generator": "Object3D.toJSON"
+	},
+	"materials": [
+		{
+			"uuid": "944F467E-6F0C-4438-8C9A-CDC0177C9780",
+			"type": "SpriteMaterial",
+			"color": 16777215,
+			"depthFunc": 3,
+			"depthTest": true,
+			"depthWrite": true
+		}],
+	"object": {
+		"uuid": "3125E426-1357-4251-A514-62383391465D",
+		"type": "Sprite",
+		"name": "Sprite",
+		"matrix": [1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1],
+		"material": "944F467E-6F0C-4438-8C9A-CDC0177C9780"
+	}
+}

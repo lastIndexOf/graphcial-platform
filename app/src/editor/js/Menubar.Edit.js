@@ -94,7 +94,7 @@ Menubar.Edit = function ( editor ) {
 		if ( object.parent === null ) return; // avoid cloning the camera or scene
 
 		object = object.clone();
-
+		
 		editor.execute( new AddObjectCommand( object ) );
 
 	} );

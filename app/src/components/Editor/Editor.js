@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 
 import './Editor.scss'
 
+import sweetalert from 'sweetalert2'
+
 export default class Editor extends Component {
   constructor () {
     super()
@@ -19,6 +21,11 @@ export default class Editor extends Component {
     this.props.checkToBackground()
   }
 
+  makeNewRole () {
+    console.log(sweetalert('暂不支持角色建模，请从素材库中选择素材'))
+    
+  }
+
   render () {
     let { bgImgUrl, bgImgTitle, bgImgIsActived } = this.state
     let { role } = this.props
@@ -28,11 +35,11 @@ export default class Editor extends Component {
         <div className="gra-editor-header">
           <div className="gra-editor-header-block"></div>
           <div className="gra-editor-header-role">
-            <span className="gra-editor-role-title">角色</span>
+            <span className="gra-editor-role-title">素材</span>
             <span className="gra-editor-role-operate">
-              新建角色: 
+              新建素材: 
               <i className="iconfont icon-addrole gra-icon-addrole" onClick={this.addBackground.bind(this, 'role')}></i>
-              <i className="iconfont icon-huabi gra-icon-draw"></i>
+              <i className="iconfont icon-huabi gra-icon-draw" onClick={this.makeNewRole.bind(this)}></i>
               <i className="iconfont icon-shangchuan1 gra-icon-upload"></i>
               <i className="iconfont icon-xiangji gra-icon-camera"></i>
             </span>
@@ -56,6 +63,9 @@ export default class Editor extends Component {
                 <i className="iconfont icon-xiangji gra-icon-camera"></i>
               </span>
             </div>
+          </div>
+          <div className="gra-editor-main-role-wrapper" id="gra-role-wrapper">
+            
           </div>
         </div>
       </section>

@@ -387,6 +387,16 @@ Editor.prototype = {
 		this.config.setKey( 'selected', uuid );
 		this.signals.objectSelected.dispatch( object );
 
+		this.getWorkspace()
+	},
+
+	getWorkspace: function () {
+		let script = this.selected.uuid && this.scripts[this.selected.uuid] && this.scripts[this.selected.uuid][0]
+
+		workspace.clear()
+		if (script && script.xml) {
+			Blockly.Xml.domToWorkspace(script.xml, window.workspace)
+		}
 	},
 
 	selectById: function ( id ) {

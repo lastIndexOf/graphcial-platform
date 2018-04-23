@@ -137,5 +137,13 @@
         }
       }
     }
+    .gra-editor-main-role-wrapper {
+      position: relative;
+      display:inline-block;
+      height: 100%;
+      width: 80%;
+      box-sizing: border-box;
+      vertical-align: top;
+    }
   }
 }

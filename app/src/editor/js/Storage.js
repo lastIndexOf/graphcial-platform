@@ -87,8 +87,11 @@ var Storage = function () {
 			var request = objectStore.clear();
 			request.onsuccess = function ( event ) {
 
-				console.log( '[' + /\d\d\:\d\d\:\d\d/.exec( new Date() )[ 0 ] + ']', 'Cleared IndexedDB.' );
-
+				console.log( '[' + /\d\d\:\d\d\:\d\d/.exec( new Date() )[ 0 ] + ']', 'Cleared IndexedDB.' )
+				
+				// 添加新项目的scene脚本文件
+				let script = { name: '', source: '', xml: '' }
+        editor.execute(new AddScriptCommand(editor.scene, script))
 			};
 
 		}

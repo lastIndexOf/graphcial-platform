@@ -4102,6 +4102,10 @@ signal-exit@^3.0.0:
   version "3.0.2"
   resolved "http://registry.npm.taobao.org/signal-exit/download/signal-exit-3.0.2.tgz#b5fdc08f1287ea1178628e415e25132b73646c6d"
 
+signals@^1.0.0:
+  version "1.0.0"
+  resolved "http://registry.npm.taobao.org/signals/download/signals-1.0.0.tgz#65f0c1599352b35372ecaae5a250e6107376ed69"
+
 single-line-log@^1.1.2:
   version "1.1.2"
   resolved "http://registry.npm.taobao.org/single-line-log/download/single-line-log-1.1.2.tgz#c2f83f273a3e1a16edb0995661da0ed5ef033364"
@@ -4392,6 +4396,10 @@ svgo@^0.7.0, svgo@^0.7.2:
     mkdirp "~0.5.1"
     sax "~1.2.1"
     whet.extend "~0.9.9"
+
+sweetalert2@^7.18.0:
+  version "7.18.0"
+  resolved "http://registry.npm.taobao.org/sweetalert2/download/sweetalert2-7.18.0.tgz#10f1019aae0a842eebefcf5b06fe42ea1ef53e79"
 
 tar-pack@^3.4.0:
   version "3.4.1"

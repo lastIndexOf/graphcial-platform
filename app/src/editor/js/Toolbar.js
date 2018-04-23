@@ -42,13 +42,13 @@ var Toolbar = function ( editor ) {
 	} );
 	buttons.add( scale );
 
-	var local = new UI.THREE.Boolean( false, 'local' )
-	local.onChange( function () {
+	// var local = new UI.THREE.Boolean( false, 'local' )
+	// local.onChange( function () {
 
-		signals.spaceChanged.dispatch( this.getValue() === true ? 'local' : 'world' );
+	// 	signals.spaceChanged.dispatch( this.getValue() === true ? 'local' : 'world' );
 
-	} );
-	buttons.add( local );
+	// } );
+	// buttons.add( local );
 
 	signals.transformModeChanged.add( function ( mode ) {
 

@@ -539,6 +539,7 @@ THREE.OrbitControls = function ( object, domElement ) {
 
 	function handleKeyDown( event ) {
 
+		console.log(event)
 		//console.log( 'handleKeyDown' );
 
 		switch ( event.keyCode ) {

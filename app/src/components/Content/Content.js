@@ -19,9 +19,16 @@ export default class Content extends Component {
   }
   
   indexChange (index) {
+    this.background.getCanvasView()
     this.setState({
       tabIndex: index
+    }, () => {
+      this.background.getCanvasView()
     })
+  }
+
+  checkToBackgroundTab () {
+    this.tabList.changeIndex(1)
   }
 
   render () {
@@ -29,13 +36,13 @@ export default class Content extends Component {
 
     return (
       <section className="gra-content-wrapper">
-        <Tablist getTab={this.indexChange.bind(this)} role={this.props.role}/>
+        <Tablist getTab={this.indexChange.bind(this)} role={this.props.role} ref={tabList => this.tabList = tabList}/>
         <div className="gra-content-main-wrapper">
           <div className={`gra-content-main-container ${tabIndex === 0 ? '' : 'hidden'}`}>
             <Script />
           </div>
           <div className={`gra-content-main-container ${tabIndex === 1 ? '' : 'hidden'}`}>
-            <Background />
+            <Background ref={background => this.background = background}/>
           </div>
           <div className={`gra-content-main-container ${tabIndex === 2 ? '' : 'hidden'}`}>
             <Voice />

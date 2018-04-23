@@ -17,6 +17,7 @@ var Sidebar = function ( editor ) {
 	tabs.setId( 'tabs' );
 	tabs.add( sceneTab, projectTab, settingsTab );
 	container.add( tabs );
+	tabs.dom.style.display = 'none';
 
 	function onClick( event ) {
 
@@ -28,9 +29,9 @@ var Sidebar = function ( editor ) {
 
 	var scene = new UI.Span().add(
 		new Sidebar.Scene( editor ),
-		new Sidebar.Properties( editor ),
-		new Sidebar.Animation( editor ),
-		new Sidebar.Script( editor )
+		// new Sidebar.Properties( editor ),
+		// new Sidebar.Animation( editor ),
+		// new Sidebar.Script( editor )
 	);
 	container.add( scene );
 

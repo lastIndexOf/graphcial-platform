@@ -18,14 +18,14 @@ Sidebar.Script = function ( editor ) {
 	var scriptsContainer = new UI.Row();
 	container.add( scriptsContainer );
 
-	var newScript = new UI.Button( 'New' );
-	newScript.onClick( function () {
+	// var newScript = new UI.Button( 'New' );
+	// newScript.onClick( function () {
 
-		var script = { name: '', source: 'function update( event ) {}' };
-		editor.execute( new AddScriptCommand( editor.selected, script ) );
+	// 	var script = { name: '', source: 'function update( event ) {}' };
+	// 	editor.execute( new AddScriptCommand( editor.selected, script ) );
 
-	} );
-	container.add( newScript );
+	// } );
+	// container.add( newScript );
 
 	/*
 	var loadScript = new UI.Button( 'Load' );
@@ -47,7 +47,7 @@ Sidebar.Script = function ( editor ) {
 			return;
 
 		}
-
+		
 		var scripts = editor.scripts[ object.uuid ];
 
 		if ( scripts !== undefined ) {

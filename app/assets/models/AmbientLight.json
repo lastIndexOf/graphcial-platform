@@ -1,0 +1,15 @@
+{
+	"metadata": {
+		"version": 4.5,
+		"type": "Object",
+		"generator": "Object3D.toJSON"
+	},
+	"object": {
+		"uuid": "46780208-6F2F-4791-A137-26B6965D7376",
+		"type": "AmbientLight",
+		"name": "AmbientLight",
+		"matrix": [1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1],
+		"color": 2236962,
+		"intensity": 1
+	}
+}

@@ -6,11 +6,173 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>郑凡恺的儿童教育平台</title>
   <link rel="icon" href="/dist/02c9696451198c760c0b9c2680892ac7.ico" type="image/x-icon">
-<link rel="stylesheet" href="/dist/491ce5ddacbb3a68e098914ade110dda.css"></head>
-<body>
+<script src="/dist/a5baf78f88206fde7acbe6401f3aa779.js"></script><link rel="stylesheet" href="/dist/491ce5ddacbb3a68e098914ade110dda.css"></head>
+<body ontouchstart="">
+  <link href="/dist/a5baf78f88206fde7acbe6401f3aa779.css" rel="stylesheet">
+  <script>
+    window.sweetalert2 = require('sweetalert2')
+  </script>
+  <link href="http://localhost:4040/css/main.css" rel="stylesheet">
+  <link id="theme" href="http://localhost:4040/css/dark.css" rel="stylesheet">
+  <link id="theme" href="http://localhost:4040/css/light.css" rel="stylesheet">
+
+  <script src="http://localhost:4040/./three.js"></script>
+  <script src="http://localhost:4040/./render/js/libs/system.min.js"></script>
+
+  <script src="http://localhost:4040/./render/js/controls/EditorControls.js"></script>
+  <script src="http://localhost:4040/./render/js/controls/TransformControls.js"></script>
+
+  <script src="http://localhost:4040/./render/js/libs/jszip.min.js"></script>
+  <script src="http://localhost:4040/./render/js/libs/inflate.min.js"></script> <!-- FBX -->
+
+  <script src="http://localhost:4040/./render/js/loaders/AMFLoader.js"></script>
+  <script src="http://localhost:4040/./render/js/loaders/AWDLoader.js"></script>
+  <script src="http://localhost:4040/./render/js/loaders/BabylonLoader.js"></script>
+  <script src="http://localhost:4040/./render/js/loaders/ColladaLoader.js"></script>
+  <script src="http://localhost:4040/./render/js/loaders/FBXLoader.js"></script>
+  <script src="http://localhost:4040/./render/js/loaders/GLTFLoader.js"></script>
+  <script src="http://localhost:4040/./render/js/loaders/deprecated/LegacyGLTFLoader.js"></script>
+  <script src="http://localhost:4040/./render/js/loaders/KMZLoader.js"></script>
+  <script src="http://localhost:4040/./render/js/loaders/MD2Loader.js"></script>
+  <script src="http://localhost:4040/./render/js/loaders/OBJLoader.js"></script>
+  <script src="http://localhost:4040/./render/js/loaders/MTLLoader.js"></script>
+  <script src="http://localhost:4040/./render/js/loaders/PlayCanvasLoader.js"></script>
+  <script src="http://localhost:4040/./render/js/loaders/PLYLoader.js"></script>
+  <script src="http://localhost:4040/./render/js/loaders/STLLoader.js"></script>
+  <script src="http://localhost:4040/./render/js/loaders/SVGLoader.js"></script>
+  <script src="http://localhost:4040/./render/js/loaders/TGALoader.js"></script>
+  <script src="http://localhost:4040/./render/js/loaders/TDSLoader.js"></script>
+  <script src="http://localhost:4040/./render/js/loaders/UTF8Loader.js"></script>
+  <script src="http://localhost:4040/./render/js/loaders/VRMLLoader.js"></script>
+  <script src="http://localhost:4040/./render/js/loaders/VTKLoader.js"></script>
+  <script src="http://localhost:4040/./render/js/loaders/ctm/lzma.js"></script>
+  <script src="http://localhost:4040/./render/js/loaders/ctm/ctm.js"></script>
+  <script src="http://localhost:4040/./render/js/loaders/ctm/CTMLoader.js"></script>
+  <script src="http://localhost:4040/./render/js/exporters/OBJExporter.js"></script>
+  <script src="http://localhost:4040/./render/js/exporters/GLTFExporter.js"></script>
+  <script src="http://localhost:4040/./render/js/exporters/STLExporter.js"></script>
+
+  <script src="http://localhost:4040/./render/js/renderers/Projector.js"></script>
+  <script src="http://localhost:4040/./render/js/renderers/CanvasRenderer.js"></script>
+  <script src="http://localhost:4040/./render/js/renderers/RaytracingRenderer.js"></script>
+  <script src="http://localhost:4040/./render/js/renderers/SoftwareRenderer.js"></script>
+  <script src="http://localhost:4040/./render/js/renderers/SVGRenderer.js"></script>
+
+  <link rel="stylesheet" href="http://localhost:4040/js/libs/codemirror/codemirror.css">
+  <link rel="stylesheet" href="http://localhost:4040/js/libs/codemirror/theme/monokai.css">
+  <script src="http://localhost:4040/js/libs/codemirror/codemirror.js"></script>
+  <script src="http://localhost:4040/js/libs/codemirror/mode/javascript.js"></script>
+  <script src="http://localhost:4040/js/libs/codemirror/mode/glsl.js"></script>
+
+  <script src="http://localhost:4040/js/libs/esprima.js"></script>
+  <script src="http://localhost:4040/js/libs/jsonlint.js"></script>
+  <script src="http://localhost:4040/js/libs/glslprep.min.js"></script>
+
+  <link rel="stylesheet" href="http://localhost:4040/js/libs/codemirror/addon/dialog.css">
+  <link rel="stylesheet" href="http://localhost:4040/js/libs/codemirror/addon/show-hint.css">
+  <link rel="stylesheet" href="http://localhost:4040/js/libs/codemirror/addon/tern.css">
+  <script src="http://localhost:4040/js/libs/codemirror/addon/dialog.js"></script>
+  <script src="http://localhost:4040/js/libs/codemirror/addon/show-hint.js"></script>
+  <script src="http://localhost:4040/js/libs/codemirror/addon/tern.js"></script>
+  <script src="http://localhost:4040/js/libs/acorn/acorn.js"></script>
+  <script src="http://localhost:4040/js/libs/acorn/acorn_loose.js"></script>
+  <script src="http://localhost:4040/js/libs/acorn/walk.js"></script>
+  <script src="http://localhost:4040/js/libs/ternjs/polyfill.js"></script>
+  <script src="http://localhost:4040/js/libs/ternjs/signal.js"></script>
+  <script src="http://localhost:4040/js/libs/ternjs/tern.js"></script>
+  <script src="http://localhost:4040/js/libs/ternjs/def.js"></script>
+  <script src="http://localhost:4040/js/libs/ternjs/comment.js"></script>
+  <script src="http://localhost:4040/js/libs/ternjs/infer.js"></script>
+  <script src="http://localhost:4040/js/libs/ternjs/doc_comment.js"></script>
+  <script src="http://localhost:4040/js/libs/tern-threejs/threejs.js"></script>
+
+  <script src="http://localhost:4040/js/libs/signals.min.js"></script>
+  <script src="http://localhost:4040/js/libs/ui.js"></script>
+  <script src="http://localhost:4040/js/libs/ui.three.js"></script>
+
+  <script src="http://localhost:4040/js/libs/app.js"></script>
+  <script src="http://localhost:4040/js/Player.js"></script>
+  <script src="http://localhost:4040/js/Script.js"></script>
+
+  <script src="http://localhost:4040/./render/js/vr/WebVR.js"></script>
+
+  <script src="http://localhost:4040/js/Storage.js"></script>
+
+  <script src="http://localhost:4040/js/Editor.js"></script>
+  <script src="http://localhost:4040/js/Config.js"></script>
+  <script src="http://localhost:4040/js/History.js"></script>
+  <script src="http://localhost:4040/js/Loader.js"></script>
+  <script src="http://localhost:4040/js/Menubar.js"></script>
+  <script src="http://localhost:4040/js/Menubar.File.js"></script>
+  <script src="http://localhost:4040/js/Menubar.Edit.js"></script>
+  <script src="http://localhost:4040/js/Menubar.Add.js"></script>
+  <script src="http://localhost:4040/js/Menubar.Play.js"></script>
+  <!-- <script src="http://localhost:4040/js/Menubar.View.js"></script> -->
+  <script src="http://localhost:4040/js/Menubar.Examples.js"></script>
+  <script src="http://localhost:4040/js/Menubar.Help.js"></script>
+  <script src="http://localhost:4040/js/Menubar.Status.js"></script>
+  <script src="http://localhost:4040/js/Sidebar.js"></script>
+  <script src="http://localhost:4040/js/Sidebar.Scene.js"></script>
+  <script src="http://localhost:4040/js/Sidebar.Project.js"></script>
+  <script src="http://localhost:4040/js/Sidebar.Settings.js"></script>
+  <script src="http://localhost:4040/js/Sidebar.Settings.Shortcuts.js"></script>
+  <script src="http://localhost:4040/js/Sidebar.Settings.Viewport.js"></script>
+  <script src="http://localhost:4040/js/Sidebar.Properties.js"></script>
+  <script src="http://localhost:4040/js/Sidebar.Object.js"></script>
+  <script src="http://localhost:4040/js/Sidebar.Geometry.js"></script>
+  <script src="http://localhost:4040/js/Sidebar.Geometry.Geometry.js"></script>
+  <script src="http://localhost:4040/js/Sidebar.Geometry.BufferGeometry.js"></script>
+  <script src="http://localhost:4040/js/Sidebar.Geometry.Modifiers.js"></script>
+  <script src="http://localhost:4040/js/Sidebar.Geometry.BoxGeometry.js"></script>
+  <script src="http://localhost:4040/js/Sidebar.Geometry.CircleGeometry.js"></script>
+  <script src="http://localhost:4040/js/Sidebar.Geometry.CylinderGeometry.js"></script>
+  <script src="http://localhost:4040/js/Sidebar.Geometry.IcosahedronGeometry.js"></script>
+  <script src="http://localhost:4040/js/Sidebar.Geometry.PlaneGeometry.js"></script>
+  <script src="http://localhost:4040/js/Sidebar.Geometry.SphereGeometry.js"></script>
+  <script src="http://localhost:4040/js/Sidebar.Geometry.TorusGeometry.js"></script>
+  <script src="http://localhost:4040/js/Sidebar.Geometry.TorusKnotGeometry.js"></script>
+  <script src="http://localhost:4040/./render/js/geometries/TeapotBufferGeometry.js"></script>
+  <script src="http://localhost:4040/js/Sidebar.Geometry.TeapotBufferGeometry.js"></script>
+  <script src="http://localhost:4040/js/Sidebar.Geometry.LatheGeometry.js"></script>
+  <script src="http://localhost:4040/js/Sidebar.Material.js"></script>
+  <script src="http://localhost:4040/js/Sidebar.Animation.js"></script>
+  <script src="http://localhost:4040/js/Sidebar.Script.js"></script>
+  <script src="http://localhost:4040/js/Sidebar.History.js"></script>
+  <script src="http://localhost:4040/js/Toolbar.js"></script>
+  <script src="http://localhost:4040/js/Viewport.js"></script>
+  <script src="http://localhost:4040/js/Viewport.Info.js"></script>
+
+  <script src="http://localhost:4040/js/Command.js"></script>
+  <script src="http://localhost:4040/js/commands/AddObjectCommand.js"></script>
+  <script src="http://localhost:4040/js/commands/RemoveObjectCommand.js"></script>
+  <script src="http://localhost:4040/js/commands/MoveObjectCommand.js"></script>
+  <script src="http://localhost:4040/js/commands/SetPositionCommand.js"></script>
+  <script src="http://localhost:4040/js/commands/SetRotationCommand.js"></script>
+  <script src="http://localhost:4040/js/commands/SetScaleCommand.js"></script>
+  <script src="http://localhost:4040/js/commands/SetValueCommand.js"></script>
+  <script src="http://localhost:4040/js/commands/SetUuidCommand.js"></script>
+  <script src="http://localhost:4040/js/commands/SetColorCommand.js"></script>
+  <script src="http://localhost:4040/js/commands/SetGeometryCommand.js"></script>
+  <script src="http://localhost:4040/js/commands/SetGeometryValueCommand.js"></script>
+  <script src="http://localhost:4040/js/commands/MultiCmdsCommand.js"></script>
+  <script src="http://localhost:4040/js/commands/AddScriptCommand.js"></script>
+  <script src="http://localhost:4040/js/commands/RemoveScriptCommand.js"></script>
+  <script src="http://localhost:4040/js/commands/SetScriptValueCommand.js"></script>
+  <script src="http://localhost:4040/js/commands/SetMaterialCommand.js"></script>
+  <script src="http://localhost:4040/js/commands/SetMaterialValueCommand.js"></script>
+  <script src="http://localhost:4040/js/commands/SetMaterialColorCommand.js"></script>
+  <script src="http://localhost:4040/js/commands/SetMaterialMapCommand.js"></script>
+  <script src="http://localhost:4040/js/commands/SetSceneCommand.js"></script>
+
+  <script src="http://localhost:4040/js/libs/html2canvas.js"></script>
+  <script src="http://localhost:4040/js/libs/three.html.js"></script>
+
   <div id="app"></div>
   <xml id="toolbox" style="display: none">
     <category id="catLogic" colour="210" name="逻辑">
+      <block type="position"></block>
+      <block type="rotation"></block>
+      <block type="scale"></block>
       <block type="controls_if"></block>
       <block type="logic_compare"></block>
       <block type="logic_operation"></block>
@@ -313,10 +475,19 @@
     <category id="catFunctions" colour="290" custom="PROCEDURE" name="功能"></category>
   </xml>
 
+  <xml id="function_update">
+    <variables></variables>
+    <block type="procedures_defnoreturn" id="iHpxA2hgSpMOFQz?v^X-" x="98" y="195">
+      <field name="NAME">update</field>
+      <comment pinned="false" h="80" w="160">每隔一段时间间隔便会自动执行该函数</comment>
+    </block>
+  </xml>
+
   <script src="/dist/f0e0420dbb78266074e88ede40df1a19.js"></script>
   <script src="/dist/339b61f381d20cdc20363effc759b535.js"></script>
   <script src="/dist/7b9dcb916ec3cdfad2030c2416612dd1.js"></script>
   <script src="/dist/2358750a29b7803e8bd6a06d99e54a71.js"></script>
+  <script src="/dist/0e8f246e08ae82545da4c635133f4f79.js"></script>
   <script src="/dist/491ce5ddacbb3a68e098914ade110dda.js"></script>
 </body>
 </html>

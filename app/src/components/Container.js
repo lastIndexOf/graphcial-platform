@@ -22,13 +22,21 @@ export default class Container extends Component {
     })
   }
 
+  checkToBackgroundView () {
+    this.contentContainer.checkToBackgroundTab()
+    this.contentContainer.indexChange(1)
+  }
+
   showModal (role) {
     if (role) {
       this.setState({
         role
+      }, () => {
+        this.checkModal.showModal()
       })
-    } 
-    this.checkModal.showModal()
+    } else {
+      this.checkModal.showModal()
+    }
   }
 
   render () {
@@ -41,13 +49,22 @@ export default class Container extends Component {
             <Screen />
           </div>  
           <div className="gra-left-bottom-wrapper">
-            <Editor role={role} checkToBackground={this.checkToBackground.bind(this)} showModal={this.showModal.bind(this)}/>
+            <Editor 
+              role={role} 
+              checkToBackground={this.checkToBackground.bind(this)} 
+              showModal={this.showModal.bind(this)}/>
           </div>  
         </div>
         <div className="gra-right-wrapper">
-          <Content role={role}/>
+          <Content
+            role={role} 
+            ref={contentContainer => this.contentContainer = contentContainer}/>
         </div>
-        <Checkmodal role={role} ref={checkModal => this.checkModal = checkModal}/>
+        <Checkmodal
+          role={role} 
+          checkToBackground={this.checkToBackground.bind(this)}
+          checkToBackgroundView={this.checkToBackgroundView.bind(this)}
+          ref={checkModal => this.checkModal = checkModal}/>
       </section>
     )
   }

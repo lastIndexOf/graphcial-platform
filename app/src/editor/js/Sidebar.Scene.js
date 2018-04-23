@@ -11,7 +11,7 @@ Sidebar.Scene = function ( editor ) {
 	container.setPaddingTop( '20px' );
 
 	// outliner
-
+	// console.log(container)
 	function buildOption( object, draggable ) {
 
 		var option = document.createElement( 'div' );
@@ -122,7 +122,7 @@ Sidebar.Scene = function ( editor ) {
 	backgroundRow.add( new UI.Text( 'Background' ).setWidth( '90px' ) );
 	backgroundRow.add( backgroundColor );
 
-	container.add( backgroundRow );
+	// container.add( backgroundRow );
 
 	// fog
 
@@ -156,14 +156,14 @@ Sidebar.Scene = function ( editor ) {
 	fogTypeRow.add( new UI.Text( 'Fog' ).setWidth( '90px' ) );
 	fogTypeRow.add( fogType );
 
-	container.add( fogTypeRow );
+	// container.add( fogTypeRow );
 
 	// fog color
 
 	var fogPropertiesRow = new UI.Row();
 	fogPropertiesRow.setDisplay( 'none' );
 	fogPropertiesRow.setMarginLeft( '90px' );
-	container.add( fogPropertiesRow );
+	// container.add( fogPropertiesRow );
 
 	var fogColor = new UI.Color().setValue( '#aaaaaa' );
 	fogColor.onChange( onFogChanged );

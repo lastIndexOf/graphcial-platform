@@ -184,12 +184,12 @@ UI.Outliner = function ( editor ) {
 	// hack
 	this.scene = editor.scene;
 
-	// Prevent native scroll behavior
 	dom.addEventListener( 'keydown', function ( event ) {
 
 		switch ( event.keyCode ) {
 			case 38: // up
 			case 40: // down
+			case 67: // C
 				event.preventDefault();
 				event.stopPropagation();
 				break;
@@ -197,7 +197,6 @@ UI.Outliner = function ( editor ) {
 
 	}, false );
 
-	// Keybindings to support arrow navigation
 	dom.addEventListener( 'keyup', function ( event ) {
 
 		switch ( event.keyCode ) {
@@ -206,6 +205,18 @@ UI.Outliner = function ( editor ) {
 				break;
 			case 40: // down
 				scope.selectIndex( scope.selectedIndex + 1 );
+				break;
+			case 67: // C
+				if (event.ctrlKey) {
+					let object = editor.selected;
+
+					if ( object.parent === null ) return; 
+
+					object = object.clone();
+					editor.scripts[object.uuid] = [{ name: '', source: '', xml: document.querySelector('#function_update') }]
+
+					editor.execute( new AddObjectCommand( object ) );
+				}
 				break;
 		}
 

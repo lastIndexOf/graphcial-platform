@@ -86,12 +86,13 @@ Sidebar.Settings.Shortcuts = function ( editor ) {
 	}
 
 	document.addEventListener( 'keydown', function ( event ) {
+		event.stopPropagation()
 
 		switch ( event.key.toLowerCase() ) {
 
-			case 'backspace':
+			// case 'backspace':
 
-				event.preventDefault(); // prevent browser back
+			// 	event.preventDefault(); // prevent browser back
 
 				// fall-through
 

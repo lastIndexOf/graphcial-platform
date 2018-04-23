@@ -4,8 +4,16 @@
     "isActive": false,
     "children": [
       {
-        "title": "打开",
-        "func": "fileOpen"
+        "title": "新建程序",
+        "func": "newProject"
+      },
+      {
+        "title": "导出项目",
+        "func": "exportProject"
+      },
+      {
+        "title": "导入项目",
+        "func": "importProject"
       }
     ] 
   },
