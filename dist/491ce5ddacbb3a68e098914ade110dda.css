@@ -469,6 +469,14 @@
     padding: 6px 6px 0 0;
     overflow: auto;
     box-sizing: border-box; }
+.gra-drag-modal {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99; }
+  .gra-drag-modal.display {
+    display: inherit; }
 /**
  * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
  * http://cssreset.com

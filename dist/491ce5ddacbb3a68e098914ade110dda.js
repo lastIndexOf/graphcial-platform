@@ -163,7 +163,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 	return to;
 };
 
-},{}],109:[function(require,module,exports) {
+},{}],75:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -181,7 +181,7 @@ if ('development' !== 'production') {
 }
 
 module.exports = emptyObject;
-},{}],110:[function(require,module,exports) {
+},{}],77:[function(require,module,exports) {
 "use strict";
 
 /**
@@ -218,7 +218,7 @@ emptyFunction.thatReturnsArgument = function (arg) {
 };
 
 module.exports = emptyFunction;
-},{}],60:[function(require,module,exports) {
+},{}],47:[function(require,module,exports) {
 /** @license React v16.2.0
  * react.production.min.js
  *
@@ -241,7 +241,7 @@ var U={Children:{map:function(a,b,e){if(null==a)return a;var c=[];T(a,c,null,b,e
 d=a.key,g=a.ref,k=a._owner;if(null!=b){void 0!==b.ref&&(g=b.ref,k=G.current);void 0!==b.key&&(d=""+b.key);if(a.type&&a.type.defaultProps)var f=a.type.defaultProps;for(h in b)H.call(b,h)&&!I.hasOwnProperty(h)&&(c[h]=void 0===b[h]&&void 0!==f?f[h]:b[h])}var h=arguments.length-2;if(1===h)c.children=e;else if(1<h){f=Array(h);for(var l=0;l<h;l++)f[l]=arguments[l+2];c.children=f}return{$$typeof:r,type:a.type,key:d,ref:g,props:c,_owner:k}},createFactory:function(a){var b=J.bind(null,a);b.type=a;return b},
 isValidElement:K,version:"16.2.0",__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED:{ReactCurrentOwner:G,assign:m}},V=Object.freeze({default:U}),W=V&&U||V;module.exports=W["default"]?W["default"]:W;
 
-},{"object-assign":70,"fbjs/lib/emptyObject":109,"fbjs/lib/emptyFunction":110}],118:[function(require,module,exports) {
+},{"object-assign":70,"fbjs/lib/emptyObject":75,"fbjs/lib/emptyFunction":77}],104:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -295,7 +295,7 @@ function invariant(condition, format, a, b, c, d, e, f) {
 }
 
 module.exports = invariant;
-},{}],117:[function(require,module,exports) {
+},{}],105:[function(require,module,exports) {
 /**
  * Copyright (c) 2014-present, Facebook, Inc.
  *
@@ -358,7 +358,7 @@ if ('development' !== 'production') {
 }
 
 module.exports = warning;
-},{"./emptyFunction":110}],74:[function(require,module,exports) {
+},{"./emptyFunction":77}],73:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -432,7 +432,7 @@ function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
 }
 
 module.exports = checkPropTypes;
-},{"fbjs/lib/invariant":118,"fbjs/lib/warning":117,"./lib/ReactPropTypesSecret":74}],61:[function(require,module,exports) {
+},{"fbjs/lib/invariant":104,"fbjs/lib/warning":105,"./lib/ReactPropTypesSecret":73}],48:[function(require,module,exports) {
 /** @license React v16.2.0
  * react.development.js
  *
@@ -1784,7 +1784,7 @@ if ('development' !== "production") {
     module.exports = react;
   })();
 }
-},{"object-assign":70,"fbjs/lib/emptyObject":109,"fbjs/lib/invariant":118,"fbjs/lib/warning":117,"fbjs/lib/emptyFunction":110,"prop-types/checkPropTypes":71}],57:[function(require,module,exports) {
+},{"object-assign":70,"fbjs/lib/emptyObject":75,"fbjs/lib/invariant":104,"fbjs/lib/warning":105,"fbjs/lib/emptyFunction":77,"prop-types/checkPropTypes":71}],25:[function(require,module,exports) {
 'use strict';
 
 if ('development' === 'production') {
@@ -1792,7 +1792,7 @@ if ('development' === 'production') {
 } else {
   module.exports = require('./cjs/react.development.js');
 }
-},{"./cjs/react.production.min.js":60,"./cjs/react.development.js":61}],111:[function(require,module,exports) {
+},{"./cjs/react.production.min.js":47,"./cjs/react.development.js":48}],82:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -1826,7 +1826,7 @@ var ExecutionEnvironment = {
 };
 
 module.exports = ExecutionEnvironment;
-},{}],113:[function(require,module,exports) {
+},{}],84:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -1901,7 +1901,7 @@ var EventListener = {
 };
 
 module.exports = EventListener;
-},{"./emptyFunction":110}],114:[function(require,module,exports) {
+},{"./emptyFunction":77}],83:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -1938,7 +1938,7 @@ function getActiveElement(doc) /*?DOMElement*/{
 }
 
 module.exports = getActiveElement;
-},{}],112:[function(require,module,exports) {
+},{}],85:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2004,7 +2004,7 @@ function shallowEqual(objA, objB) {
 }
 
 module.exports = shallowEqual;
-},{}],125:[function(require,module,exports) {
+},{}],113:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2027,7 +2027,7 @@ function isNode(object) {
 }
 
 module.exports = isNode;
-},{}],122:[function(require,module,exports) {
+},{}],103:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2050,7 +2050,7 @@ function isTextNode(object) {
 }
 
 module.exports = isTextNode;
-},{"./isNode":125}],115:[function(require,module,exports) {
+},{"./isNode":113}],86:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2088,7 +2088,7 @@ function containsNode(outerNode, innerNode) {
 }
 
 module.exports = containsNode;
-},{"./isTextNode":122}],116:[function(require,module,exports) {
+},{"./isTextNode":103}],87:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2113,7 +2113,7 @@ function focusNode(node) {
 }
 
 module.exports = focusNode;
-},{}],63:[function(require,module,exports) {
+},{}],54:[function(require,module,exports) {
 /** @license React v16.2.0
  * react-dom.production.min.js
  *
@@ -2344,7 +2344,7 @@ var Sg={createPortal:Qg,findDOMNode:function(a){if(null==a)return null;if(1===a.
 E("40");return a._reactRootContainer?(Z.unbatchedUpdates(function(){Pg(null,null,a,!1,function(){a._reactRootContainer=null})}),!0):!1},unstable_createPortal:Qg,unstable_batchedUpdates:tc,unstable_deferredUpdates:Z.deferredUpdates,flushSync:Z.flushSync,__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED:{EventPluginHub:mb,EventPluginRegistry:Va,EventPropagators:Cb,ReactControlledComponent:qc,ReactDOMComponentTree:sb,ReactDOMEventListener:xd}};
 Z.injectIntoDevTools({findFiberByHostInstance:pb,bundleType:0,version:"16.2.0",rendererPackageName:"react-dom"});var Tg=Object.freeze({default:Sg}),Ug=Tg&&Sg||Tg;module.exports=Ug["default"]?Ug["default"]:Ug;
 
-},{"react":57,"fbjs/lib/ExecutionEnvironment":111,"object-assign":70,"fbjs/lib/emptyFunction":110,"fbjs/lib/EventListener":113,"fbjs/lib/getActiveElement":114,"fbjs/lib/shallowEqual":112,"fbjs/lib/containsNode":115,"fbjs/lib/focusNode":116,"fbjs/lib/emptyObject":109}],123:[function(require,module,exports) {
+},{"react":25,"fbjs/lib/ExecutionEnvironment":82,"object-assign":70,"fbjs/lib/emptyFunction":77,"fbjs/lib/EventListener":84,"fbjs/lib/getActiveElement":83,"fbjs/lib/shallowEqual":85,"fbjs/lib/containsNode":86,"fbjs/lib/focusNode":87,"fbjs/lib/emptyObject":75}],125:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2375,7 +2375,7 @@ function hyphenate(string) {
 }
 
 module.exports = hyphenate;
-},{}],119:[function(require,module,exports) {
+},{}],123:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2412,7 +2412,7 @@ function hyphenateStyleName(string) {
 }
 
 module.exports = hyphenateStyleName;
-},{"./hyphenate":123}],124:[function(require,module,exports) {
+},{"./hyphenate":125}],124:[function(require,module,exports) {
 "use strict";
 
 /**
@@ -2442,7 +2442,7 @@ function camelize(string) {
 }
 
 module.exports = camelize;
-},{}],120:[function(require,module,exports) {
+},{}],122:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2480,7 +2480,7 @@ function camelizeStyleName(string) {
 }
 
 module.exports = camelizeStyleName;
-},{"./camelize":124}],62:[function(require,module,exports) {
+},{"./camelize":124}],55:[function(require,module,exports) {
 /** @license React v16.2.0
  * react-dom.development.js
  *
@@ -17838,7 +17838,7 @@ if ('development' !== "production") {
     module.exports = reactDom;
   })();
 }
-},{"react":57,"fbjs/lib/invariant":118,"fbjs/lib/warning":117,"fbjs/lib/ExecutionEnvironment":111,"object-assign":70,"fbjs/lib/emptyFunction":110,"fbjs/lib/EventListener":113,"fbjs/lib/getActiveElement":114,"fbjs/lib/shallowEqual":112,"fbjs/lib/containsNode":115,"fbjs/lib/focusNode":116,"fbjs/lib/emptyObject":109,"prop-types/checkPropTypes":71,"fbjs/lib/hyphenateStyleName":119,"fbjs/lib/camelizeStyleName":120}],58:[function(require,module,exports) {
+},{"react":25,"fbjs/lib/invariant":104,"fbjs/lib/warning":105,"fbjs/lib/ExecutionEnvironment":82,"object-assign":70,"fbjs/lib/emptyFunction":77,"fbjs/lib/EventListener":84,"fbjs/lib/getActiveElement":83,"fbjs/lib/shallowEqual":85,"fbjs/lib/containsNode":86,"fbjs/lib/focusNode":87,"fbjs/lib/emptyObject":75,"prop-types/checkPropTypes":71,"fbjs/lib/hyphenateStyleName":123,"fbjs/lib/camelizeStyleName":122}],24:[function(require,module,exports) {
 'use strict';
 
 function checkDCE() {
@@ -17874,7 +17874,7 @@ if ('development' === 'production') {
 } else {
   module.exports = require('./cjs/react-dom.development.js');
 }
-},{"./cjs/react-dom.production.min.js":63,"./cjs/react-dom.development.js":62}],14:[function(require,module,exports) {
+},{"./cjs/react-dom.production.min.js":54,"./cjs/react-dom.development.js":55}],14:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -17935,13 +17935,13 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":14}],56:[function(require,module,exports) {
+},{"./bundle-url":14}],67:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":10}],54:[function(require,module,exports) {
+},{"_css_loader":10}],62:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -18046,13 +18046,13 @@ var Nextmenu = function (_Component) {
 }(_react.Component);
 
 exports.default = Nextmenu;
-},{"react":57,"./Nextmenu.scss":56}],53:[function(require,module,exports) {
+},{"react":25,"./Nextmenu.scss":67}],61:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":10}],51:[function(require,module,exports) {
+},{"_css_loader":10}],60:[function(require,module,exports) {
 module.exports = [
   {
     "title": "文件",
@@ -18082,7 +18082,7 @@ module.exports = [
     ]
   }
 ];
-},{}],27:[function(require,module,exports) {
+},{}],51:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -18198,11 +18198,11 @@ var Menubar = function (_Component) {
 }(_react.Component);
 
 exports.default = Menubar;
-},{"react":57,"./Nextmenu":54,"./Menubar.scss":53,"../../common/menuData.json":51}],28:[function(require,module,exports) {
+},{"react":25,"./Nextmenu":62,"./Menubar.scss":61,"../../common/menuData.json":60}],57:[function(require,module,exports) {
 module.exports="/dist/1e268891d6e6396879728079ba91da11.png";
-},{}],29:[function(require,module,exports) {
+},{}],58:[function(require,module,exports) {
 module.exports="/dist/8aad4350ace5cfa6017ac8e5dc0e9993.png";
-},{}],25:[function(require,module,exports) {
+},{}],49:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -18222,13 +18222,13 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 exports.logo = _logo2.default;
 exports.language = _language2.default;
-},{"../../assets/image/logo.png":28,"../../assets/image/language.png":29}],26:[function(require,module,exports) {
+},{"../../assets/image/logo.png":57,"../../assets/image/language.png":58}],50:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":10}],19:[function(require,module,exports) {
+},{"_css_loader":10}],26:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -18296,13 +18296,13 @@ var Header = function (_Component) {
 }(_react.Component);
 
 exports.default = Header;
-},{"react":57,"./Menubar":27,"../../common/images":25,"./Header.scss":26}],47:[function(require,module,exports) {
+},{"react":25,"./Menubar":51,"../../common/images":49,"./Header.scss":50}],53:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":10}],72:[function(require,module,exports) {
+},{"_css_loader":10}],74:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -59296,9 +59296,9 @@ exports.Projector = Projector;
 exports.CanvasRenderer = CanvasRenderer;
 exports.SceneUtils = SceneUtils;
 exports.LensFlare = LensFlare;
-},{}],30:[function(require,module,exports) {
+},{}],52:[function(require,module,exports) {
 module.exports="/dist/6266afa47f221d355b798c480308ba71.png";
-},{}],21:[function(require,module,exports) {
+},{}],20:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -59336,9 +59336,15 @@ var Screen = function (_Component) {
     _this.state = {
       isStarted: false,
       isEnded: false,
-      _x: 0,
-      _y: 0,
-      _z: 0
+      _px: 0,
+      _py: 0,
+      _pz: 0,
+      _rx: 0,
+      _ry: 0,
+      _rz: 0,
+      _sx: 0,
+      _sy: 0,
+      _sz: 0
     };
     return _this;
   }
@@ -59360,12 +59366,43 @@ var Screen = function (_Component) {
       }
     }
   }, {
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      setTimeout(function () {
+        window.editor.signals.positionInfo.add(function (_ref) {
+          var position = _ref.position,
+              rotation = _ref.rotation,
+              scale = _ref.scale;
+
+          _this2.setState({
+            _px: position && position.x.toFixed(2) || '0',
+            _py: position && position.y.toFixed(2) || '0',
+            _pz: position && position.z.toFixed(2) || '0',
+            _rx: rotation && rotation.x.toFixed(2) || '0',
+            _ry: rotation && rotation.y.toFixed(2) || '0',
+            _rz: rotation && rotation.z.toFixed(2) || '0',
+            _sx: scale && scale.x.toFixed(2) || '0',
+            _sy: scale && scale.y.toFixed(2) || '0',
+            _sz: scale && scale.z.toFixed(2) || '0'
+          });
+        });
+      }, 0);
+    }
+  }, {
     key: 'render',
     value: function render() {
       var _state = this.state,
-          _x = _state._x,
-          _y = _state._y,
-          _z = _state._z;
+          _px = _state._px,
+          _py = _state._py,
+          _pz = _state._pz,
+          _rx = _state._rx,
+          _ry = _state._ry,
+          _rz = _state._rz,
+          _sx = _state._sx,
+          _sy = _state._sy,
+          _sz = _state._sz;
 
 
       return _react2.default.createElement(
@@ -59393,20 +59430,62 @@ var Screen = function (_Component) {
           _react2.default.createElement(
             'span',
             { className: 'gra-screen-x' },
-            'x: ',
-            _x
+            '\u4F4D\u7F6E: '
+          ),
+          _react2.default.createElement(
+            'span',
+            { className: 'gra-screen-x' },
+            _px
+          ),
+          _react2.default.createElement(
+            'span',
+            { className: 'gra-screen-x' },
+            _py
+          ),
+          _react2.default.createElement(
+            'span',
+            { className: 'gra-screen-x' },
+            _pz
+          ),
+          _react2.default.createElement(
+            'span',
+            { className: 'gra-screen-x' },
+            '\u65CB\u8F6C: '
+          ),
+          _react2.default.createElement(
+            'span',
+            { className: 'gra-screen-x' },
+            _rx
+          ),
+          _react2.default.createElement(
+            'span',
+            { className: 'gra-screen-x' },
+            _ry
+          ),
+          _react2.default.createElement(
+            'span',
+            { className: 'gra-screen-x' },
+            _rz
           ),
           _react2.default.createElement(
             'span',
             { className: 'gra-screen-y' },
-            'y: ',
-            _y
+            '\u7F29\u653E: '
           ),
           _react2.default.createElement(
             'span',
             { className: 'gra-screen-z' },
-            'z: ',
-            _z
+            _sx
+          ),
+          _react2.default.createElement(
+            'span',
+            { className: 'gra-screen-z' },
+            _sy
+          ),
+          _react2.default.createElement(
+            'span',
+            { className: 'gra-screen-z' },
+            _sz
           )
         )
       );
@@ -59417,13 +59496,13 @@ var Screen = function (_Component) {
 }(_react.Component);
 
 exports.default = Screen;
-},{"react":57,"./Screen.scss":47,"three":72,"../../../assets/image/guide.png":30}],48:[function(require,module,exports) {
+},{"react":25,"./Screen.scss":53,"three":74,"../../../assets/image/guide.png":52}],27:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":10}],76:[function(require,module,exports) {
+},{"_css_loader":10}],78:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -59505,7 +59584,7 @@ const warnOnce = exports.warnOnce = message => {
 const callIfFunction = exports.callIfFunction = arg => typeof arg === 'function' ? arg() : arg;
 
 const isThenable = exports.isThenable = arg => typeof arg === 'object' && typeof arg.then === 'function';
-},{}],79:[function(require,module,exports) {
+},{}],81:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -59518,7 +59597,7 @@ const DismissReason = exports.DismissReason = Object.freeze({
   esc: 'esc',
   timer: 'timer'
 });
-},{}],75:[function(require,module,exports) {
+},{}],76:[function(require,module,exports) {
 module.exports = {
   "name": "sweetalert2",
   "version": "7.18.0",
@@ -59638,7 +59717,7 @@ module.exports = {
   }
 }
 ;
-},{}],80:[function(require,module,exports) {
+},{}],88:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -59669,7 +59748,7 @@ const argsToParams = exports.argsToParams = args => {
   }
   return params;
 };
-},{"../utils/utils.js":76}],81:[function(require,module,exports) {
+},{"../utils/utils.js":78}],92:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -59683,7 +59762,7 @@ const adaptInputValidator = exports.adaptInputValidator = legacyValidator => {
     return legacyValidator.call(this, inputValue, extraParams).then(() => undefined, validationError => validationError);
   };
 };
-},{}],96:[function(require,module,exports) {
+},{}],106:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -59702,7 +59781,7 @@ const prefix = exports.prefix = items => {
 const swalClasses = exports.swalClasses = prefix(['container', 'shown', 'iosfix', 'popup', 'modal', 'no-backdrop', 'toast', 'toast-shown', 'fade', 'show', 'hide', 'noanimation', 'close', 'title', 'header', 'content', 'actions', 'confirm', 'cancel', 'footer', 'icon', 'icon-text', 'image', 'input', 'has-input', 'file', 'range', 'select', 'radio', 'checkbox', 'textarea', 'inputerror', 'validationerror', 'progresssteps', 'activeprogressstep', 'progresscircle', 'progressline', 'loading', 'styled', 'top', 'top-start', 'top-end', 'top-left', 'top-right', 'center', 'center-start', 'center-end', 'center-left', 'center-right', 'bottom', 'bottom-start', 'bottom-end', 'bottom-left', 'bottom-right', 'grow-row', 'grow-column', 'grow-fullscreen']);
 
 const iconTypes = exports.iconTypes = prefix(['success', 'warning', 'info', 'question', 'error']);
-},{}],103:[function(require,module,exports) {
+},{}],114:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -59810,7 +59889,7 @@ const resetPrevState = exports.resetPrevState = () => {
     }
   }
 };
-},{"../classes":96}],105:[function(require,module,exports) {
+},{"../classes":106}],116:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -59892,7 +59971,7 @@ const isToast = exports.isToast = () => {
 const isLoading = exports.isLoading = () => {
   return getPopup().hasAttribute('data-loading');
 };
-},{"../classes":96,"../utils":76}],121:[function(require,module,exports) {
+},{"../classes":106,"../utils":78}],121:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -59900,7 +59979,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 // Detect Node env
 const isNodeEnv = exports.isNodeEnv = () => typeof window === 'undefined' || typeof document === 'undefined';
-},{}],104:[function(require,module,exports) {
+},{}],115:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -60037,7 +60116,7 @@ const init = exports.init = params => {
 
   return popup;
 };
-},{"../classes":96,"./getters":105,"./domUtils":103,"../isNodeEnv":121,"../utils":76,"../../sweetalert2":73}],106:[function(require,module,exports) {
+},{"../classes":106,"./getters":116,"./domUtils":114,"../isNodeEnv":121,"../utils":78,"../../sweetalert2":72}],117:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -60066,7 +60145,7 @@ const parseHtmlToContainer = exports.parseHtmlToContainer = (param, target) => {
   } else {}
   (0, _domUtils.show)(target);
 };
-},{"./domUtils":103}],107:[function(require,module,exports) {
+},{"./domUtils":114}],118:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -60096,7 +60175,7 @@ const animationEndEvent = exports.animationEndEvent = (() => {
 
   return false;
 })();
-},{"../isNodeEnv":121}],108:[function(require,module,exports) {
+},{"../isNodeEnv":121}],119:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -60118,7 +60197,7 @@ const measureScrollbar = exports.measureScrollbar = () => {
   document.body.removeChild(scrollDiv);
   return scrollbarWidth;
 };
-},{}],101:[function(require,module,exports) {
+},{}],110:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -60196,7 +60275,7 @@ Object.keys(_measureScrollbar).forEach(function (key) {
     }
   });
 });
-},{"./domUtils":103,"./init":104,"./getters":105,"./parseHtmlToContainer":106,"./animationEndEvent":107,"./measureScrollbar":108}],97:[function(require,module,exports) {
+},{"./domUtils":114,"./init":115,"./getters":116,"./parseHtmlToContainer":117,"./animationEndEvent":118,"./measureScrollbar":119}],108:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -60229,7 +60308,7 @@ const undoScrollbar = exports.undoScrollbar = () => {
     dom.states.previousBodyPadding = null;
   }
 };
-},{"./dom/index":101}],98:[function(require,module,exports) {
+},{"./dom/index":110}],109:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -60263,7 +60342,7 @@ const undoIOSfix = exports.undoIOSfix = () => {
     document.body.scrollTop = offset * -1;
   }
 };
-},{"./dom/index":101,"../utils/classes":96}],88:[function(require,module,exports) {
+},{"./dom/index":110,"../utils/classes":106}],97:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -60371,7 +60450,7 @@ const showWarningsForParams = exports.showWarningsForParams = params => {
 };
 
 exports.default = defaultParams;
-},{"../utils/utils":76}],95:[function(require,module,exports) {
+},{"../utils/utils":78}],107:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -60387,7 +60466,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = {
   popupParams: Object.assign({}, _params2.default)
 };
-},{"./utils/params.js":88}],86:[function(require,module,exports) {
+},{"./utils/params.js":97}],93:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -60472,7 +60551,7 @@ exports.close = close;
 exports.closePopup = close;
 exports.closeModal = close;
 exports.closeToast = close;
-},{"../utils/scrollbarFix":97,"../utils/iosFix":98,"../utils/dom/index":101,"../utils/classes.js":96,"../globalState":95}],82:[function(require,module,exports) {
+},{"../utils/scrollbarFix":108,"../utils/iosFix":109,"../utils/dom/index":110,"../utils/classes.js":106,"../globalState":107}],89:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -60557,7 +60636,7 @@ const clickConfirm = exports.clickConfirm = () => dom.getConfirmButton().click()
  * Global function to click 'Cancel' button
  */
 const clickCancel = exports.clickCancel = () => dom.getCancelButton().click();
-},{"../utils/dom/index":101}],83:[function(require,module,exports) {
+},{"../utils/dom/index":110}],90:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -60590,7 +60669,7 @@ function mixin(mixinParams) {
     }
   };
 }
-},{}],84:[function(require,module,exports) {
+},{}],91:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -60655,7 +60734,7 @@ const deleteQueueStep = exports.deleteQueueStep = index => {
     currentSteps.splice(index, 1);
   }
 };
-},{}],85:[function(require,module,exports) {
+},{}],95:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -60700,7 +60779,7 @@ const setDefaults = exports.setDefaults = userParams => {
 const resetDefaults = exports.resetDefaults = () => {
   _globalState2.default.popupParams = Object.assign({}, _params2.default);
 };
-},{"../utils/utils":76,"../utils/params":88,"../globalState":95}],90:[function(require,module,exports) {
+},{"../utils/utils":78,"../utils/params":97,"../globalState":107}],94:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -60748,7 +60827,7 @@ const showLoading = () => {
 
 exports.showLoading = showLoading;
 exports.enableLoading = showLoading;
-},{"../utils/dom/index":101,"../sweetalert2":73,"../utils/classes":96}],87:[function(require,module,exports) {
+},{"../utils/dom/index":110,"../sweetalert2":72,"../utils/classes":106}],96:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -60759,7 +60838,7 @@ function fire(...args) {
   const Swal = this;
   return new Swal(...args);
 }
-},{}],77:[function(require,module,exports) {
+},{}],79:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -60888,7 +60967,7 @@ Object.defineProperty(exports, 'isDeprecatedParameter', {
     return _params.isDeprecatedParameter;
   }
 });
-},{"./staticMethods/argsToParams":80,"./staticMethods/adaptInputValidator":81,"./staticMethods/close":86,"./staticMethods/dom":82,"./staticMethods/mixin":83,"./staticMethods/queue":84,"./staticMethods/set-reset-defaults":85,"./staticMethods/showLoading":90,"./staticMethods/fire":87,"./utils/params":88}],89:[function(require,module,exports) {
+},{"./staticMethods/argsToParams":88,"./staticMethods/adaptInputValidator":92,"./staticMethods/close":93,"./staticMethods/dom":89,"./staticMethods/mixin":90,"./staticMethods/queue":91,"./staticMethods/set-reset-defaults":95,"./staticMethods/showLoading":94,"./staticMethods/fire":96,"./utils/params":97}],98:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -60924,7 +61003,7 @@ function hideLoading() {
 
 exports.hideLoading = hideLoading;
 exports.disableLoading = hideLoading;
-},{"../utils/dom/index":101,"../utils/classes":96}],91:[function(require,module,exports) {
+},{"../utils/dom/index":110,"../utils/classes":106}],99:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -60962,7 +61041,7 @@ function getInput(inputType) {
       return dom.getChildByClass(domCache.content, _classes.swalClasses.input);
   }
 }
-},{"../utils/dom/index":101,"../utils/classes":96}],92:[function(require,module,exports) {
+},{"../utils/dom/index":110,"../utils/classes":106}],102:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -61023,7 +61102,7 @@ function disableInput() {
     input.disabled = true;
   }
 }
-},{}],93:[function(require,module,exports) {
+},{}],100:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -61072,7 +61151,7 @@ function resetValidationError() {
     dom.removeClass(input, _classes.swalClasses.inputerror);
   }
 }
-},{"../utils/dom/index":101,"../utils/classes":96}],102:[function(require,module,exports) {
+},{"../utils/dom/index":110,"../utils/classes":106}],120:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -61089,7 +61168,7 @@ exports.default = {
     );
   }
 };
-},{}],99:[function(require,module,exports) {
+},{}],111:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -61402,7 +61481,7 @@ function setParameters(params) {
     (0, _utils.warn)('showLoaderOnConfirm is set to true, but preConfirm is not defined.\n' + 'showLoaderOnConfirm should be used together with preConfirm, see usage example:\n' + 'https://sweetalert2.github.io/#ajax-request');
   }
 }
-},{"./classes.js":96,"./utils.js":76,"./dom/index":101,"../sweetalert2":73,"./defaultInputValidators":102}],100:[function(require,module,exports) {
+},{"./classes.js":106,"./utils.js":78,"./dom/index":110,"../sweetalert2":72,"./defaultInputValidators":120}],112:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -61469,7 +61548,7 @@ const openPopup = exports.openPopup = (animation, onBeforeOpen, onOpen) => {
     });
   }
 };
-},{"./dom/index":101,"./classes":96,"./scrollbarFix":97,"./iosFix":98}],94:[function(require,module,exports) {
+},{"./dom/index":110,"./classes":106,"./scrollbarFix":108,"./iosFix":109}],101:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -62021,7 +62100,7 @@ function _main(userParams) {
     domCache.container.scrollTop = 0;
   });
 }
-},{"../utils/params":88,"../utils/dom/index":101,"../utils/classes":96,"../utils/utils":76,"../utils/setParameters":99,"../globalState":95,"../utils/openPopup":100}],78:[function(require,module,exports) {
+},{"../utils/params":97,"../utils/dom/index":110,"../utils/classes":106,"../utils/utils":78,"../utils/setParameters":111,"../globalState":107,"../utils/openPopup":112}],80:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -62087,7 +62166,7 @@ Object.keys(_main).forEach(function (key) {
     }
   });
 });
-},{"./instanceMethods/hideLoading":89,"./instanceMethods/getInput":91,"./instanceMethods/enable-disable-elements":92,"./instanceMethods/show-reset-validation-error":93,"./instanceMethods/_main":94}],73:[function(require,module,exports) {
+},{"./instanceMethods/hideLoading":98,"./instanceMethods/getInput":99,"./instanceMethods/enable-disable-elements":102,"./instanceMethods/show-reset-validation-error":100,"./instanceMethods/_main":101}],72:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -62181,7 +62260,7 @@ if (typeof window !== 'undefined' && typeof window._swalDefaults === 'object') {
 }
 
 exports.default = SweetAlert;
-},{"./utils/utils.js":76,"./utils/DismissReason":79,"../package.json":75,"./staticMethods":77,"./instanceMethods":78}],22:[function(require,module,exports) {
+},{"./utils/utils.js":78,"./utils/DismissReason":81,"../package.json":76,"./staticMethods":79,"./instanceMethods":80}],21:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -62234,9 +62313,25 @@ var Editor = function (_Component) {
       this.props.checkToBackground();
     }
   }, {
+    key: 'changeBackgroundColor',
+    value: function changeBackgroundColor() {
+      this.colorPicker.click();
+    }
+  }, {
     key: 'makeNewRole',
     value: function makeNewRole() {
       console.log((0, _sweetalert2.default)('暂不支持角色建模，请从素材库中选择素材'));
+    }
+  }, {
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      this.colorPicker = document.createElement('input');
+      this.colorPicker.type = 'color';
+      this.colorPicker.onchange = function (e) {
+        editor.signals.sceneBackgroundChanged.dispatch(parseInt(_this2.colorPicker.value.substr(1), 16));
+      };
     }
   }, {
     key: 'render',
@@ -62309,7 +62404,7 @@ var Editor = function (_Component) {
                 'span',
                 { className: 'gra-editor-main-bgimg-edit-operate' },
                 _react2.default.createElement('i', { className: 'iconfont icon-zhaopianphotos11 gra-icon-addbgimg', onClick: this.addBackground.bind(this, 'background') }),
-                _react2.default.createElement('i', { className: 'iconfont icon-huabi gra-icon-draw' }),
+                _react2.default.createElement('i', { className: 'iconfont icon-huabi gra-icon-draw', title: '\u4FEE\u6539\u80CC\u666F\u989C\u8272', onClick: this.changeBackgroundColor.bind(this) }),
                 _react2.default.createElement('i', { className: 'iconfont icon-shangchuan1 gra-icon-upload' }),
                 _react2.default.createElement('i', { className: 'iconfont icon-xiangji gra-icon-camera' })
               )
@@ -62325,13 +62420,13 @@ var Editor = function (_Component) {
 }(_react.Component);
 
 exports.default = Editor;
-},{"react":57,"./Editor.scss":48,"sweetalert2":73}],55:[function(require,module,exports) {
+},{"react":25,"./Editor.scss":27,"sweetalert2":72}],56:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":10}],52:[function(require,module,exports) {
+},{"_css_loader":10}],46:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -62418,19 +62513,19 @@ var Tablist = function (_Component) {
 }(_react.Component);
 
 exports.default = Tablist;
-},{"react":57,"./Tablist.scss":55}],49:[function(require,module,exports) {
+},{"react":25,"./Tablist.scss":56}],45:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":10}],68:[function(require,module,exports) {
+},{"_css_loader":10}],69:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":10}],64:[function(require,module,exports) {
+},{"_css_loader":10}],63:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -62510,7 +62605,7 @@ var Script = function (_Component) {
 }(_react.Component);
 
 exports.default = Script;
-},{"react":57,"./Script.scss":68}],65:[function(require,module,exports) {
+},{"react":25,"./Script.scss":69}],64:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -62555,13 +62650,13 @@ var Voice = function (_Component) {
 }(_react.Component);
 
 exports.default = Voice;
-},{"react":57}],69:[function(require,module,exports) {
+},{"react":25}],68:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":10}],66:[function(require,module,exports) {
+},{"_css_loader":10}],65:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -62771,7 +62866,7 @@ var Background = function (_Component) {
 }(_react.Component);
 
 exports.default = Background;
-},{"react":57,"./Background.scss":69}],67:[function(require,module,exports) {
+},{"react":25,"./Background.scss":68}],66:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -62816,7 +62911,7 @@ var Handsome = function (_Component) {
 }(_react.Component);
 
 exports.default = Handsome;
-},{"react":57}],59:[function(require,module,exports) {
+},{"react":25}],59:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -62846,7 +62941,7 @@ exports.Script = _Script2.default;
 exports.Background = _Background2.default;
 exports.Voice = _Voice2.default;
 exports.Handsome = _Handsome2.default;
-},{"./Script":64,"./Voice":65,"./Background":66,"./Handsome":67}],23:[function(require,module,exports) {
+},{"./Script":63,"./Voice":64,"./Background":65,"./Handsome":66}],23:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -62954,45 +63049,45 @@ var Content = function (_Component) {
 }(_react.Component);
 
 exports.default = Content;
-},{"react":57,"./Tablist":52,"./Content.scss":49,"./editors":59}],50:[function(require,module,exports) {
+},{"react":25,"./Tablist":46,"./Content.scss":45,"./editors":59}],44:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":10}],31:[function(require,module,exports) {
+},{"_css_loader":10}],28:[function(require,module,exports) {
 module.exports="/dist/4dda97cbd21f46ab29ef219fe13471a8.png";
-},{}],32:[function(require,module,exports) {
-module.exports="/dist/691960d58391147427ef84992d984aff.png";
-},{}],33:[function(require,module,exports) {
-module.exports="/dist/2d5d928684e1ba09cc6289631cf871e3.png";
-},{}],34:[function(require,module,exports) {
-module.exports="/dist/31e9681429ced19c1b89a597018ad8e1.png";
-},{}],35:[function(require,module,exports) {
-module.exports="/dist/dd81daa949a06924a30400a047187b0a.png";
-},{}],36:[function(require,module,exports) {
-module.exports="/dist/26dfc5ff8caf9840410021e71e9760d9.png";
-},{}],37:[function(require,module,exports) {
-module.exports="/dist/338eb6349b98a0ed65753e80612014e1.png";
-},{}],38:[function(require,module,exports) {
-module.exports="/dist/a34888e6f3120af4307db7b8ac969586.png";
-},{}],39:[function(require,module,exports) {
-module.exports="/dist/ca546eb573bc197ff93eaf8792772a8d.png";
-},{}],40:[function(require,module,exports) {
-module.exports="/dist/aff94a967e865155c2394e3d323cc391.png";
 },{}],41:[function(require,module,exports) {
+module.exports="/dist/691960d58391147427ef84992d984aff.png";
+},{}],29:[function(require,module,exports) {
+module.exports="/dist/2d5d928684e1ba09cc6289631cf871e3.png";
+},{}],30:[function(require,module,exports) {
+module.exports="/dist/31e9681429ced19c1b89a597018ad8e1.png";
+},{}],31:[function(require,module,exports) {
+module.exports="/dist/dd81daa949a06924a30400a047187b0a.png";
+},{}],32:[function(require,module,exports) {
+module.exports="/dist/26dfc5ff8caf9840410021e71e9760d9.png";
+},{}],33:[function(require,module,exports) {
+module.exports="/dist/338eb6349b98a0ed65753e80612014e1.png";
+},{}],34:[function(require,module,exports) {
+module.exports="/dist/a34888e6f3120af4307db7b8ac969586.png";
+},{}],35:[function(require,module,exports) {
+module.exports="/dist/ca546eb573bc197ff93eaf8792772a8d.png";
+},{}],36:[function(require,module,exports) {
+module.exports="/dist/aff94a967e865155c2394e3d323cc391.png";
+},{}],37:[function(require,module,exports) {
 module.exports="/dist/7d8bf94ddec1df305f46a3a326a15dc7.png";
-},{}],42:[function(require,module,exports) {
+},{}],38:[function(require,module,exports) {
 module.exports="/dist/50f6351bf665cf2c04d23ac576876974.png";
-},{}],43:[function(require,module,exports) {
+},{}],39:[function(require,module,exports) {
 module.exports="/dist/5202fb81a9109645d5c728aff7ca41d7.png";
-},{}],44:[function(require,module,exports) {
+},{}],40:[function(require,module,exports) {
 module.exports="/dist/53614079770d1b20ae6f3008c5366b34.png";
-},{}],45:[function(require,module,exports) {
+},{}],42:[function(require,module,exports) {
 module.exports="/dist/bdbc8b2f505953664d5d808f27025e09.png";
-},{}],46:[function(require,module,exports) {
+},{}],43:[function(require,module,exports) {
 module.exports="/dist/313379688bf732fa9e42ac0b9efe008a.png";
-},{}],24:[function(require,module,exports) {
+},{}],22:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -63463,13 +63558,13 @@ var Checkmodal = function (_Component) {
 }(_react.Component);
 
 exports.default = Checkmodal;
-},{"react":57,"./Checkmodal.scss":50,"../../../assets/image/Group.png":31,"../../../assets/image/Plane.png":32,"../../../assets/image/Box.png":33,"../../../assets/image/Circle.png":34,"../../../assets/image/Cylinder.png":35,"../../../assets/image/Sphere.png":36,"../../../assets/image/Lcosahedron.png":37,"../../../assets/image/Torus.png":38,"../../../assets/image/TorusKnot.png":39,"../../../assets/image/Lathe.png":40,"../../../assets/image/Sprite.png":41,"../../../assets/image/PointLight.png":42,"../../../assets/image/SpotLight.png":43,"../../../assets/image/DirectionalLight.png":44,"../../../assets/image/HemisphereLight.png":45,"../../../assets/image/PerspectiveCamera.png":46}],20:[function(require,module,exports) {
+},{"react":25,"./Checkmodal.scss":44,"../../../assets/image/Group.png":28,"../../../assets/image/Plane.png":41,"../../../assets/image/Box.png":29,"../../../assets/image/Circle.png":30,"../../../assets/image/Cylinder.png":31,"../../../assets/image/Sphere.png":32,"../../../assets/image/Lcosahedron.png":33,"../../../assets/image/Torus.png":34,"../../../assets/image/TorusKnot.png":35,"../../../assets/image/Lathe.png":36,"../../../assets/image/Sprite.png":37,"../../../assets/image/PointLight.png":38,"../../../assets/image/SpotLight.png":39,"../../../assets/image/DirectionalLight.png":40,"../../../assets/image/HemisphereLight.png":42,"../../../assets/image/PerspectiveCamera.png":43}],19:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":10}],18:[function(require,module,exports) {
+},{"_css_loader":10}],15:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -63602,7 +63697,80 @@ var Container = function (_Component) {
 }(_react.Component);
 
 exports.default = Container;
-},{"react":57,"./Screen/Screen":21,"./Editor/Editor":22,"./Content/Content":23,"./Checkmodal/Checkmodal":24,"./Container.scss":20}],12:[function(require,module,exports) {
+},{"react":25,"./Screen/Screen":20,"./Editor/Editor":21,"./Content/Content":23,"./Checkmodal/Checkmodal":22,"./Container.scss":19}],136:[function(require,module,exports) {
+
+        var reloadCSS = require('_css_loader');
+        module.hot.dispose(reloadCSS);
+        module.hot.accept(reloadCSS);
+      
+},{"_css_loader":10}],135:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+require('./Dragmodal.scss');
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Dragmodal = function (_Component) {
+  _inherits(Dragmodal, _Component);
+
+  function Dragmodal() {
+    _classCallCheck(this, Dragmodal);
+
+    var _this = _possibleConstructorReturn(this, (Dragmodal.__proto__ || Object.getPrototypeOf(Dragmodal)).call(this));
+
+    _this.state = {
+      showModal: true
+    };
+    return _this;
+  }
+
+  _createClass(Dragmodal, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      var material = new Sidebar.Material(editor);
+      this.dragModal.appendChild(material.dom);
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var _this2 = this;
+
+      var showModal = this.state.showModal;
+
+
+      return _react2.default.createElement('div', { className: 'gra-drag-modal ' + (showModal ? 'display' : ''), ref: function ref(dragModal) {
+          return _this2.dragModal = dragModal;
+        } });
+    }
+  }]);
+
+  return Dragmodal;
+}(_react.Component);
+
+exports.default = Dragmodal;
+},{"react":25,"./Dragmodal.scss":136}],134:[function(require,module,exports) {
+
+        var reloadCSS = require('_css_loader');
+        module.hot.dispose(reloadCSS);
+        module.hot.accept(reloadCSS);
+      
+},{"_css_loader":10}],11:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -63622,6 +63790,12 @@ var _Header2 = _interopRequireDefault(_Header);
 var _Container = require('./components/Container');
 
 var _Container2 = _interopRequireDefault(_Container);
+
+var _Dragmodal = require('./components/Dragmodal/Dragmodal');
+
+var _Dragmodal2 = _interopRequireDefault(_Dragmodal);
+
+require('./App.scss');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -63647,7 +63821,8 @@ var App = function (_Component) {
         'div',
         { className: 'gra-app' },
         _react2.default.createElement(_Header2.default, null),
-        _react2.default.createElement(_Container2.default, null)
+        _react2.default.createElement(_Container2.default, null),
+        _react2.default.createElement(_Dragmodal2.default, null)
       );
     }
   }]);
@@ -63656,7 +63831,7 @@ var App = function (_Component) {
 }(_react.Component);
 
 exports.default = App;
-},{"react":57,"./components/Header/Header":19,"./components/Container":18}],11:[function(require,module,exports) {
+},{"react":25,"./components/Header/Header":26,"./components/Container":15,"./components/Dragmodal/Dragmodal":135,"./App.scss":134}],12:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
@@ -63668,13 +63843,13 @@ exports.default = App;
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"./iconfont.eot":[["52fc726a6e8818256ee0fc6c50b9e084.eot",15],15],"./iconfont.ttf":[["04e0360c30e5af3cd8fde800632c3cf1.ttf",16],16],"./iconfont.svg":[["26565906627a51cc3d91a6dd519f3436.svg",17],17],"_css_loader":10}],3:[function(require,module,exports) {
+},{"./iconfont.eot":[["52fc726a6e8818256ee0fc6c50b9e084.eot",16],16],"./iconfont.ttf":[["04e0360c30e5af3cd8fde800632c3cf1.ttf",17],17],"./iconfont.svg":[["26565906627a51cc3d91a6dd519f3436.svg",18],18],"_css_loader":10}],8:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":10}],4:[function(require,module,exports) {
+},{"_css_loader":10}],3:[function(require,module,exports) {
 'use strict';
 
 var _react = require('react');
@@ -63698,7 +63873,7 @@ require('sweetalert2/dist/sweetalert2.min.css');
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 _reactDom2.default.render(_react2.default.createElement(_App2.default, null), document.querySelector('#app'));
-},{"react":57,"react-dom":58,"./src/App":12,"./assets/css/reset.css":11,"./assets/icon/iconfont.css":13,"sweetalert2/dist/sweetalert2.min.css":3}],126:[function(require,module,exports) {
+},{"react":25,"react-dom":24,"./src/App":11,"./assets/css/reset.css":12,"./assets/icon/iconfont.css":13,"sweetalert2/dist/sweetalert2.min.css":8}],142:[function(require,module,exports) {
 
 var global = (1, eval)('this');
 var OldModule = module.bundle.Module;
@@ -63720,7 +63895,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '41792' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '40762' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -63821,5 +63996,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.require, id);
   });
 }
-},{}]},{},[126,4])
+},{}]},{},[142,3])
 //# sourceMappingURL=/dist/491ce5ddacbb3a68e098914ade110dda.map

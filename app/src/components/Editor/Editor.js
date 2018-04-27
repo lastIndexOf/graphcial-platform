@@ -21,9 +21,21 @@ export default class Editor extends Component {
     this.props.checkToBackground()
   }
 
+  changeBackgroundColor () {
+    this.colorPicker.click()
+  }
+  
   makeNewRole () {
     console.log(sweetalert('暂不支持角色建模，请从素材库中选择素材'))
     
+  }
+
+  componentDidMount () {
+    this.colorPicker = document.createElement('input')
+    this.colorPicker.type = 'color'
+    this.colorPicker.onchange = e => {
+      editor.signals.sceneBackgroundChanged.dispatch(parseInt(this.colorPicker.value.substr( 1 ), 16 ))
+    }
   }
 
   render () {
@@ -58,7 +70,7 @@ export default class Editor extends Component {
               <h4 className="gra-editor-main-bgimg-edit-title">新建背景</h4>
               <span className="gra-editor-main-bgimg-edit-operate">
                 <i className="iconfont icon-zhaopianphotos11 gra-icon-addbgimg" onClick={this.addBackground.bind(this, 'background')}></i>
-                <i className="iconfont icon-huabi gra-icon-draw"></i>
+                <i className="iconfont icon-huabi gra-icon-draw" title="修改背景颜色" onClick={this.changeBackgroundColor.bind(this)}></i>
                 <i className="iconfont icon-shangchuan1 gra-icon-upload"></i>
                 <i className="iconfont icon-xiangji gra-icon-camera"></i>
               </span>

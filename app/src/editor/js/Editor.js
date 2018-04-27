@@ -26,6 +26,10 @@ var Editor = function () {
 
 		showModal: new Signal(),
 
+		// position
+
+		positionInfo: new Signal(),
+
 		// notifications
 
 		editorCleared: new Signal(),

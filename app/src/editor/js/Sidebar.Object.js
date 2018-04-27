@@ -365,12 +365,13 @@ Sidebar.Object = function ( editor ) {
 	function update() {
 
 		var object = editor.selected;
-
+		console.log(1)
 		if ( object !== null ) {
 
 			var newPosition = new THREE.Vector3( objectPositionX.getValue(), objectPositionY.getValue(), objectPositionZ.getValue() );
 			if ( object.position.distanceTo( newPosition ) >= 0.01 ) {
 
+				console.log(newPosition)
 				editor.execute( new SetPositionCommand( object, newPosition ) );
 
 			}
@@ -378,6 +379,7 @@ Sidebar.Object = function ( editor ) {
 			var newRotation = new THREE.Euler( objectRotationX.getValue() * THREE.Math.DEG2RAD, objectRotationY.getValue() * THREE.Math.DEG2RAD, objectRotationZ.getValue() * THREE.Math.DEG2RAD );
 			if ( object.rotation.toVector3().distanceTo( newRotation.toVector3() ) >= 0.01 ) {
 
+				console.log(newRotation)
 				editor.execute( new SetRotationCommand( object, newRotation ) );
 
 			}
@@ -385,6 +387,7 @@ Sidebar.Object = function ( editor ) {
 			var newScale = new THREE.Vector3( objectScaleX.getValue(), objectScaleY.getValue(), objectScaleZ.getValue() );
 			if ( object.scale.distanceTo( newScale ) >= 0.01 ) {
 
+				console.log(newScale)
 				editor.execute( new SetScaleCommand( object, newScale ) );
 
 			}
@@ -591,22 +594,24 @@ Sidebar.Object = function ( editor ) {
 	function updateUI( object ) {
 
 		objectType.setValue( object.type );
-
+		
 		objectUUID.setValue( object.uuid );
 		objectName.setValue( object.name );
-
+		
 		objectPositionX.setValue( object.position.x );
 		objectPositionY.setValue( object.position.y );
 		objectPositionZ.setValue( object.position.z );
-
+		
 		objectRotationX.setValue( object.rotation.x * THREE.Math.RAD2DEG );
 		objectRotationY.setValue( object.rotation.y * THREE.Math.RAD2DEG );
 		objectRotationZ.setValue( object.rotation.z * THREE.Math.RAD2DEG );
-
+		
 		objectScaleX.setValue( object.scale.x );
 		objectScaleY.setValue( object.scale.y );
 		objectScaleZ.setValue( object.scale.z );
-
+		
+		editor.signals.positionInfo.dispatch(object);
+		
 		if ( object.fov !== undefined ) {
 
 			objectFov.setValue( object.fov );

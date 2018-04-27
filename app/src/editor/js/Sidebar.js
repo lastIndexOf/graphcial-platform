@@ -26,13 +26,18 @@ var Sidebar = function ( editor ) {
 	}
 
 	//
-
+	var _properties = new Sidebar.Properties( editor )
+	var _animation = new Sidebar.Animation( editor )
+	var _scripts = new Sidebar.Script( editor )
 	var scene = new UI.Span().add(
 		new Sidebar.Scene( editor ),
-		// new Sidebar.Properties( editor ),
-		// new Sidebar.Animation( editor ),
-		// new Sidebar.Script( editor )
+		// _properties,
+		// _animation,
+		// _scripts
 	);
+	_properties.dom.style.display = 'none'
+	_animation.dom.style.display = 'none'
+	_scripts.dom.style.display = 'none'
 	container.add( scene );
 
 	var project = new UI.Span().add(

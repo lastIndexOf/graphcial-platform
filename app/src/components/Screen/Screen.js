@@ -10,9 +10,15 @@ export default class Screen extends Component {
     this.state = {
       isStarted: false,
       isEnded: false,
-      _x: 0,
-      _y: 0,
-      _z: 0
+      _px: 0,
+      _py: 0,
+      _pz: 0,
+      _rx: 0,
+      _ry: 0,
+      _rz: 0,
+      _sx: 0,
+      _sy: 0,
+      _sz: 0
     }
   }
 
@@ -33,8 +39,27 @@ export default class Screen extends Component {
     }
   }
 
+  componentDidMount () {
+
+    setTimeout(() => {
+      window.editor.signals.positionInfo.add(({ position, rotation, scale }) => {
+        this.setState({
+          _px: (position && position.x.toFixed(2)) || '0',
+          _py: (position && position.y.toFixed(2)) || '0',
+          _pz: (position && position.z.toFixed(2)) || '0',
+          _rx: (rotation && rotation.x.toFixed(2)) || '0',
+          _ry: (rotation && rotation.y.toFixed(2)) || '0',
+          _rz: (rotation && rotation.z.toFixed(2)) || '0',
+          _sx: (scale && scale.x.toFixed(2)) || '0',
+          _sy: (scale && scale.y.toFixed(2)) || '0',
+          _sz: (scale && scale.z.toFixed(2)) || '0'
+        })
+      })
+    }, 0)
+  }
+
   render () {
-    let { _x, _y, _z } = this.state
+    let { _px, _py, _pz, _rx, _ry, _rz, _sx, _sy, _sz } = this.state
 
     return (
       <section className="gra-screen-wrapper">
@@ -49,9 +74,18 @@ export default class Screen extends Component {
           </div>
         </div>
         <div className="gra-screen-footer">
-          <span className="gra-screen-x">x: {_x}</span>
-          <span className="gra-screen-y">y: {_y}</span>
-          <span className="gra-screen-z">z: {_z}</span>
+          <span className="gra-screen-x">位置: </span>
+          <span className="gra-screen-x">{_px}</span>
+          <span className="gra-screen-x">{_py}</span>
+          <span className="gra-screen-x">{_pz}</span>
+          <span className="gra-screen-x">旋转: </span>
+          <span className="gra-screen-x">{_rx}</span>
+          <span className="gra-screen-x">{_ry}</span>
+          <span className="gra-screen-x">{_rz}</span>
+          <span className="gra-screen-y">缩放: </span>
+          <span className="gra-screen-z">{_sx}</span>
+          <span className="gra-screen-z">{_sy}</span>
+          <span className="gra-screen-z">{_sz}</span>
         </div>
       </section>
     )
