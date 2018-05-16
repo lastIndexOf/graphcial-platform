@@ -293,11 +293,13 @@
     bottom: 0;
     background-color: #e8e8e8; }
     .gra-content-wrapper .gra-content-main-wrapper .gra-content-main-container {
+      display: inline-block;
       width: 100%;
-      height: 100%; }
+      height: 100%;
+      vertical-align: top; }
 
 .hidden {
-  display: none; }
+  display: none !important; }
 .gra-content-script-editor {
   width: 100%;
   height: 100%; }
@@ -305,12 +307,146 @@
     width: 99%;
     height: 200px; }
   .gra-content-script-editor .gra-content-script-blockly {
-    height: 80%;
+    height: 100%;
     width: 100%; }
     .gra-content-script-editor .gra-content-script-blockly .injectionDiv .blocklyToolboxDiv {
       width: 15%;
       padding: 6px;
       box-sizing: border-box; }
+@charset "UTF-8";
+.gra-content-voice-editor {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  vertical-align: top; }
+  .gra-content-voice-editor .gra-content-voice-left-wrapper,
+  .gra-content-voice-editor .gra-content-voice-right-wrapper {
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box; }
+  .gra-content-voice-editor .gra-content-voice-left-wrapper {
+    width: 15%;
+    height: 100%;
+    overflow: hidden;
+    padding: 6px; }
+    .gra-content-voice-editor .gra-content-voice-left-wrapper .gra-content-voice-left-header {
+      padding: 6px;
+      font-style: '微软雅黑';
+      font-size: 14px;
+      font-weight: 700; }
+    .gra-content-voice-editor .gra-content-voice-left-wrapper .gra-content-btn-wrapper {
+      width: 100%; }
+      .gra-content-voice-editor .gra-content-voice-left-wrapper .gra-content-btn-wrapper .btn {
+        display: inline-block;
+        height: 20px;
+        font-size: 14px;
+        padding: 0 6px;
+        margin: 4px;
+        color: #fff;
+        cursor: pointer;
+        line-height: 20px;
+        vertical-align: top;
+        border-radius: 6px; }
+        .gra-content-voice-editor .gra-content-voice-left-wrapper .gra-content-btn-wrapper .btn.btn-default {
+          background-color: #44a8f2; }
+          .gra-content-voice-editor .gra-content-voice-left-wrapper .gra-content-btn-wrapper .btn.btn-default:hover {
+            background-color: #43c8f2; }
+        .gra-content-voice-editor .gra-content-voice-left-wrapper .gra-content-btn-wrapper .btn.btn-danger {
+          background-color: #fa3140; }
+          .gra-content-voice-editor .gra-content-voice-left-wrapper .gra-content-btn-wrapper .btn.btn-danger:hover {
+            background-color: #ea3140; }
+    .gra-content-voice-editor .gra-content-voice-left-wrapper .gra-content-voice-list {
+      width: 100%;
+      padding: 12px; }
+      .gra-content-voice-editor .gra-content-voice-left-wrapper .gra-content-voice-list .gra-content-voice-item .gra-content-voice-item-content {
+        display: inline-block;
+        position: relative;
+        height: 32px;
+        cursor: pointer;
+        line-height: 32px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis; }
+        .gra-content-voice-editor .gra-content-voice-left-wrapper .gra-content-voice-list .gra-content-voice-item .gra-content-voice-item-content:hover::after, .gra-content-voice-editor .gra-content-voice-left-wrapper .gra-content-voice-list .gra-content-voice-item .gra-content-voice-item-content:hover::before, .gra-content-voice-editor .gra-content-voice-left-wrapper .gra-content-voice-list .gra-content-voice-item .gra-content-voice-item-content.active::after, .gra-content-voice-editor .gra-content-voice-left-wrapper .gra-content-voice-list .gra-content-voice-item .gra-content-voice-item-content.active::before {
+          opacity: 1;
+          width: 50%; }
+        .gra-content-voice-editor .gra-content-voice-left-wrapper .gra-content-voice-list .gra-content-voice-item .gra-content-voice-item-content::before {
+          content: '';
+          position: absolute;
+          display: inline-block;
+          opacity: 0;
+          right: 50%;
+          bottom: 0;
+          width: 0;
+          height: 2px;
+          transition: all .5s;
+          background-color: #43c8f2; }
+        .gra-content-voice-editor .gra-content-voice-left-wrapper .gra-content-voice-list .gra-content-voice-item .gra-content-voice-item-content::after {
+          content: '';
+          position: absolute;
+          display: inline-block;
+          opacity: 0;
+          left: 50%;
+          bottom: 0;
+          width: 0;
+          height: 2px;
+          transition: all .5s;
+          background-color: #43c8f2; }
+  .gra-content-voice-editor .gra-content-voice-right-wrapper {
+    width: 85%;
+    height: 100%;
+    padding: 12px; }
+    .gra-content-voice-editor .gra-content-voice-right-wrapper .gra-content-voice-right-content {
+      width: 100%;
+      height: 100%;
+      background-color: #d2d2d2; }
+      .gra-content-voice-editor .gra-content-voice-right-wrapper .gra-content-voice-right-content .gra-content-voice-item-wrapper {
+        padding: 32px; }
+        .gra-content-voice-editor .gra-content-voice-right-wrapper .gra-content-voice-right-content .gra-content-voice-item-wrapper .gra-content-voice-item-title {
+          color: #666;
+          font-size: 24px;
+          font-weight: 700; }
+        .gra-content-voice-editor .gra-content-voice-right-wrapper .gra-content-voice-right-content .gra-content-voice-item-wrapper .process-wrapper {
+          position: relative;
+          width: 60%;
+          margin: 24px 0;
+          height: 10px;
+          cursor: pointer;
+          line-height: 10px; }
+          .gra-content-voice-editor .gra-content-voice-right-wrapper .gra-content-voice-right-content .gra-content-voice-item-wrapper .process-wrapper .process-all {
+            position: absolute;
+            width: 100%;
+            height: 10px;
+            line-height: 10px;
+            background-color: #000; }
+          .gra-content-voice-editor .gra-content-voice-right-wrapper .gra-content-voice-right-content .gra-content-voice-item-wrapper .process-wrapper .process-current {
+            position: absolute;
+            width: 0%;
+            height: 10px;
+            line-height: 10px;
+            background-color: #ccc; }
+        .gra-content-voice-editor .gra-content-voice-right-wrapper .gra-content-voice-right-content .gra-content-voice-item-wrapper .gra-content-voice-item-time {
+          position: relative;
+          width: 60%;
+          margin: 24px 0;
+          height: 10px;
+          cursor: pointer;
+          line-height: 10px; }
+          .gra-content-voice-editor .gra-content-voice-right-wrapper .gra-content-voice-right-content .gra-content-voice-item-wrapper .gra-content-voice-item-time .gra-content-voice-time {
+            float: right; }
+        .gra-content-voice-editor .gra-content-voice-right-wrapper .gra-content-voice-right-content .gra-content-voice-item-wrapper .gra-content-voice-control-wrapper {
+          text-align: center;
+          width: 60%; }
+          .gra-content-voice-editor .gra-content-voice-right-wrapper .gra-content-voice-right-content .gra-content-voice-item-wrapper .gra-content-voice-control-wrapper .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: 500;
+            color: #fff;
+            border-radius: 6px;
+            background-color: #999; }
+            .gra-content-voice-editor .gra-content-voice-right-wrapper .gra-content-voice-right-content .gra-content-voice-item-wrapper .gra-content-voice-control-wrapper .btn:hover {
+              background-color: #AAA; }
 .gra-content-background-editor {
   width: 100%;
   height: 100%; }
@@ -467,16 +603,81 @@
     width: 65%;
     height: 100%;
     padding: 6px 6px 0 0;
-    overflow: auto;
+    overflow: hidden;
     box-sizing: border-box; }
 .gra-drag-modal {
   display: none;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 120px;
+  left: 640px;
+  background-color: #d2d2d2;
   z-index: 99; }
   .gra-drag-modal.display {
     display: inherit; }
+  .gra-drag-modal .gra-drag-modal-header {
+    width: 100%;
+    height: 30px;
+    padding: 0 12px;
+    line-height: 30px;
+    cursor: all-scroll;
+    box-sizing: border-box;
+    background-color: #d2d2d2; }
+    .gra-drag-modal .gra-drag-modal-header .iconfont {
+      float: right;
+      padding: 0 0 0 12px;
+      font-size: 14px;
+      line-height: 30px; }
+      .gra-drag-modal .gra-drag-modal-header .iconfont:hover {
+        color: #fff; }
+  .gra-drag-modal .gra-drag-modal-content {
+    color: #fff;
+    padding: 12px 24px 24px;
+    background-color: #393d49; }
+    .gra-drag-modal .gra-drag-modal-content .Row {
+      height: 32px;
+      line-height: 32px; }
+      .gra-drag-modal .gra-drag-modal-content .Row input:not(.Number), .gra-drag-modal .gra-drag-modal-content .Row select {
+        color: #fff;
+        border: 1px solid #1e9fff;
+        border-radius: 6px;
+        background-color: #1e9fff; }
+      .gra-drag-modal .gra-drag-modal-content .Row canvas {
+        border: 1px solid #1e9fff; }
+      .gra-drag-modal .gra-drag-modal-content .Row canvas {
+        vertical-align: middle; }
+.gra-debug-modal {
+  display: none;
+  position: absolute;
+  top: 120px;
+  left: 640px;
+  background-color: #d2d2d2;
+  z-index: 99; }
+  .gra-debug-modal.display {
+    display: inherit; }
+  .gra-debug-modal .gra-debug-modal-header {
+    width: 100%;
+    height: 30px;
+    padding: 0 12px;
+    line-height: 30px;
+    cursor: all-scroll;
+    box-sizing: border-box;
+    background-color: #d2d2d2; }
+    .gra-debug-modal .gra-debug-modal-header .iconfont {
+      float: right;
+      padding: 0 0 0 12px;
+      font-size: 14px;
+      line-height: 30px; }
+      .gra-debug-modal .gra-debug-modal-header .iconfont:hover {
+        color: #fff; }
+  .gra-debug-modal .gra-debug-modal-content {
+    color: #fff;
+    padding: 12px 24px 24px;
+    background-color: #393d49; }
+    .gra-debug-modal .gra-debug-modal-content #debug-modal-textarea {
+      min-width: 640px;
+      min-height: 480px;
+      color: #fff;
+      background-color: #393d49; }
 /**
  * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
  * http://cssreset.com
@@ -499,7 +700,7 @@
      border: 0;
      font-size: 100%;
      font-weight: normal;
-     vertical-align: baseline;
+     vertical-align: middle;
  }
  
  /* HTML5 display-role reset for older browsers */

@@ -164,6 +164,10 @@ var APP = {
 				dispatch( events.update, { time: time, delta: time - prevTime } );
 
 			} catch ( e ) {
+				
+				let debugModal = document.getElementById('debug-modal-textarea')
+				debugModal.style.color = '#fa3140'
+				debugModal.value = ( e.message || e ) + ( e.stack || "" )
 
 				console.error( ( e.message || e ), ( e.stack || "" ) );
 
@@ -188,7 +192,19 @@ var APP = {
 			document.addEventListener( 'touchend', onDocumentTouchEnd );
 			document.addEventListener( 'touchmove', onDocumentTouchMove );
 
-			dispatch( events.start, arguments );
+			try {
+				
+				dispatch( events.start, arguments );
+			
+			} catch (e) {
+
+				let debugModal = document.getElementById('debug-modal-textarea')
+				debugModal.style.color = '#fa3140'
+				debugModal.value = ( e.message || e ) + ( e.stack || "" )
+
+				console.error( ( e.message || e ), ( e.stack || "" ) )
+
+			}
 
 			renderer.animate( animate );
 

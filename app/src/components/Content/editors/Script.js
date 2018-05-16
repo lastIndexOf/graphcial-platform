@@ -22,8 +22,10 @@ export default class Script extends Component {
     function myUpdateFunction(event) {
       let code = Blockly.JavaScript.workspaceToCode(workspace)
       let xml = Blockly.Xml.workspaceToDom(workspace)
-
-      document.getElementById('textarea').value = code
+      
+      let debugModal = document.getElementById('debug-modal-textarea')
+      debugModal.style.color = '#fff'
+      debugModal.value = code
 
       let object = editor.selected
       let script = editor.scripts[object.uuid] && editor.scripts[object.uuid][0]
@@ -41,7 +43,6 @@ export default class Script extends Component {
     return (
       <section className="gra-content-script-editor">
         <div id="blocklyDiv" className="gra-content-script-blockly"></div>
-        <textarea id="textarea"></textarea>
       </section>
     )
   }

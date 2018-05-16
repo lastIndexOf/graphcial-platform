@@ -30,6 +30,9 @@ var Editor = function () {
 
 		positionInfo: new Signal(),
 
+		// dragAction
+		dragAction: new Signal(),
+
 		// notifications
 
 		editorCleared: new Signal(),
@@ -94,6 +97,7 @@ var Editor = function () {
 	this.materials = {};
 	this.textures = {};
 	this.scripts = {};
+	this.voices = {};
 
 	this.selected = null;
 	this.helpers = {};

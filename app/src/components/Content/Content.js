@@ -47,9 +47,6 @@ export default class Content extends Component {
           <div className={`gra-content-main-container ${tabIndex === 2 ? '' : 'hidden'}`}>
             <Voice />
           </div>
-          <div className={`gra-content-main-container ${tabIndex === 3 ? '' : 'hidden'}`}>
-            <Handsome />
-          </div>
         </div>
       </section>
     )

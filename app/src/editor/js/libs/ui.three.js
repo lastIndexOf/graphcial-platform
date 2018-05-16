@@ -15,7 +15,7 @@ UI.Texture = function ( mapping ) {
 	var input = document.createElement( 'input' );
 	input.type = 'file';
 	input.addEventListener( 'change', function ( event ) {
-
+		
 		loadFile( event.target.files[ 0 ] );
 
 	} );
@@ -26,7 +26,7 @@ UI.Texture = function ( mapping ) {
 	canvas.height = 16;
 	canvas.style.cursor = 'pointer';
 	canvas.style.marginRight = '5px';
-	canvas.style.border = '1px solid #888';
+	// canvas.style.border = '1px solid #888';
 	canvas.addEventListener( 'click', function ( event ) {
 
 		input.click();
@@ -44,7 +44,7 @@ UI.Texture = function ( mapping ) {
 	var name = document.createElement( 'input' );
 	name.disabled = true;
 	name.style.width = '64px';
-	name.style.border = '1px solid #ccc';
+	// name.style.border = '1px solid #ccc';
 	dom.appendChild( name );
 
 	function loadFile( file ) {
@@ -190,6 +190,7 @@ UI.Outliner = function ( editor ) {
 			case 38: // up
 			case 40: // down
 			case 67: // C
+			case 79: // O
 				event.preventDefault();
 				event.stopPropagation();
 				break;
@@ -217,6 +218,14 @@ UI.Outliner = function ( editor ) {
 
 					editor.execute( new AddObjectCommand( object ) );
 				}
+				break;
+			case 79: // O
+				if (editor.selected !== editor.scene && editor.selected !== editor.camera) {
+				
+					window.editor.signals.dragAction.dispatch();
+				
+				} 
+				
 				break;
 		}
 

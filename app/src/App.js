@@ -3,6 +3,7 @@ import Header from './components/Header/Header'
 import Container from './components/Container'
 
 import Dragmodal from './components/Dragmodal/Dragmodal'
+import Debugmodal from './components/Dragmodal/Debugmodal'
 
 import './App.scss'
 
@@ -13,6 +14,7 @@ export default class App extends Component {
         <Header />
         <Container />
         <Dragmodal />
+        <Debugmodal />
       </div>
     )
   }

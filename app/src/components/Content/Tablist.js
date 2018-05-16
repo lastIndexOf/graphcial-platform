@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 import './Tablist.scss'
-const TAB_LIST = [ '脚本' ,'背景' ,'声音' ,'造型' ]
+const TAB_LIST = [ '脚本' ,'场景' ,'声音' ]
 
 export default class Tablist extends Component {
   constructor () {

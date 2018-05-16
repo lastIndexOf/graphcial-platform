@@ -11,7 +11,6 @@ Sidebar.Scene = function ( editor ) {
 	container.setPaddingTop( '20px' );
 
 	// outliner
-	// console.log(container)
 	function buildOption( object, draggable ) {
 
 		var option = document.createElement( 'div' );

@@ -89,8 +89,9 @@ Sidebar.Object = function ( editor ) {
 
 	} );
 
-	objectNameRow.add( new UI.Text( 'Name' ).setWidth( '90px' ) );
+	objectNameRow.add( new UI.Text( 'ID' ).setWidth( '90px' ) );
 	objectNameRow.add( objectName );
+	window.objectNameRow = objectNameRow
 
 	container.add( objectNameRow );
 
@@ -177,9 +178,10 @@ Sidebar.Object = function ( editor ) {
 	var objectColorRow = new UI.Row();
 	var objectColor = new UI.Color().onChange( update );
 
-	objectColorRow.add( new UI.Text( 'Color' ).setWidth( '90px' ) );
+	objectColorRow.add( new UI.Text( '颜色' ).setWidth( '90px' ) );
 	objectColorRow.add( objectColor );
 
+	window.objectColorRow = objectColorRow
 	container.add( objectColorRow );
 
 	// ground color

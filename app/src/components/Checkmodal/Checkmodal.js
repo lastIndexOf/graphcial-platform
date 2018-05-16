@@ -216,6 +216,9 @@ export default class Checkmodal extends Component {
                         sprite.name = 'Sprite'
 
                         editor.execute( new AddObjectCommand( sprite ) )
+                        let script = { name: '', source: '', xml: document.querySelector('#function_update') }
+                        editor.execute( new AddScriptCommand( editor.selected, script ) )
+                        editor.getWorkspace()
                       }
                     }
                   ]
@@ -236,6 +239,9 @@ export default class Checkmodal extends Component {
                         light.name = 'PointLight'
 
                         editor.execute( new AddObjectCommand( light ) )
+                        let script = { name: '', source: '', xml: document.querySelector('#function_update') }
+                        editor.execute( new AddScriptCommand( editor.selected, script ) )
+                        editor.getWorkspace()
                       }
                     },
                     {
@@ -255,6 +261,9 @@ export default class Checkmodal extends Component {
                         light.position.set( 5, 10, 7.5 )
 
                         editor.execute( new AddObjectCommand( light ) )
+                        let script = { name: '', source: '', xml: document.querySelector('#function_update') }
+                        editor.execute( new AddScriptCommand( editor.selected, script ) )
+                        editor.getWorkspace()
                       }
                     },
                     {
@@ -271,6 +280,9 @@ export default class Checkmodal extends Component {
                         light.position.set( 5, 10, 7.5 )
 
                         editor.execute( new AddObjectCommand( light ) )
+                        let script = { name: '', source: '', xml: document.querySelector('#function_update') }
+                        editor.execute( new AddScriptCommand( editor.selected, script ) )
+                        editor.getWorkspace()
                       }
                     },
                     {
@@ -287,6 +299,9 @@ export default class Checkmodal extends Component {
                         light.position.set( 0, 10, 0 )
 
                         editor.execute( new AddObjectCommand( light ) )
+                        let script = { name: '', source: '', xml: document.querySelector('#function_update') }
+                        editor.execute( new AddScriptCommand( editor.selected, script ) )
+                        editor.getWorkspace()
                       }
                     },
                     {
@@ -299,6 +314,9 @@ export default class Checkmodal extends Component {
                         light.name = 'AmbientLight'
 
                         editor.execute( new AddObjectCommand( light ) )
+                        let script = { name: '', source: '', xml: document.querySelector('#function_update') }
+                        editor.execute( new AddScriptCommand( editor.selected, script ) )
+                        editor.getWorkspace()
                       }
                     }
                   ]
@@ -315,6 +333,9 @@ export default class Checkmodal extends Component {
                         camera.name = 'PerspectiveCamera'
 
                         editor.execute( new AddObjectCommand( camera ) )
+                        let script = { name: '', source: '', xml: document.querySelector('#function_update') }
+                        editor.execute( new AddScriptCommand( editor.selected, script ) )
+                        editor.getWorkspace()
                       }
                     }
                   ]
