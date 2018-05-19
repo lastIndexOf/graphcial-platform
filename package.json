@@ -20,11 +20,10 @@
     "signals": "^1.0.0"
   },
   "dependencies": {
+    "animejs": "^2.2.0",
     "connect": "^3.6.6",
     "electron": "^1.8.2",
-    "howler": "^2.0.12",
     "react": "^16.2.0",
-    "react-addons-css-transition-group": "^15.6.2",
     "react-dom": "^16.2.0",
     "react-router": "^4.2.0",
     "serve-static": "^1.13.2",

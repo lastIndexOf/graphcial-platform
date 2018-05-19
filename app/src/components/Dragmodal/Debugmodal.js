@@ -28,7 +28,7 @@ export default class Debugmodal extends Component {
       }
     }
     this.state = {
-      showModal: true
+      showModal: false
     }
   }
 
