@@ -2,4 +2,4 @@
 
 - 安装依赖 yarn install / or npm i
 
-- [使用说明](./tree/master/docs)
+- [使用说明](./docs)
