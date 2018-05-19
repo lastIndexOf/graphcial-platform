@@ -24,6 +24,9 @@ var Player = function ( editor ) {
 
 	signals.startPlayer.add( function () {
 
+		if (player.state === 'playing') return;
+		player.state = 'playing';
+
 		container.setDisplay( '' );
 
 		player.load( editor.toJSON() );
@@ -33,6 +36,9 @@ var Player = function ( editor ) {
 	} );
 
 	signals.stopPlayer.add( function () {
+
+		if (player.state === 'stop') return;
+		player.state = 'stop';
 
 		container.setDisplay( 'none' );
 

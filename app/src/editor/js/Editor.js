@@ -22,6 +22,10 @@ var Editor = function () {
 		startPlayer: new Signal(),
 		stopPlayer: new Signal(),
 
+		// voices
+		initVoices: new Signal(),
+		clearVoices: new Signal(),
+
 		// actions
 
 		showModal: new Signal(),
@@ -475,6 +479,7 @@ Editor.prototype = {
 		this.materials = {};
 		this.textures = {};
 		this.scripts = {};
+		this.voices = {};
 
 		this.deselect();
 
@@ -505,6 +510,7 @@ Editor.prototype = {
 
 		this.history.fromJSON( json.history );
 		this.scripts = json.scripts;
+		this.voices = json.voices;
 
 		this.setScene( loader.parse( json.scene ) );
 
@@ -543,7 +549,8 @@ Editor.prototype = {
 			camera: this.camera.toJSON(),
 			scene: this.scene.toJSON(),
 			scripts: this.scripts,
-			history: this.history.toJSON()
+			history: this.history.toJSON(),
+			voices: this.voices
 
 		};
 

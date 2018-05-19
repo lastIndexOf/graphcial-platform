@@ -337,6 +337,30 @@ Blockly.Blocks['key_down'] = {
             [
               "↓",
               "40"
+            ],
+            [
+              "A",
+              "65"
+            ],
+            [
+              "W",
+              "87"
+            ],
+            [
+              "D",
+              "68"
+            ],
+            [
+              "S",
+              "83"
+            ],
+            [
+              "↵",
+              "13"
+            ],
+            [
+              "空格",
+              "32"
             ]
           ]
         }
@@ -1062,5 +1086,38 @@ Blockly.JavaScript['clear_interval'] = function(block) {
   var variable_interval = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('interval'), Blockly.Variables.NAME_TYPE);
   // TODO: Assemble JavaScript into code variable.
   var code = `clearInterval(${variable_interval}) \n`;
+  return code;
+};
+
+// play_voice
+
+Blockly.Blocks['play_voice'] = {
+  init: function () {
+    this.jsonInit({
+      "type": "play_voice",
+      "message0": "播放声音 %1",
+      "args0": [
+        {
+          "type": "field_input",
+          "name": "voice",
+          "text": "voice"
+        }
+      ],
+      "previousStatement": null,
+      "nextStatement": null,
+      "colour": 210,
+      "tooltip": "",
+      "helpUrl": ""
+    })
+  }
+}
+
+Blockly.JavaScript['play_voice'] = function(block) {
+  var text_voice = block.getFieldValue('voice');
+  // TODO: Assemble JavaScript into code variable.
+  var code = `var voice = editor.voices['${text_voice}'].url
+_audio.src = voice
+_audio.currentTime = 0
+_audio.play() \n`;
   return code;
 };

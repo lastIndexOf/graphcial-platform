@@ -621,18 +621,32 @@ var Loader = function ( editor ) {
 			case 'app':
 
 				for (let key in data.scripts) {
+
 					data.scripts[key][0].xml = 
 						(function () {
+
 							let xml = document.createElement('xml')
 							
 							xml.innerHTML = data.scripts[key][0].xml
 
 							return xml
+
 						})() 
 						|| ''
+
 				}
 
-				console.log(data)
+				for (let key in data.voices) {
+
+					let buffer = fs.readFileSync(data.voices[key].path)
+					let blob = new Blob([buffer])
+					let url = URL.createObjectURL(blob)
+
+					data.voices[key].url = url
+
+				}
+
+				editor.signals.initVoices.dispatch(data.voices);
 				editor.fromJSON( data );
 
 				break;

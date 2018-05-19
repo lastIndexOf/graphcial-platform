@@ -213,10 +213,29 @@ UI.Outliner = function ( editor ) {
 
 					if ( object.parent === null ) return; 
 
-					object = object.clone();
-					editor.scripts[object.uuid] = [{ name: '', source: '', xml: document.querySelector('#function_update') }]
+					if  (object) {
+						
+						let script = (oldScript => {
+							
+							let script = {}
 
-					editor.execute( new AddObjectCommand( object ) );
+							script.name = oldScript.name
+							script.source = oldScript.source
+							script.xml = document.createElement('xml')
+							script.xml.innerHTML = oldScript.xml.innerHTML
+
+							return script
+
+						})(editor.scripts[object.uuid][0])
+
+						object = object.clone();
+						editor.scripts[object.uuid] = script.source
+							? [script]
+							: [{ name: '', source: '', xml: document.querySelector('#function_update') }]
+						
+						editor.execute( new AddObjectCommand( object ) );
+
+					}
 				}
 				break;
 			case 79: // O

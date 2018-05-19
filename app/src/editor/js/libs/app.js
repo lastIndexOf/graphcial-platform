@@ -15,6 +15,8 @@ var APP = {
 
 		this.dom = dom;
 
+		this.state = 'stop';
+
 		this.width = 500;
 		this.height = 500;
 
@@ -146,7 +148,7 @@ var APP = {
 		};
 
 		function dispatch( array, event ) {
-
+			
 			for ( var i = 0, l = array.length; i < l; i ++ ) {
 
 				array[ i ]( event );

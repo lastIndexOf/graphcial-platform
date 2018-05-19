@@ -15,10 +15,10 @@ app.on('ready', function() {
   mainWindow = new BrowserWindow({
     width: 1980,
     height: 1080,
-    frame: false //无边框
+    // frame: false //无边框
   })
 
-  // mainWindow.setMenu(null)
+  mainWindow.setMenu(null)
 
   mainWindow.loadURL('http://localhost:4000')
 

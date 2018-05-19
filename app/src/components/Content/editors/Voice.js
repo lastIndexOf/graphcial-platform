@@ -22,29 +22,7 @@ export default class Voice extends Component {
     this.fileInput = document.createElement('input')
     this.fileInput.type = 'file'
 
-    this.fileInput.addEventListener('change', e => {
-      if (e.target.files && e.target.files.length) {
-
-        let file = e.target.files[0]
-  
-        let buffer = fs.readFileSync(file.path)
-        let blob = new Blob([buffer])
-        let url = URL.createObjectURL(blob)
-        
-        this.videoAudio.src = url
-
-        let { voiceList } = this.state
-
-        this.setState({
-          voiceList: [ ...voiceList, {
-            name: file.name,
-            key: url
-          } ]
-        }, () => {
-          editor.voices[file.name] = url 
-        })
-      }
-    })
+    this.fileInput.addEventListener('change', getNewFile)
 
     this.processWrapper.addEventListener('mousedown', e => {
   
@@ -90,7 +68,63 @@ export default class Voice extends Component {
 
     })
 
-    window.audio = this.videoAudio
+    function getNewFile (e) {
+      if (e.target.files && e.target.files.length) {
+
+        let file = e.target.files[0]
+        let path = file.path
+
+        let buffer = fs.readFileSync(path)
+        let blob = new Blob([buffer])
+        let url = URL.createObjectURL(blob)
+        
+        self.videoAudio.src = url
+
+        let { voiceList } = self.state
+
+        self.setState({
+          voiceList: [ ...voiceList, {
+            name: file.name,
+            key: url
+          } ]
+        }, () => {
+          editor.voices[file.name] = { url, path }
+          self.fileInput.removeEventListener('change', getNewFile)
+          self.fileInput = document.createElement('input')
+          self.fileInput.type = 'file'
+      
+          self.fileInput.addEventListener('change', getNewFile)
+        })
+      }
+    }
+
+    window._audio = this.videoAudio
+    window.editor.signals.initVoices.add(function (voices) {
+
+      let voiceList = []
+      for (let key in voices) {
+        voiceList.push({
+          name: key,
+          key: voices[key].url
+        })
+      }
+
+      self.setState({
+        voiceList
+      })
+
+    })
+    window.editor.signals.clearVoices.add(function () {
+      
+      self.setState({
+        voiceIndex: -1,
+        voiceList: [],
+        voice: {},
+        currentTime: '00:00',
+        wholeTime: '00:00'
+      })
+
+    })
   }
 
   checkVoice (item, i) {
@@ -160,7 +194,8 @@ export default class Voice extends Component {
 
       this.setState({
         voiceList,
-        voiceIndex: voiceIndex === 0 ? -1 : voiceIndex
+        voiceIndex: -1,
+        voice: {}
       })
 
     }

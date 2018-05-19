@@ -4,9 +4,9 @@ import './Nextmenu.scss'
 
 export default class Nextmenu extends Component {
   exportProject () {
-    var output = editor.toJSON();
-		output.metadata.type = 'App';
-		delete output.history;
+    var output = editor.toJSON()
+		output.metadata.type = 'App'
+		delete output.history
 
     for (let key in output.scripts) {
       try {
@@ -27,7 +27,13 @@ export default class Nextmenu extends Component {
 
   newProject () {
     if (confirm('未保存的素材和脚本将会丢失， 确定要离开吗？')) {
+
+      window.workspace.clear()
+      editor.signals.stopPlayer.dispatch()
+      editor.signals.clearVoices.dispatch()
+      
       editor.clear()
+
 		}
   }
 
