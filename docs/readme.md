@@ -2,7 +2,7 @@
 
 - 初始界面
 
-  ![初始界面](./images/animation.png)
+  ![初始界面](./images/animation.gif)
 
   等待3秒或更久等待资源加载完毕后进入程序主界面
 
