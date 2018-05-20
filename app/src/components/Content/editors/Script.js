@@ -20,6 +20,7 @@ export default class Script extends Component {
     })
 
     function myUpdateFunction(event) {
+
       let code = Blockly.JavaScript.workspaceToCode(workspace)
       let xml = Blockly.Xml.workspaceToDom(workspace)
       
@@ -28,12 +29,15 @@ export default class Script extends Component {
       debugModal.value = code
 
       let object = editor.selected
-      let script = editor.scripts[object.uuid] && editor.scripts[object.uuid][0]
+      let script = object.uuid && editor.scripts[object.uuid] && editor.scripts[object.uuid][0]
 
       if (script) {
+
         script.source = code
         script.xml = xml
+
       }
+
     }
 
     workspace.addChangeListener(myUpdateFunction)

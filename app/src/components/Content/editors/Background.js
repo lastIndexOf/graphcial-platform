@@ -8,9 +8,6 @@ export default class Background extends Component {
   }
   
   componentDidMount () {
-    window.URL = window.URL || window.webkitURL;
-    window.BlobBuilder = window.BlobBuilder || window.WebKitBlobBuilder || window.MozBlobBuilder;
-
     Number.prototype.format = function (){
       return this.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,");
     };
@@ -20,7 +17,6 @@ export default class Background extends Component {
     window.editor = new Editor();
 
     window.viewport = new Viewport( editor );
-    document.body.appendChild( viewport.dom )
     this._container.appendChild( viewport.dom );
 
     window.script = new Script( editor );
@@ -32,29 +28,42 @@ export default class Background extends Component {
     window.toolbar = new Toolbar( editor );
     this._container.appendChild( toolbar.dom );
     
-    window.menubar = new Menubar( editor );
-    this._container.appendChild( menubar.dom );
-    menubar.dom.style.visibility = 'hidden';
-    
     window.sidebar = new Sidebar( editor );
     document.querySelector('#gra-role-wrapper').appendChild(sidebar.dom)
-    // sidebar.dom.style.visibility = 'hidden';
-
-    window.modal = new UI.Modal();
-    this._container.appendChild( modal.dom );
-
-    // new Viewport.Info( editor )
-    //
-
-    window.editor.setTheme( editor.config.getKey( 'theme' ) );
 
     window.editor.storage.init( function () {
 
       window.editor.storage.get( function ( state ) {
 
-        if ( isLoadingFromHash ) return;
-
         if ( state !== undefined ) {
+
+          for (let key in state.scripts) {
+
+            state.scripts[key][0].xml = 
+              (function () {
+  
+                let xml = document.createElement('xml')
+                
+                xml.innerHTML = state.scripts[key][0].xml
+  
+                return xml
+  
+              })() 
+              || ''
+  
+          }
+  
+          for (let key in state.voices) {
+  
+            let buffer = fs.readFileSync(state.voices[key].path)
+            let blob = new Blob([buffer])
+            let url = URL.createObjectURL(blob)
+  
+            state.voices[key].url = url
+  
+          }
+  
+          editor.signals.initVoices.dispatch(state.voices);
 
           window.editor.fromJSON( state );
 
@@ -76,12 +85,6 @@ export default class Background extends Component {
 
       function saveState( scene ) {
 
-        if ( window.editor.config.getKey( 'autosave' ) === false ) {
-
-          return;
-
-        }
-
         clearTimeout( window.timeout );
 
         window.timeout = setTimeout( function () {
@@ -90,7 +93,19 @@ export default class Background extends Component {
 
           window.timeout = setTimeout( function () {
 
-            window.editor.storage.set( editor.toJSON() );
+            let data = editor.toJSON();
+
+            for (let key in data.scripts) {
+
+              if (data.scripts[key][0]) {
+
+                data.scripts[key][0].xml = data.scripts[key][0].xml && data.scripts[key][0].xml.innerHTML
+
+              } 
+
+            }
+
+            window.editor.storage.set( data );
 
             window.editor.signals.savingFinished.dispatch();
 
@@ -113,67 +128,8 @@ export default class Background extends Component {
       window.signals.scriptChanged.add( saveState );
       window.signals.historyChanged.add( saveState );
 
-      window.signals.showModal.add( function ( content ) {
-
-        window.modal.show( content );
-
-      } );
-
     } );
 
-    //
-
-    document.addEventListener( 'dragover', function ( event ) {
-
-      event.preventDefault();
-      event.dataTransfer.dropEffect = 'copy';
-
-    }, false );
-
-    document.addEventListener( 'drop', function ( event ) {
-
-      event.preventDefault();
-
-      if ( event.dataTransfer.files.length > 0 ) {
-
-        editor.loader.loadFile( event.dataTransfer.files[ 0 ] );
-
-      }
-
-    }, false );
-
-    function onWindowResize( event ) {
-
-      window.editor.signals.windowResize.dispatch();
-
-    }
-
-    // window.addEventListener( 'resize', onWindowResize, false );
-    //
-
-    var isLoadingFromHash = false;
-    var hash = window.location.hash;
-
-    if ( hash.substr( 1, 5 ) === 'file=' ) {
-
-      var file = hash.substr( 6 );
-
-      if ( confirm( 'Any unsaved data will be lost. Are you sure?' ) ) {
-
-        var loader = new THREE.FileLoader();
-        loader.crossOrigin = '';
-        loader.load( file, function ( text ) {
-
-          editor.clear();
-          editor.fromJSON( JSON.parse( text ) );
-
-        } );
-
-        isLoadingFromHash = true;
-
-      }
-
-    }
   }
 
   getCanvasView () {

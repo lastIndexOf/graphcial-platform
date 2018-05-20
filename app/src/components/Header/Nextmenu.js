@@ -4,21 +4,13 @@ import './Nextmenu.scss'
 
 export default class Nextmenu extends Component {
   exportProject () {
+
     var output = editor.toJSON()
 		output.metadata.type = 'App'
-		delete output.history
-
-    for (let key in output.scripts) {
-      try {
-
-        output.scripts[key][0].xml = output.scripts[key][0].xml.innerHTML
-
-      } catch (e) {}
-    }
-
     output = JSON.stringify( output )
 
-		saveString( output, 'app.json' )
+    this.saveString( output, 'app.json' )
+    
   }
   
   importProject () {
@@ -50,6 +42,24 @@ export default class Nextmenu extends Component {
       form.reset()
 
     })
+
+    var link = document.createElement( 'a' )
+    link.style.display = 'none'
+    document.body.appendChild( link )
+
+    this.save = ( blob, filename ) => {
+
+      link.href = URL.createObjectURL( blob )
+      link.download = filename || 'data.json'
+      link.click()
+
+    }
+
+    this.saveString = ( text, filename ) => {
+	
+      this.save( new Blob( [ text ], { type: 'text/plain' } ), filename )
+  
+    }
   }
 
   render () {

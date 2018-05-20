@@ -40,7 +40,7 @@ app.on('ready', function() {
       }, 500)
 
 
-      // if (process.NODE_ENV !== 'production') mainWindow.openDevTools()
+      if (process.NODE_ENV !== 'production') mainWindow.openDevTools()
 
     } else {
 
