@@ -1,6 +1,8 @@
 .gra-screen-wrapper {
-  height: 100%;
   position: relative;
+  transition: all .4s cubic-bezier(.3, 1.2, .8, 1);
+  height: 100%;
+  width: 100%;
   .gra-screen-header {
     height: 40px;
     border-top-left-radius: 20px;

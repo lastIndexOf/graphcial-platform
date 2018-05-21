@@ -13,6 +13,14 @@ var Player = function ( editor ) {
 
 	//
 
+	container.setSize = function () {
+
+		player.setSize( container.dom.clientWidth, container.dom.clientHeight );
+
+	};
+
+	//
+
 	var player = new APP.Player();
 	container.dom.appendChild( player.dom );
 

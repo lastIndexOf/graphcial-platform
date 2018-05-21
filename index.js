@@ -49,7 +49,7 @@ app.on('ready', function() {
     }
 
   }
-  setTimeout(checkWindow, 3000)
+  setTimeout(checkWindow, 1500)
   
   animateWindow.once('ready-to-show', () => {
 

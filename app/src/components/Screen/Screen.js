@@ -2,14 +2,13 @@ import React, { Component } from 'react'
 
 import './Screen.scss'
 
-const THREE = require('three')
-
 export default class Screen extends Component {
   constructor () {
     super()
     this.state = {
       isStarted: false,
       isEnded: false,
+      fullScreen: false,
       _px: 0,
       _py: 0,
       _pz: 0,
@@ -22,27 +21,113 @@ export default class Screen extends Component {
     }
   }
 
+  changeMode () {
+
+    const self = this
+
+    if (!this.state.fullScreen) {
+
+      getFullScreen()
+
+      document.body.addEventListener('keydown', getFullScreenEvent)
+      
+    } else {
+      
+      cancelFullScreen()
+
+      document.body.removeEventListener('keydown', getFullScreenEvent)
+
+    }
+
+    function getFullScreen () {
+      
+      const wHeight = window.innerHeight - 17
+      const wWidth = window.innerWidth
+
+      self.screenWrapper.style.zIndex = '999'
+      self.screenWrapper.style.width = wWidth + 'px'
+      self.screenWrapper.style.height = wHeight + 'px'
+      
+      setPlayerInterval(wWidth, 5)  
+
+      self.setState({
+        fullScreen: true
+      })
+      
+    }
+    
+    function cancelFullScreen () {
+      
+      const wWidth = window.innerWidth
+
+      self.screenWrapper.style.width = ''
+      self.screenWrapper.style.height = '100%'
+      setTimeout(() => {
+
+        self.screenWrapper.style.zIndex = ''
+
+      }, 400)
+
+      setPlayerInterval(wWidth)
+
+      self.setState({
+        fullScreen: false
+      })
+
+    }
+
+    function getFullScreenEvent (e) {
+
+      if (e.keyCode === 27) cancelFullScreen()
+
+    }
+
+    function setPlayerInterval (wWidth, timer = 10) {
+
+      let interval
+      setInterval(() => {
+
+        player.setSize(player.dom.clientWidth, player.dom.clientHeight)
+
+        if (player.dom.clientWidth === wWidth) clearInterval(interval)
+
+      }, timer)
+
+    }
+
+  }
+
   changeState (state) {
+    
     let signals = editor.signals
     if (state === 'isStarted') {
+    
       signals.startPlayer.dispatch()
+  
       this.setState({
         [state]: true,
         isEnded: false
+    
       })
+  
     } else {
+    
       signals.stopPlayer.dispatch()
+  
       this.setState({
         [state]: true,
         isStarted: false
       })
+    
     }
+  
   }
 
   componentDidMount () {
 
     setTimeout(() => {
       window.editor.signals.positionInfo.add(({ position, rotation, scale }) => {
+
         this.setState({
           _px: (position && position.x.toFixed(2)) || '0',
           _py: (position && position.y.toFixed(2)) || '0',
@@ -55,16 +140,19 @@ export default class Screen extends Component {
           _sz: (scale && scale.z.toFixed(2)) || '0'
         })
       })
+      
     }, 0)
   }
 
   render () {
-    let { _px, _py, _pz, _rx, _ry, _rz, _sx, _sy, _sz } = this.state
+    let { _px, _py, _pz, _rx, _ry, _rz, _sx, _sy, _sz, fullScreen } = this.state
 
     return (
-      <section className="gra-screen-wrapper">
+      <section 
+        className='gra-screen-wrapper' 
+        ref={screenWrapper => this.screenWrapper = screenWrapper}>
         <div className="gra-screen-header">
-          <i className="iconfont icon-quanping gra-icon-full-screen" title="全屏"></i>
+          <i onClick={this.changeMode.bind(this)} className="iconfont icon-quanping gra-icon-full-screen" title="全屏"></i>
           <i onClick={this.changeState.bind(this, 'isEnded')} className={`iconfont icon-circle gra-icon-end ${this.state.isEnded ? 'active' : ''}`}></i>
           <i onClick={this.changeState.bind(this, 'isStarted')} className={`iconfont icon-qizi gra-icon-start ${this.state.isStarted ? 'active' : ''}`}></i>
         </div>

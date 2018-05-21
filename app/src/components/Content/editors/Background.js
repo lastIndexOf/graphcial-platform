@@ -79,8 +79,6 @@ export default class Background extends Component {
 
       } );
 
-      //
-
       window.timeout;
 
       function saveState( scene ) {
@@ -94,16 +92,6 @@ export default class Background extends Component {
           window.timeout = setTimeout( function () {
 
             let data = editor.toJSON();
-
-            for (let key in data.scripts) {
-
-              if (data.scripts[key][0]) {
-
-                data.scripts[key][0].xml = data.scripts[key][0].xml && data.scripts[key][0].xml.innerHTML
-
-              } 
-
-            }
 
             window.editor.storage.set( data );
 
