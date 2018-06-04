@@ -1,5 +1,5 @@
 /**
- * @author mrdoob / http://mrdoob.com/
+
  */
 
 var Player = function ( editor ) {
@@ -15,7 +15,9 @@ var Player = function ( editor ) {
 
 	container.setSize = function () {
 
-		player.setSize( container.dom.clientWidth, container.dom.clientHeight );
+		if (!arguments.length) player.setSize( container.dom.clientWidth, container.dom.clientHeight );
+
+		else player.setSize( arguments[0], arguments[1] );
 
 	};
 
@@ -24,11 +26,11 @@ var Player = function ( editor ) {
 	var player = new APP.Player();
 	container.dom.appendChild( player.dom );
 
-	window.addEventListener( 'resize', function () {
+	// window.addEventListener( 'resize', function () {
 
-		player.setSize( container.dom.clientWidth, container.dom.clientHeight );
+	// 	player.setSize( container.dom.clientWidth, container.dom.clientHeight );
 
-	} );
+	// } );
 
 	signals.startPlayer.add( function () {
 

@@ -1,5 +1,5 @@
 /**
- * @author mrdoob / http://mrdoob.com/
+
  */
 
 var APP = {
@@ -55,11 +55,13 @@ var APP = {
 
 			var scriptWrapParams = 'player,renderer,scene,camera';
 			var scriptWrapResultObj = {};
+			var scriptWrapErrorObj = {};
 
 			for ( var eventKey in events ) {
 
 				scriptWrapParams += ',' + eventKey;
 				scriptWrapResultObj[ eventKey ] = eventKey;
+				scriptWrapErrorObj[ eventKey ] = undefined;
 
 			}
 
@@ -82,7 +84,19 @@ var APP = {
 
 					var script = scripts[ i ];
 
-					var functions = ( new Function( scriptWrapParams, script.source + '\nreturn ' + scriptWrapResult + ';' ).bind( object ) )( this, renderer, scene, camera );
+					var functions
+
+					try {
+					
+						functions = ( new Function( scriptWrapParams, script.source + '\nreturn ' + scriptWrapResult + ';' ).bind( object ) )( this, renderer, scene, camera );
+
+					} catch ( e ) {
+				
+						catchError(( e.message || e ), ( e.stack || "" ));
+						
+						functions = scriptWrapErrorObj;
+
+					}
 
 					for ( var name in functions ) {
 
@@ -90,7 +104,7 @@ var APP = {
 
 						if ( events[ name ] === undefined ) {
 
-							console.warn( 'APP.Player: Event type not supported (', name, ')' );
+							catchError('APP.Player: Event type not supported (', name, ')')
 							continue;
 
 						}
@@ -167,11 +181,7 @@ var APP = {
 
 			} catch ( e ) {
 				
-				let debugModal = document.getElementById('debug-modal-textarea')
-				debugModal.style.color = '#fa3140'
-				debugModal.value = ( e.message || e ) + ( e.stack || "" )
-
-				console.error( ( e.message || e ), ( e.stack || "" ) );
+				catchError(( e.message || e ), ( e.stack || "" ));
 
 			}
 
@@ -185,30 +195,26 @@ var APP = {
 
 			prevTime = performance.now();
 
-			document.addEventListener( 'keydown', onDocumentKeyDown );
-			document.addEventListener( 'keyup', onDocumentKeyUp );
-			document.addEventListener( 'mousedown', onDocumentMouseDown );
-			document.addEventListener( 'mouseup', onDocumentMouseUp );
-			document.addEventListener( 'mousemove', onDocumentMouseMove );
-			document.addEventListener( 'touchstart', onDocumentTouchStart );
-			document.addEventListener( 'touchend', onDocumentTouchEnd );
-			document.addEventListener( 'touchmove', onDocumentTouchMove );
-
 			try {
-				
+
+				document.addEventListener( 'keydown', onDocumentKeyDown );
+				document.addEventListener( 'keyup', onDocumentKeyUp );
+				document.addEventListener( 'mousedown', onDocumentMouseDown );
+				document.addEventListener( 'mouseup', onDocumentMouseUp );
+				document.addEventListener( 'mousemove', onDocumentMouseMove );
+				document.addEventListener( 'touchstart', onDocumentTouchStart );
+				document.addEventListener( 'touchend', onDocumentTouchEnd );
+				document.addEventListener( 'touchmove', onDocumentTouchMove );
+
 				dispatch( events.start, arguments );
-			
-			} catch (e) {
 
-				let debugModal = document.getElementById('debug-modal-textarea')
-				debugModal.style.color = '#fa3140'
-				debugModal.value = ( e.message || e ) + ( e.stack || "" )
+				renderer.animate( animate );
 
-				console.error( ( e.message || e ), ( e.stack || "" ) )
+			} catch ( e ) {
+				
+				catchError(( e.message || e ), ( e.stack || "" ));
 
 			}
-
-			renderer.animate( animate );
 
 		};
 
@@ -244,6 +250,17 @@ var APP = {
 			renderer = undefined;
 
 		};
+
+		// catch error
+
+		function catchError (text) {
+			
+			var debugModal = document.getElementById('debug-modal-textarea');
+
+			debugModal.style.color = '#fa3140';
+			debugModal.value = text;
+
+		}
 
 		//
 

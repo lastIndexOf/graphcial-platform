@@ -48,7 +48,7 @@ export default class Screen extends Component {
       self.screenWrapper.style.width = wWidth + 'px'
       self.screenWrapper.style.height = wHeight + 'px'
       
-      setPlayerInterval(wWidth, 5)  
+      setPlayerInterval(wWidth)  
 
       self.setState({
         fullScreen: true
@@ -58,7 +58,9 @@ export default class Screen extends Component {
     
     function cancelFullScreen () {
       
-      const wWidth = window.innerWidth
+      const _wrapper = document.querySelector('.gra-left-top-wrapper')
+      const wWidth = _wrapper.clientWidth - 12
+      const wHeight = _wrapper.clientHeight - 65
 
       self.screenWrapper.style.width = ''
       self.screenWrapper.style.height = '100%'
@@ -82,12 +84,12 @@ export default class Screen extends Component {
 
     }
 
-    function setPlayerInterval (wWidth, timer = 10) {
+    function setPlayerInterval (wWidth, timer = 0) {
 
       let interval
-      setInterval(() => {
+      interval = setInterval(() => {
 
-        player.setSize(player.dom.clientWidth, player.dom.clientHeight)
+        player.setSize()
 
         if (player.dom.clientWidth === wWidth) clearInterval(interval)
 

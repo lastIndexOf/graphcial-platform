@@ -1,6 +1,6 @@
 /**
  * @author Mugen87 / https://github.com/Mugen87
- * @author mrdoob / http://mrdoob.com/
+
  */
 
 THREE.Lensflare = function () {

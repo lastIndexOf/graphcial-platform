@@ -1,5 +1,5 @@
 /**
- * @author mrdoob / http://mrdoob.com/
+
  */
 
 Viewport.Info = function ( editor ) {

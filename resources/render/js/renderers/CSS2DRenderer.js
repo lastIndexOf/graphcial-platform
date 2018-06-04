@@ -1,5 +1,5 @@
 /**
- * @author mrdoob / http://mrdoob.com/
+
  */
 
 THREE.CSS2DObject = function ( element ) {

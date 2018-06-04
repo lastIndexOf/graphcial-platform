@@ -75,7 +75,7 @@ self.onmessage = function( e ) {
 
 /**
  * DOM-less version of Raytracing Renderer
- * @author mrdoob / http://mrdoob.com/
+
  * @author alteredq / http://alteredqualia.com/
  * @author zz95 / http://github.com/zz85
  */

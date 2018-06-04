@@ -121,7 +121,9 @@ export default class Background extends Component {
   }
 
   getCanvasView () {
-    window.editor.signals.windowResize.dispatch();
+
+    window.editor.signals.windowResize.dispatch()
+  
   }
 
   render () {

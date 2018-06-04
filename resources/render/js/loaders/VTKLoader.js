@@ -1,5 +1,5 @@
 /**
- * @author mrdoob / http://mrdoob.com/
+
  * @author Alex Pletzer
  *
  * Updated on 22.03.2017

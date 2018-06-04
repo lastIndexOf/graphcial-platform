@@ -1,5 +1,5 @@
 /**
- * @author mrdoob / http://mrdoob.com/
+
  */
 
 var Menubar = function ( editor ) {

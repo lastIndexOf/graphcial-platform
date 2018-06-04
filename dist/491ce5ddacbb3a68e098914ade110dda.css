@@ -86,6 +86,8 @@
   transition: all 0.4s cubic-bezier(0.3, 1.2, 0.8, 1);
   height: 100%;
   width: 100%; }
+  .gra-screen-wrapper #player {
+    transition: all 0.4s cubic-bezier(0.3, 1.2, 0.8, 1); }
   .gra-screen-wrapper .gra-screen-header {
     height: 40px;
     border-top-left-radius: 20px;

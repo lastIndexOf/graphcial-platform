@@ -4,6 +4,7 @@ import './Dragmodal.scss'
 
 export default class Dragmodal extends Component {
   constructor () {
+
     super()
 
     const self = this
@@ -13,8 +14,11 @@ export default class Dragmodal extends Component {
     this.preLeft = 0
     this.top = 120
     this.left = 640
+    
     this.mouseMoveFunction = function (e) {
+
       if (self.key) {
+
         let _x = e.clientX - self.preLeft
         let _y = e.clientY - self.preTop
   
@@ -25,43 +29,57 @@ export default class Dragmodal extends Component {
   
         self.dragModal.style.top = self.top + 'px'
         self.dragModal.style.left = self.left + 'px'
+
       }
+
     }
+
     this.state = {
       showModal: false
     }
+
   }
 
   componentDidMount () {
+
     const self = this
 
     window.editor.signals.dragAction.add(function () {
+
       self.setState((o, n) => ({
         showModal: !o.showModal
       }))
+
     })
     let material = new Sidebar.Material(editor)
     this.dragContent.appendChild(objectNameRow.dom)
     this.dragContent.appendChild(material.dom)
     this.dragContent.appendChild(window.objectColorRow.dom)
+
   }
 
   closeModal () {
+
     this.setState({
       showModal: false
     })
+
   }
 
   dragOptionModal (e) {
+
     this.preTop = e.clientY
     this.preLeft = e.clientX
     this.key = true
     document.body.addEventListener('mousemove', this.mouseMoveFunction)
+
   }
 
   closeMoveOptionModal (e) {
+
     this.key = false
     document.body.removeEventListener('mousemove', this.mouseMoveFunction)
+
   }
 
   render () {

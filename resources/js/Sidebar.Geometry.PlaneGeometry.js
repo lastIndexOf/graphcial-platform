@@ -1,5 +1,5 @@
 /**
- * @author mrdoob / http://mrdoob.com/
+
  */
 
 Sidebar.Geometry.PlaneGeometry = function ( editor, object ) {

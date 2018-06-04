@@ -32,6 +32,10 @@ var Loader = function ( editor ) {
 
 					editor.execute( new AddObjectCommand( object ) );
 
+					let script = { name: '', source: '', xml: document.querySelector('#function_update') }
+						editor.execute( new AddScriptCommand( editor.selected, script ) )
+						editor.getWorkspace()
+
 				}, false );
 				reader.readAsArrayBuffer( file );
 
@@ -45,6 +49,10 @@ var Loader = function ( editor ) {
 					var amfobject = loader.parse( event.target.result );
 
 					editor.execute( new AddObjectCommand( amfobject ) );
+
+					let script = { name: '', source: '', xml: document.querySelector('#function_update') }
+						editor.execute( new AddScriptCommand( editor.selected, script ) )
+						editor.getWorkspace()
 
 				}, false );
 				reader.readAsArrayBuffer( file );
@@ -99,6 +107,10 @@ var Loader = function ( editor ) {
 
 					editor.execute( new AddObjectCommand( mesh ) );
 
+					let script = { name: '', source: '', xml: document.querySelector('#function_update') }
+						editor.execute( new AddScriptCommand( editor.selected, script ) )
+						editor.getWorkspace()
+
 				}, false );
 				reader.readAsText( file );
 
@@ -126,6 +138,10 @@ var Loader = function ( editor ) {
 
 						editor.execute( new AddObjectCommand( mesh ) );
 
+						let script = { name: '', source: '', xml: document.querySelector('#function_update') }
+						editor.execute( new AddScriptCommand( editor.selected, script ) )
+						editor.getWorkspace()
+
 					} );
 
 				}, false );
@@ -146,6 +162,10 @@ var Loader = function ( editor ) {
 
 					editor.execute( new AddObjectCommand( collada.scene ) );
 
+					let script = { name: '', source: '', xml: document.querySelector('#function_update') }
+						editor.execute( new AddScriptCommand( editor.selected, script ) )
+						editor.getWorkspace()
+
 				}, false );
 				reader.readAsText( file );
 
@@ -161,6 +181,10 @@ var Loader = function ( editor ) {
 					var object = loader.parse( contents );
 
 					editor.execute( new AddObjectCommand( object ) );
+
+					let script = { name: '', source: '', xml: document.querySelector('#function_update') }
+						editor.execute( new AddScriptCommand( editor.selected, script ) )
+						editor.getWorkspace()
 
 				}, false );
 				reader.readAsArrayBuffer( file );
@@ -189,6 +213,10 @@ var Loader = function ( editor ) {
 
 						result.scene.name = filename;
 						editor.execute( new AddObjectCommand( result.scene ) );
+
+						let script = { name: '', source: '', xml: document.querySelector('#function_update') }
+						editor.execute( new AddScriptCommand( editor.selected, script ) )
+						editor.getWorkspace()
 
 					} );
 
@@ -265,6 +293,10 @@ var Loader = function ( editor ) {
 
 					editor.execute( new AddObjectCommand( collada.scene ) );
 
+let script = { name: '', source: '', xml: document.querySelector('#function_update') }
+                        editor.execute( new AddScriptCommand( editor.selected, script ) )
+                        editor.getWorkspace()
+
 				}, false );
 				reader.readAsArrayBuffer( file );
 
@@ -288,6 +320,10 @@ var Loader = function ( editor ) {
 
 					editor.execute( new AddObjectCommand( mesh ) );
 
+					let script = { name: '', source: '', xml: document.querySelector('#function_update') }
+						editor.execute( new AddScriptCommand( editor.selected, script ) )
+						editor.getWorkspace()
+
 				}, false );
 				reader.readAsArrayBuffer( file );
 
@@ -303,6 +339,10 @@ var Loader = function ( editor ) {
 					object.name = filename;
 
 					editor.execute( new AddObjectCommand( object ) );
+
+					let script = { name: '', source: '', xml: document.querySelector('#function_update') }
+						editor.execute( new AddScriptCommand( editor.selected, script ) )
+						editor.getWorkspace()
 
 				}, false );
 				reader.readAsText( file );
@@ -320,6 +360,10 @@ var Loader = function ( editor ) {
 					var object = loader.parse( json );
 
 					editor.execute( new AddObjectCommand( object ) );
+
+					let script = { name: '', source: '', xml: document.querySelector('#function_update') }
+						editor.execute( new AddScriptCommand( editor.selected, script ) )
+						editor.getWorkspace()
 
 				}, false );
 				reader.readAsText( file );
@@ -343,6 +387,10 @@ var Loader = function ( editor ) {
 
 					editor.execute( new AddObjectCommand( mesh ) );
 
+					let script = { name: '', source: '', xml: document.querySelector('#function_update') }
+						editor.execute( new AddScriptCommand( editor.selected, script ) )
+						editor.getWorkspace()
+
 				}, false );
 				reader.readAsArrayBuffer( file );
 
@@ -364,6 +412,10 @@ var Loader = function ( editor ) {
 					mesh.name = filename;
 
 					editor.execute( new AddObjectCommand( mesh ) );
+
+					let script = { name: '', source: '', xml: document.querySelector('#function_update') }
+						editor.execute( new AddScriptCommand( editor.selected, script ) )
+						editor.getWorkspace()
 
 				}, false );
 
@@ -420,6 +472,10 @@ var Loader = function ( editor ) {
 
 					editor.execute( new AddObjectCommand( group ) );
 
+					let script = { name: '', source: '', xml: document.querySelector('#function_update') }
+						editor.execute( new AddScriptCommand( editor.selected, script ) )
+						editor.getWorkspace()
+
 				}, false );
 				reader.readAsText( file );
 
@@ -438,6 +494,10 @@ var Loader = function ( editor ) {
 					var mesh = new THREE.Mesh( geometry, material );
 
 					editor.execute( new AddObjectCommand( mesh ) );
+
+					let script = { name: '', source: '', xml: document.querySelector('#function_update') }
+						editor.execute( new AddScriptCommand( editor.selected, script ) )
+						editor.getWorkspace()
 
 				}, false );
 				reader.readAsBinaryString( file );
@@ -461,6 +521,10 @@ var Loader = function ( editor ) {
 					mesh.name = filename;
 
 					editor.execute( new AddObjectCommand( mesh ) );
+
+					let script = { name: '', source: '', xml: document.querySelector('#function_update') }
+						editor.execute( new AddScriptCommand( editor.selected, script ) )
+						editor.getWorkspace()
 
 				}, false );
 				reader.readAsText( file );
@@ -497,6 +561,10 @@ var Loader = function ( editor ) {
 						var materials = new THREE.MTLLoader().parse( zip.file( 'materials.mtl' ).asText() );
 						var object = new THREE.OBJLoader().setMaterials( materials ).parse( zip.file( 'model.obj' ).asText() );
 						editor.execute( new AddObjectCommand( object ) );
+
+						let script = { name: '', source: '', xml: document.querySelector('#function_update') }
+						editor.execute( new AddScriptCommand( editor.selected, script ) )
+						editor.getWorkspace()
 
 					}
 
@@ -611,6 +679,10 @@ var Loader = function ( editor ) {
 				} else {
 
 					editor.execute( new AddObjectCommand( result ) );
+
+					let script = { name: '', source: '', xml: document.querySelector('#function_update') }
+						editor.execute( new AddScriptCommand( editor.selected, script ) )
+						editor.getWorkspace()
 
 				}
 

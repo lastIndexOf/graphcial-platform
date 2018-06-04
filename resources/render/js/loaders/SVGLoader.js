@@ -1,5 +1,5 @@
 /**
- * @author mrdoob / http://mrdoob.com/
+
  * @author zz85 / http://joshuakoo.com/
  */
 

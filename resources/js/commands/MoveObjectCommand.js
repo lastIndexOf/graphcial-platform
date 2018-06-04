@@ -1,7 +1,3 @@
-/**
- * @author dforrer / https://github.com/dforrer
- * Developed as part of a project at University of Applied Sciences and Arts Northwestern Switzerland (www.fhnw.ch)
- */
 
 /**
  * @param object THREE.Object3D

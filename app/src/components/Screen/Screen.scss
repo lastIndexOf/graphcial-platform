@@ -3,6 +3,9 @@
   transition: all .4s cubic-bezier(.3, 1.2, .8, 1);
   height: 100%;
   width: 100%;
+  #player {
+    transition: all .4s cubic-bezier(.3, 1.2, .8, 1);
+  }
   .gra-screen-header {
     height: 40px;
     border-top-left-radius: 20px;

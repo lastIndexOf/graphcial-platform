@@ -14,33 +14,38 @@ export default class Script extends Component {
   }
 
   componentDidMount () {
+
     window.workspace = Blockly.inject('blocklyDiv', {
       media: '../../../../assets/media/',
       toolbox: document.getElementById('toolbox')
     })
+
+    let debugModal = document.getElementById('debug-modal-textarea')
 
     function myUpdateFunction(event) {
 
       let code = Blockly.JavaScript.workspaceToCode(workspace)
       let xml = Blockly.Xml.workspaceToDom(workspace)
       
-      let debugModal = document.getElementById('debug-modal-textarea')
       debugModal.style.color = '#fff'
       debugModal.value = code
 
       let object = editor.selected
-      let script = object.uuid && editor.scripts[object.uuid] && editor.scripts[object.uuid][0]
+      let script = object && editor.scripts[object.uuid] && editor.scripts[object.uuid][0]
 
       if (script) {
 
         script.source = code
         script.xml = xml
 
+        window.signals.scriptChanged.dispatch()
+
       }
 
     }
 
     workspace.addChangeListener(myUpdateFunction)
+    
   }
 
   render () {

@@ -1,5 +1,5 @@
 /**
- * @author mrdoob / http://mrdoob.com/
+
  */
 
 Sidebar.Geometry.CircleGeometry = function ( editor, object ) {

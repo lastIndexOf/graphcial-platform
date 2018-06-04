@@ -1,6 +1,6 @@
 /**
  * @author kovacsv / http://kovacsv.hu/
- * @author mrdoob / http://mrdoob.com/
+
  */
 
 THREE.STLExporter = function () {};

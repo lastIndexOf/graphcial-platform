@@ -26,16 +26,21 @@ export default class Editor extends Component {
   }
   
   makeNewRole () {
+
     console.log(sweetalert('暂不支持角色建模，请从素材库中选择素材'))
     
   }
 
   componentDidMount () {
+
     this.colorPicker = document.createElement('input')
     this.colorPicker.type = 'color'
     this.colorPicker.onchange = e => {
+
       editor.signals.sceneBackgroundChanged.dispatch(parseInt(this.colorPicker.value.substr( 1 ), 16 ))
+      
     }
+
   }
 
   render () {

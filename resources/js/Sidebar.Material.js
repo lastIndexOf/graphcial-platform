@@ -1,5 +1,5 @@
 /**
- * @author mrdoob / http://mrdoob.com/
+
  */
 
 Sidebar.Material = function ( editor ) {
@@ -539,12 +539,7 @@ Sidebar.Material = function ( editor ) {
 				material = new THREE[ materialClass.getValue() ]();
 
 				editor.execute( new SetMaterialCommand( currentObject, material, currentMaterialSlot ), 'New Material: ' + materialClass.getValue() );
-				// TODO Copy other references in the scene graph
-				// keeping name and UUID then.
-				// Also there should be means to create a unique
-				// copy for the current object explicitly and to
-				// attach the current material to other objects.
-
+				
 			}
 
 			if ( material.color !== undefined && material.color.getHex() !== materialColor.getHexValue() ) {

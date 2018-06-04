@@ -1,5 +1,5 @@
 /**
- * @author mrdoob / http://mrdoob.com/
+
  * @author ryg / http://farbrausch.de/~fg
  * @author mraleph / http://mrale.ph/
  * @author daoshengmu / http://dsmu.me/

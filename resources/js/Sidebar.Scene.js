@@ -1,7 +1,3 @@
-/**
- * @author mrdoob / http://mrdoob.com/
- */
-
 Sidebar.Scene = function ( editor ) {
 
 	var signals = editor.signals;

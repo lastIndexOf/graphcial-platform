@@ -327,7 +327,7 @@
 
 	/**
 	 * @author alteredq / http://alteredqualia.com/
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 */
 
 	var _Math = {
@@ -474,7 +474,7 @@
 	};
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 * @author philogb / http://blog.thejit.org/
 	 * @author egraether / http://egraether.com/
 	 * @author zz85 / http://www.lab4games.net/zz85/blog
@@ -965,7 +965,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 * @author supereggbert / http://www.paulbrunt.co.uk/
 	 * @author philogb / http://blog.thejit.org/
 	 * @author jordi_ros / http://plattsoft.com
@@ -2495,7 +2495,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 * @author kile / http://kile.stravaganza.org/
 	 * @author philogb / http://blog.thejit.org/
 	 * @author mikael emtinger / http://gomo.se/
@@ -3603,7 +3603,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 * @author alteredq / http://alteredqualia.com/
 	 * @author szimek / https://github.com/szimek/
 	 */
@@ -4674,7 +4674,7 @@
 	DataTexture.prototype.isDataTexture = true;
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 */
 
 	function CubeTexture( images, mapping, wrapS, wrapT, magFilter, minFilter, format, type, anisotropy, encoding ) {
@@ -5315,7 +5315,7 @@
 	};
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 */
 
 	var ColorKeywords = { 'aliceblue': 0xF0F8FF, 'antiquewhite': 0xFAEBD7, 'aqua': 0x00FFFF, 'aquamarine': 0x7FFFD4, 'azure': 0xF0FFFF,
@@ -6414,7 +6414,7 @@
 
 	/**
 	 * @author alteredq / http://alteredqualia.com/
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 * @author mikael emtinger / http://gomo.se/
 	 */
 
@@ -6649,7 +6649,7 @@
 	};
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 */
 
 	function CanvasTexture( canvas, mapping, wrapS, wrapT, magFilter, minFilter, format, type, anisotropy ) {
@@ -7045,7 +7045,7 @@
 	}
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 * @author alteredq / http://alteredqualia.com/
 	 */
 
@@ -7410,7 +7410,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 * @author alteredq / http://alteredqualia.com/
 	 * @author bhouston / https://clara.io
 	 * @author WestLangley / http://github.com/WestLangley
@@ -8154,7 +8154,7 @@
 
 	/**
 	 * @author bhouston / http://clara.io
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 */
 
 	function Sphere( center, radius ) {
@@ -8543,7 +8543,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 * @author alteredq / http://alteredqualia.com/
 	 * @author bhouston / http://clara.io
 	 */
@@ -8739,7 +8739,7 @@
 
 	/**
 	 * @author alteredq / http://alteredqualia.com/
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 */
 
 	function WebGLShadowMap( _renderer, _objects, maxTextureSize ) {
@@ -9156,7 +9156,7 @@
 	}
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 */
 
 	function WebGLAttributes( gl ) {
@@ -9309,7 +9309,7 @@
 	}
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 * @author WestLangley / http://github.com/WestLangley
 	 * @author bhouston / http://clara.io
 	 */
@@ -9654,7 +9654,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 */
 
 	function Layers() {
@@ -9698,7 +9698,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 * @author mikael emtinger / http://gomo.se/
 	 * @author alteredq / http://alteredqualia.com/
 	 * @author WestLangley / http://github.com/WestLangley
@@ -10517,7 +10517,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 * @author mikael emtinger / http://gomo.se/
 	 * @author WestLangley / http://github.com/WestLangley
 	*/
@@ -10723,7 +10723,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 * @author alteredq / http://alteredqualia.com/
 	 */
 
@@ -10781,7 +10781,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 * @author kile / http://kile.stravaganza.org/
 	 * @author alteredq / http://alteredqualia.com/
 	 * @author mikael emtinger / http://gomo.se/
@@ -12202,7 +12202,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 */
 
 	function BufferAttribute( array, itemSize, normalized ) {
@@ -12629,7 +12629,7 @@
 	Float64BufferAttribute.prototype.constructor = Float64BufferAttribute;
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 */
 
 	function DirectGeometry() {
@@ -12888,7 +12888,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 */
 
 	function arrayMax( array ) {
@@ -12909,7 +12909,7 @@
 
 	/**
 	 * @author alteredq / http://alteredqualia.com/
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 */
 
 	var bufferGeometryId = 1; // BufferGeometry uses odd numbers as Id
@@ -14017,7 +14017,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 * @author Mugen87 / https://github.com/Mugen87
 	 */
 
@@ -14213,7 +14213,7 @@
 	BoxBufferGeometry.prototype.constructor = BoxBufferGeometry;
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 * @author Mugen87 / https://github.com/Mugen87
 	 */
 
@@ -14333,7 +14333,7 @@
 	PlaneBufferGeometry.prototype.constructor = PlaneBufferGeometry;
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 * @author alteredq / http://alteredqualia.com/
 	 *
 	 * parameters = {
@@ -15226,7 +15226,7 @@
 
 	/**
 	 * @author bhouston / http://clara.io
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 */
 
 	function Triangle( a, b, c ) {
@@ -15483,7 +15483,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 * @author alteredq / http://alteredqualia.com/
 	 * @author mikael emtinger / http://gomo.se/
 	 * @author jonobr1 / http://jonobr1.com/
@@ -15869,7 +15869,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 */
 
 	function WebGLBackground( renderer, state, geometries, premultipliedAlpha ) {
@@ -15998,7 +15998,7 @@
 	}
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 */
 
 	function painterSortStable( a, b ) {
@@ -16155,7 +16155,7 @@
 	}
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 */
 
 	function absNumericalSort( a, b ) {
@@ -16264,7 +16264,7 @@
 	}
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 */
 
 	function WebGLIndexedBufferRenderer( gl, extensions, infoRender ) {
@@ -16329,7 +16329,7 @@
 	}
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 */
 
 	function WebGLBufferRenderer( gl, extensions, infoRender ) {
@@ -16396,7 +16396,7 @@
 	}
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 */
 
 	function WebGLGeometries( gl, attributes, infoMemory ) {
@@ -16585,7 +16585,7 @@
 	}
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 */
 
 	function WebGLObjects( geometries, infoRender ) {
@@ -16635,7 +16635,7 @@
 	}
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 */
 
 	function addLineNumbers( string ) {
@@ -16679,7 +16679,7 @@
 	}
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 */
 
 	var programIdCount = 0;
@@ -17354,7 +17354,7 @@
 	}
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 */
 
 	function WebGLPrograms( renderer, extensions, capabilities ) {
@@ -17654,7 +17654,7 @@
 	}
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 */
 
 	function WebGLTextures( _gl, extensions, state, properties, capabilities, utils, infoMemory, infoRender ) {
@@ -18527,7 +18527,7 @@
 	}
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 */
 
 	function WebGLState( gl, extensions, utils ) {
@@ -19488,7 +19488,7 @@
 	}
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 */
 
 	function WebGLCapabilities( gl, extensions, parameters ) {
@@ -19598,7 +19598,7 @@
 	}
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 * @author greggman / http://games.greggman.com/
 	 * @author zz85 / http://www.lab4games.net/zz85/blog
 	 * @author tschw
@@ -19835,7 +19835,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 */
 
 	function ArrayCamera( array ) {
@@ -19855,7 +19855,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 */
 
 	function WebVRManager( renderer ) {
@@ -20087,7 +20087,7 @@
 	}
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 */
 
 	function WebGLExtensions( gl ) {
@@ -20461,7 +20461,7 @@
 	}
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 */
 
 	function UniformsCache() {
@@ -20884,7 +20884,7 @@
 
 	/**
 	 * @author supereggbert / http://www.paulbrunt.co.uk/
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 * @author alteredq / http://alteredqualia.com/
 	 * @author szimek / https://github.com/szimek/
 	 * @author tschw
@@ -23452,7 +23452,7 @@
 	}
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 * @author alteredq / http://alteredqualia.com/
 	 */
 
@@ -23484,7 +23484,7 @@
 	};
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 * @author alteredq / http://alteredqualia.com/
 	 */
 
@@ -23519,7 +23519,7 @@
 	};
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 */
 
 	function Scene() {
@@ -23694,7 +23694,7 @@
 	/**
 	 * @author mikael emtinger / http://gomo.se/
 	 * @author alteredq / http://alteredqualia.com/
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 */
 
 	function LOD() {
@@ -24260,7 +24260,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 * @author alteredq / http://alteredqualia.com/
 	 *
 	 * parameters = {
@@ -24311,7 +24311,7 @@
 	};
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 */
 
 	function Line( geometry, material, mode ) {
@@ -24554,7 +24554,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 */
 
 	function LineSegments( geometry, material ) {
@@ -24653,7 +24653,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 * @author alteredq / http://alteredqualia.com/
 	 *
 	 * parameters = {
@@ -24843,7 +24843,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 */
 
 	function Group() {
@@ -24863,7 +24863,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 */
 
 	function VideoTexture( video, mapping, wrapS, wrapT, magFilter, minFilter, format, type, anisotropy ) {
@@ -24957,7 +24957,7 @@
 	DepthTexture.prototype.isDepthTexture = true;
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 * @author Mugen87 / https://github.com/Mugen87
 	 */
 
@@ -26265,7 +26265,7 @@
 
 	/**
 	 * @author oosmoxiecode
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 * @author Mugen87 / https://github.com/Mugen87
 	 */
 
@@ -28182,7 +28182,7 @@
 	TextBufferGeometry.prototype.constructor = TextBufferGeometry;
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 * @author benaadams / https://twitter.com/ben_a_adams
 	 * @author Mugen87 / https://github.com/Mugen87
 	 */
@@ -28970,7 +28970,7 @@
 	EdgesGeometry.prototype.constructor = EdgesGeometry;
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 * @author Mugen87 / https://github.com/Mugen87
 	 */
 
@@ -29488,7 +29488,7 @@
 	});
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 *
 	 * parameters = {
 	 *  color: <THREE.Color>,
@@ -29518,7 +29518,7 @@
 	ShadowMaterial.prototype.isShadowMaterial = true;
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 */
 
 	function RawShaderMaterial( parameters ) {
@@ -29750,7 +29750,7 @@
 	};
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 * @author alteredq / http://alteredqualia.com/
 	 *
 	 * parameters = {
@@ -29948,7 +29948,7 @@
 	};
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 * @author WestLangley / http://github.com/WestLangley
 	 *
 	 * parameters = {
@@ -30034,7 +30034,7 @@
 	};
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 * @author alteredq / http://alteredqualia.com/
 	 *
 	 * parameters = {
@@ -30227,7 +30227,7 @@
 	});
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 */
 
 	var Cache = {
@@ -30271,7 +30271,7 @@
 	};
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 */
 
 	function LoadingManager( onLoad, onProgress, onError ) {
@@ -30364,7 +30364,7 @@
 	var DefaultLoadingManager = new LoadingManager();
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 */
 
 	var loading = {};
@@ -30671,7 +30671,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 *
 	 * Abstract Base class to block based textures loader (dds, pvr, ...)
 	 */
@@ -30893,7 +30893,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 */
 
 	function ImageLoader( manager ) {
@@ -30994,7 +30994,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 */
 
 	function CubeTextureLoader( manager ) {
@@ -31064,7 +31064,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 */
 
 	function TextureLoader( manager ) {
@@ -33127,7 +33127,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 * @author alteredq / http://alteredqualia.com/
 	 */
 
@@ -33221,7 +33221,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 */
 
 	function LightShadow( camera ) {
@@ -33277,7 +33277,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 */
 
 	function SpotLightShadow() {
@@ -33380,7 +33380,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 */
 
 
@@ -33436,7 +33436,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 */
 
 	function DirectionalLightShadow( ) {
@@ -33452,7 +33452,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 * @author alteredq / http://alteredqualia.com/
 	 */
 
@@ -33492,7 +33492,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 */
 
 	function AmbientLight( color, intensity ) {
@@ -35290,7 +35290,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 */
 
 	function MaterialLoader( manager ) {
@@ -35453,7 +35453,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 */
 
 	function BufferGeometryLoader( manager ) {
@@ -35915,7 +35915,7 @@
 	};
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 * @author alteredq / http://alteredqualia.com/
 	 */
 
@@ -36477,7 +36477,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 */
 
 	function ObjectLoader( manager ) {
@@ -37688,7 +37688,7 @@
 
 	/**
 	 * @author zz85 / http://www.lab4games.net/zz85/blog
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 */
 
 	function Font( data ) {
@@ -37829,7 +37829,7 @@
 	}
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 */
 
 	function FontLoader( manager ) {
@@ -37885,7 +37885,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 */
 
 	var context;
@@ -37945,7 +37945,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 */
 
 	function StereoCamera() {
@@ -38142,7 +38142,7 @@
 	CubeCamera.prototype.constructor = CubeCamera;
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 */
 
 	function AudioListener() {
@@ -38265,7 +38265,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 * @author Reece Aaron Lecrivain / http://reecenotes.com/
 	 */
 
@@ -38568,7 +38568,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 */
 
 	function PositionalAudio( listener ) {
@@ -38658,7 +38658,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 */
 
 	function AudioAnalyser( audio, fftSize ) {
@@ -41421,7 +41421,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 */
 
 	function Uniform( value ) {
@@ -41787,7 +41787,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 * @author bhouston / http://clara.io/
 	 * @author stephomi / http://stephaneginier.com/
 	 */
@@ -42360,7 +42360,7 @@
 	ImmediateRenderObject.prototype.isImmediateRenderObject = true;
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 * @author WestLangley / http://github.com/WestLangley
 	 */
 
@@ -42505,7 +42505,7 @@
 
 	/**
 	 * @author alteredq / http://alteredqualia.com/
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 * @author WestLangley / http://github.com/WestLangley
 	 */
 
@@ -42600,7 +42600,7 @@
 	/**
 	 * @author Sean Griffin / http://twitter.com/sgrif
 	 * @author Michael Guerrero / http://realitymeltdown.com
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 * @author ikerr / http://verold.com
 	 * @author Mugen87 / https://github.com/Mugen87
 	 */
@@ -42716,7 +42716,7 @@
 
 	/**
 	 * @author alteredq / http://alteredqualia.com/
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 */
 
 	function PointLightHelper( light, sphereSize, color ) {
@@ -42876,7 +42876,7 @@
 
 	/**
 	 * @author alteredq / http://alteredqualia.com/
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 * @author Mugen87 / https://github.com/Mugen87
 	 */
 
@@ -42960,7 +42960,7 @@
 	}();
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 */
 
 	function GridHelper( size, divisions, color1, color2 ) {
@@ -43004,7 +43004,7 @@
 	GridHelper.prototype.constructor = GridHelper;
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 * @author Mugen87 / http://github.com/Mugen87
 	 * @author Hectate / http://www.github.com/Hectate
 	 */
@@ -43091,7 +43091,7 @@
 	PolarGridHelper.prototype.constructor = PolarGridHelper;
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 * @author WestLangley / http://github.com/WestLangley
 	 */
 
@@ -43201,7 +43201,7 @@
 
 	/**
 	 * @author alteredq / http://alteredqualia.com/
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 * @author WestLangley / http://github.com/WestLangley
 	 */
 
@@ -43488,7 +43488,7 @@
 	}();
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 * @author Mugen87 / http://github.com/Mugen87
 	 */
 
@@ -43794,7 +43794,7 @@
 
 	/**
 	 * @author sroucheray / http://sroucheray.org/
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 */
 
 	function AxesHelper( size ) {
@@ -43827,7 +43827,7 @@
 	AxesHelper.prototype.constructor = AxesHelper;
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	
 	 */
 
 	function Face4( a, b, c, d, normal, color, materialIndex ) {
