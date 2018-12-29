@@ -6,7 +6,7 @@
   "author": "lastIndexOf <kgaikj2cu@icloud.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "node ./resources/serve.js & npm run main-render & npm run main-process",
+    "dev": "node resources/serve & node ./resources/serve.js & npm run main-render & npm run main-process",
     "main-render": "parcel app/app.html -p 4000",
     "main-process": "electron .",
     "editor-process": "node app/src/editor/serve.js",
