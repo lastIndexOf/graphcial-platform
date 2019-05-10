@@ -5,3 +5,5 @@
 - [使用说明](./docs)
 
 - [技术选型](./docs/node)
+
+- [一个免费阅读的在线书城](http://www.ibiquwu.com)
